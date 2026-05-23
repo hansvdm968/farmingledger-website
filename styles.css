@@ -427,6 +427,7 @@ label {
 .platform-strip,
 .section,
 .app-section,
+.download-section,
 .contact-section,
 footer {
   padding-right: clamp(18px, 4vw, 56px);
@@ -457,6 +458,7 @@ footer {
 
 .section,
 .app-section,
+.download-section,
 .contact-section {
   padding-top: 76px;
   padding-bottom: 76px;
@@ -468,6 +470,7 @@ footer {
 }
 
 .section-heading h2,
+.download-copy h2,
 .contact-section h2 {
   margin: 0;
   font-size: clamp(2rem, 4.8vw, 4rem);
@@ -519,6 +522,105 @@ footer {
 .module-card p {
   margin: 0;
   line-height: 1.6;
+}
+
+.download-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: 28px;
+  align-items: start;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(135deg, rgba(85, 240, 163, 0.1), transparent 42%),
+    #0f171c;
+}
+
+.download-copy {
+  position: sticky;
+  top: 110px;
+}
+
+.download-copy h2 {
+  max-width: 720px;
+}
+
+.download-copy p:not(.eyebrow),
+.download-card p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.download-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.download-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  min-height: 154px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(17, 27, 33, 0.96);
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.primary-download {
+  border-color: rgba(85, 240, 163, 0.35);
+  background: linear-gradient(135deg, rgba(85, 240, 163, 0.15), rgba(17, 27, 33, 0.96) 46%);
+}
+
+.download-icon {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--green-soft);
+  color: var(--green);
+  font-size: 1.18rem;
+  font-weight: 950;
+}
+
+.download-card h3 {
+  margin: 0 0 6px;
+  font-size: 1.35rem;
+}
+
+.download-card p {
+  margin: 0;
+}
+
+.download-action {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 42px;
+  white-space: nowrap;
+  border-radius: 7px;
+  background: var(--green);
+  color: #07110d;
+  padding: 0 15px;
+  font-weight: 850;
+}
+
+.download-action:hover {
+  background: #72f6b4;
+}
+
+.secondary-download {
+  border: 1px solid rgba(238, 245, 242, 0.2);
+  background: transparent;
+  color: var(--ink);
+}
+
+.secondary-download:hover {
+  border-color: rgba(85, 240, 163, 0.42);
+  background: rgba(85, 240, 163, 0.1);
 }
 
 .app-section {
@@ -752,8 +854,13 @@ footer {
 @media (max-width: 1120px) {
   .hero,
   .app-shell,
+  .download-section,
   .contact-section {
     grid-template-columns: 1fr;
+  }
+
+  .download-copy {
+    position: static;
   }
 
   .product-frame {
@@ -800,6 +907,7 @@ footer {
 
   .platform-strip,
   .module-grid,
+  .download-card,
   .form-row,
   .filters,
   .stats-grid,
@@ -816,5 +924,9 @@ footer {
   footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .download-action {
+    width: 100%;
   }
 }
