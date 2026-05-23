@@ -57,8 +57,8 @@ select {
   grid-template-columns: auto 1fr auto;
   gap: 22px;
   align-items: center;
-  border-bottom: 1px solid var(--line);
-  background: rgba(11, 17, 21, 0.9);
+  border-bottom: 1px solid rgba(238, 245, 242, 0.1);
+  background: rgba(11, 17, 21, 0.58);
   padding: 14px clamp(18px, 4vw, 56px);
   backdrop-filter: blur(14px);
 }
@@ -417,25 +417,135 @@ footer {
 .platform-strip {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1px;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  background: var(--line);
+  gap: 26px;
+  border-top: 1px solid rgba(238, 245, 242, 0.12);
+  border-bottom: 1px solid rgba(238, 245, 242, 0.12);
+  background:
+    linear-gradient(180deg, rgba(11, 17, 21, 0.58), rgba(11, 17, 21, 0.82)),
+    url("https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1600&q=80") center / cover;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .platform-strip article {
   display: grid;
-  gap: 8px;
-  min-height: 132px;
-  align-content: center;
-  background:
-    linear-gradient(135deg, rgba(21, 61, 46, 0.62), rgba(15, 23, 28, 0.98)),
-    #0f171c;
-  padding: 22px;
+  gap: 10px;
+  min-height: 150px;
+  align-content: start;
+  justify-items: center;
+  background: transparent;
+  color: #fff;
+  padding: 0 18px;
+  text-align: center;
 }
 
 .platform-strip strong {
-  font-size: 1.08rem;
+  font-size: 0.94rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.platform-icon {
+  position: relative;
+  display: grid;
+  width: 44px;
+  height: 38px;
+  margin-bottom: 4px;
+  place-items: center;
+  color: var(--ink);
+}
+
+.platform-icon::before,
+.platform-icon::after {
+  position: absolute;
+  top: 18px;
+  width: 58px;
+  height: 2px;
+  background: currentColor;
+  content: "";
+}
+
+.platform-icon::before {
+  right: 48px;
+}
+
+.platform-icon::after {
+  left: 48px;
+}
+
+.field-icon {
+  border: 2px solid currentColor;
+  border-radius: 999px 999px 999px 0;
+  transform: rotate(-45deg);
+}
+
+.field-icon::before,
+.field-icon::after {
+  transform: rotate(45deg);
+}
+
+.field-icon {
+  width: 26px;
+  height: 26px;
+  margin-top: 6px;
+}
+
+.field-icon::before {
+  right: 30px;
+  top: 12px;
+}
+
+.field-icon::after {
+  left: 30px;
+  top: 12px;
+}
+
+.finance-icon,
+.phone-icon {
+  border: 2px solid currentColor;
+  border-radius: 5px;
+}
+
+.finance-icon::before {
+  right: 48px;
+}
+
+.finance-icon::after {
+  left: 48px;
+}
+
+.finance-icon {
+  width: 32px;
+  height: 27px;
+  margin-top: 6px;
+}
+
+.finance-icon > *,
+.phone-icon > * {
+  display: none;
+}
+
+.phone-icon {
+  width: 24px;
+  height: 34px;
+  border-radius: 6px;
+}
+
+.phone-icon::before,
+.phone-icon::after {
+  top: 16px;
+}
+
+.phone-icon::before {
+  right: 34px;
+}
+
+.phone-icon::after {
+  left: 34px;
+}
+
+.phone-icon {
+  box-shadow: inset 0 -5px 0 rgba(238, 245, 242, 0.22);
 }
 
 .section,
