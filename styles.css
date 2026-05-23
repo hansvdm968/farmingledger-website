@@ -136,7 +136,7 @@ button {
   border-bottom: 1px solid rgba(214, 182, 107, 0.18);
   background:
     linear-gradient(90deg, rgba(10, 17, 14, 0.94) 0%, rgba(10, 17, 14, 0.78) 52%, rgba(10, 17, 14, 0.38) 100%),
-    url("https://images.unsplash.com/photo-1763725252225-68ce35e3d3c5?auto=format&fit=crop&w=1800&q=82") center / cover;
+    url("https://images.unsplash.com/photo-1763725252225-68ce35e3d3c5?auto=format&fit=crop&w=1800&q=82") center bottom / cover;
   padding: clamp(34px, 5vw, 64px) clamp(18px, 4vw, 56px);
 }
 
@@ -334,7 +334,7 @@ button {
   border-bottom: 1px solid rgba(85, 240, 163, 0.08);
   background:
     linear-gradient(90deg, rgba(12, 19, 15, 0.95), rgba(16, 46, 34, 0.86)),
-    url("https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=900&q=75") center / cover;
+    url("https://images.unsplash.com/photo-1763725252225-68ce35e3d3c5?auto=format&fit=crop&w=900&q=75") center bottom / cover;
   padding: 20px 24px;
 }
 
@@ -422,7 +422,7 @@ footer {
   border-bottom: 1px solid rgba(238, 245, 242, 0.12);
   background:
     linear-gradient(180deg, rgba(11, 17, 21, 0.58), rgba(11, 17, 21, 0.82)),
-    url("https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1600&q=80") center / cover;
+    url("https://images.unsplash.com/photo-1763725252225-68ce35e3d3c5?auto=format&fit=crop&w=1600&q=80") center bottom / cover;
   padding-top: 36px;
   padding-bottom: 36px;
 }
@@ -666,7 +666,7 @@ footer {
   border-bottom: 1px solid var(--line);
   background:
     linear-gradient(90deg, rgba(11, 17, 21, 0.96), rgba(11, 17, 21, 0.82)),
-    url("https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1600&q=80") center / cover,
+    url("https://images.unsplash.com/photo-1763725252225-68ce35e3d3c5?auto=format&fit=crop&w=1600&q=80") center bottom / cover,
     #0f171c;
 }
 
@@ -762,7 +762,7 @@ footer {
     linear-gradient(90deg, rgba(85, 240, 163, 0.04) 1px, transparent 1px),
     linear-gradient(rgba(85, 240, 163, 0.04) 1px, transparent 1px),
     linear-gradient(rgba(11, 17, 21, 0.93), rgba(11, 17, 21, 0.96)),
-    url("https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1600&q=80") center / cover,
+    url("https://images.unsplash.com/photo-1763725252225-68ce35e3d3c5?auto=format&fit=crop&w=1600&q=80") center bottom / cover,
     #0b1115;
   background-size: 30px 30px, 30px 30px, auto, cover, auto;
 }
