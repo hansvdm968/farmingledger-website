@@ -33,7 +33,7 @@ body {
   margin: 0;
   background:
     linear-gradient(180deg, rgba(11, 17, 21, 0.88), rgba(11, 17, 21, 0.98)),
-    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=80") center top / cover fixed,
+    url("https://images.unsplash.com/photo-1763725252225-68ce35e3d3c5?auto=format&fit=crop&w=1800&q=80") center top / cover fixed,
     #0b1115;
   color: var(--ink);
 }
@@ -136,7 +136,7 @@ button {
   border-bottom: 1px solid rgba(214, 182, 107, 0.18);
   background:
     linear-gradient(90deg, rgba(10, 17, 14, 0.94) 0%, rgba(10, 17, 14, 0.78) 52%, rgba(10, 17, 14, 0.38) 100%),
-    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=82") center / cover;
+    url("https://images.unsplash.com/photo-1763725252225-68ce35e3d3c5?auto=format&fit=crop&w=1800&q=82") center / cover;
   padding: clamp(34px, 5vw, 64px) clamp(18px, 4vw, 56px);
 }
 
