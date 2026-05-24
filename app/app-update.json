@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "source": "https://farmingledger.co.za/app/",
+  "platforms": {
+    "all": {
+      "version": "1.0.1",
+      "latest_build_number": 2,
+      "min_build_number": 0,
+      "force_update": false,
+      "download_url": "https://farmingledger.co.za/app/",
+      "release_notes": "Updates are now served from farmingledger.co.za/app/."
+    }
+  }
+}
