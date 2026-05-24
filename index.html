@@ -8,7 +8,7 @@
     <link rel="icon" href="assets/farming-ledger-logo.png">
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#0b1115">
-    <link rel="stylesheet" href="styles.css?v=12">
+    <link rel="stylesheet" href="styles.css?v=13">
   </head>
   <body>
     <header class="site-header">
@@ -19,7 +19,7 @@
       <nav aria-label="Main navigation">
         <a href="#platform">Platform</a>
         <a href="#download">Download</a>
-        <a href="#pricing">Pricing</a>
+        <a href="pricing.html">Pricing</a>
         <a href="#preview">Preview</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -168,17 +168,24 @@
 
         <div class="dashboard-preview" aria-label="Farming Ledger dashboard preview">
           <aside class="preview-sidebar" aria-hidden="true">
-            <div class="preview-brand-mark">FL</div>
-            <strong>Farming<br>Ledger</strong>
+            <div class="preview-sidebar-brand">
+              <div class="preview-brand-mark">FL</div>
+              <strong>Farming<br>Ledger</strong>
+            </div>
             <nav>
               <span class="active">Dashboard</span>
               <small>Money</small>
               <span>Finance</span>
               <small>Farm</small>
+              <div class="preview-package-tabs">
+                <span class="active">Crops</span>
+                <span>Poultry</span>
+              </div>
               <span>Crops</span>
               <span>Harvests</span>
               <span>Inventory</span>
               <span>Fields / Blocks</span>
+              <span>Planting Batches</span>
             </nav>
           </aside>
 
@@ -232,6 +239,22 @@
                 <span>Birds</span>
                 <strong>0</strong>
               </article>
+              <article class="preview-metric amber">
+                <span>Mortality</span>
+                <strong>0.0%</strong>
+              </article>
+              <article class="preview-metric purple">
+                <span>Avg FCR</span>
+                <strong>-</strong>
+              </article>
+              <article class="preview-metric yellow">
+                <span>Eggs Collected</span>
+                <strong>0</strong>
+              </article>
+              <article class="preview-metric income">
+                <span>Poultry Profit</span>
+                <strong>R 0.00</strong>
+              </article>
             </div>
 
             <div class="preview-chart">
@@ -252,28 +275,38 @@
       <section id="pricing" class="pricing-section" aria-labelledby="pricingTitle">
         <div class="section-heading">
           <p class="eyebrow">Plans and pricing</p>
-          <h2 id="pricingTitle">Start with a 7-day free trial.</h2>
+          <h2 id="pricingTitle">Choose the farm package you need.</h2>
         </div>
 
         <div class="pricing-layout">
           <article class="pricing-card">
-            <p class="eyebrow">Farming Ledger</p>
-            <h3>Farm management plan</h3>
+            <p class="eyebrow">Crops or Poultry</p>
+            <h3>Single package</h3>
             <div class="price-line">
               <strong>R150</strong>
               <span>/ month</span>
             </div>
-            <p>Includes the tools needed to run day-to-day crop, poultry, harvest, inventory, field, and finance records from one dashboard.</p>
-            <a class="download-action" href="https://farmingledger.co.za/app/">Start 7-day free trial</a>
+            <p>Start with either crop management or poultry management. A 7-day free trial is included.</p>
+            <a class="download-action" href="pricing.html">Choose package</a>
+          </article>
+
+          <article class="pricing-card featured-plan">
+            <p class="eyebrow">Crops + Poultry</p>
+            <h3>Combined package</h3>
+            <div class="price-line">
+              <strong>R200</strong>
+              <span>/ month</span>
+            </div>
+            <p>Use both Crops and Poultry from one subscription. Existing users can add the second package later for R50/month extra.</p>
+            <a class="download-action" href="pricing.html">View plans</a>
           </article>
 
           <div class="pricing-features" aria-label="Plan includes">
+            <span>7-day free trial</span>
+            <span>Crops package</span>
+            <span>Poultry package</span>
+            <span>Upgrade for R50/month extra</span>
             <span>Finance records</span>
-            <span>Crops and fields</span>
-            <span>Poultry and flocks</span>
-            <span>Harvest tracking</span>
-            <span>Inventory</span>
-            <span>Fields / Blocks</span>
             <span>Online web app</span>
             <span>Mobile APK</span>
             <span>Windows download</span>
@@ -304,7 +337,7 @@
           <h2>Product</h2>
           <a href="#platform">Platform</a>
           <a href="#download">Download</a>
-          <a href="#pricing">Pricing</a>
+          <a href="pricing.html">Pricing</a>
           <a href="#preview">App Preview</a>
           <a href="https://farmingledger.co.za/app/">Start Free Trial</a>
         </section>
@@ -343,6 +376,6 @@
       </div>
     </footer>
 
-    <script src="app.js?v=12"></script>
+    <script src="app.js?v=13"></script>
   </body>
 </html>

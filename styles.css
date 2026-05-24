@@ -866,16 +866,23 @@ footer {
 .preview-sidebar {
   display: grid;
   align-content: start;
-  gap: 16px;
+  gap: 12px;
   border-right: 1px solid rgba(238, 245, 242, 0.08);
   background: #0b181e;
-  padding: 18px 14px;
+  padding: 16px 12px;
+}
+
+.preview-sidebar-brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 0 4px 12px;
 }
 
 .preview-brand-mark {
   display: grid;
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
   place-items: center;
   border-radius: 8px;
   background: rgba(85, 240, 163, 0.16);
@@ -884,9 +891,9 @@ footer {
   font-weight: 950;
 }
 
-.preview-sidebar > strong {
+.preview-sidebar-brand strong {
   color: var(--ink);
-  font-size: 1.25rem;
+  font-size: 1.06rem;
   line-height: 1.2;
 }
 
@@ -900,7 +907,7 @@ footer {
 .preview-sidebar small {
   border-radius: 7px;
   color: var(--muted);
-  padding: 12px 14px;
+  padding: 10px 12px;
   font-weight: 800;
 }
 
@@ -917,6 +924,25 @@ footer {
   color: var(--green);
 }
 
+.preview-package-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(238, 245, 242, 0.16);
+  border-radius: 7px;
+  background: rgba(238, 245, 242, 0.06);
+  padding: 4px;
+}
+
+.preview-package-tabs span {
+  display: grid;
+  min-height: 34px;
+  place-items: center;
+  padding: 0 8px;
+  font-size: 0.84rem;
+}
+
 .preview-dashboard {
   min-width: 0;
   background: #101719;
@@ -925,9 +951,9 @@ footer {
 .preview-topbar {
   display: flex;
   align-items: center;
-  min-height: 60px;
+  min-height: 58px;
   border-bottom: 1px solid rgba(238, 245, 242, 0.08);
-  background: #0a1316;
+  background: #091318;
   padding: 0 18px;
   color: rgba(238, 245, 242, 0.72);
   font-size: 1.2rem;
@@ -938,8 +964,8 @@ footer {
   align-items: end;
   min-height: 128px;
   background:
-    linear-gradient(90deg, rgba(8, 13, 11, 0.85), rgba(8, 13, 11, 0.28)),
-    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1400&q=80") center / cover;
+    linear-gradient(90deg, rgba(8, 13, 11, 0.88), rgba(8, 13, 11, 0.24)),
+    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1400&q=82") center / cover;
   padding: 24px 18px;
 }
 
@@ -961,7 +987,7 @@ footer {
 
 .preview-filter-row span {
   border: 1px solid rgba(238, 245, 242, 0.18);
-  border-radius: 999px;
+  border-radius: 0;
   color: var(--ink);
   padding: 7px 18px;
   font-size: 0.9rem;
@@ -971,6 +997,7 @@ footer {
 .preview-filter-row .selected {
   background: rgba(130, 155, 105, 0.38);
   border-color: rgba(130, 155, 105, 0.7);
+  border-radius: 999px 0 0 999px;
 }
 
 .preview-filter-row .date-chip {
@@ -1029,6 +1056,22 @@ footer {
 
 .preview-metric.amber strong {
   color: #ffad35;
+}
+
+.preview-metric.purple {
+  border-color: rgba(213, 73, 230, 0.45);
+}
+
+.preview-metric.purple strong {
+  color: #d94be9;
+}
+
+.preview-metric.yellow {
+  border-color: rgba(255, 213, 41, 0.45);
+}
+
+.preview-metric.yellow strong {
+  color: #ffd529;
 }
 
 .preview-chart {
@@ -1252,7 +1295,7 @@ td {
 
 .pricing-layout {
   display: grid;
-  grid-template-columns: minmax(280px, 430px) minmax(0, 1fr);
+  grid-template-columns: repeat(2, minmax(280px, 420px)) minmax(0, 1fr);
   gap: 22px;
   align-items: stretch;
 }
@@ -1266,6 +1309,11 @@ td {
   background: linear-gradient(135deg, rgba(85, 240, 163, 0.18), rgba(17, 27, 33, 0.98) 48%);
   box-shadow: var(--shadow);
   padding: 24px;
+}
+
+.featured-plan {
+  border-color: rgba(214, 182, 107, 0.42);
+  background: linear-gradient(135deg, rgba(214, 182, 107, 0.16), rgba(17, 27, 33, 0.98) 48%);
 }
 
 .pricing-card h3 {
@@ -1298,7 +1346,7 @@ td {
 
 .pricing-features {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 
@@ -1454,6 +1502,34 @@ td {
   padding-left: 20px;
 }
 
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.package-card h2 {
+  margin: 0;
+  font-size: 1.45rem;
+}
+
+.package-card ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.package-card li {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.upgrade-card {
+  margin-top: 18px;
+}
+
 @media (max-width: 1120px) {
   .app-shell,
   .dashboard-preview,
@@ -1485,6 +1561,10 @@ td {
 
   .module-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .package-grid {
+    grid-template-columns: 1fr;
   }
 
   .footer-grid {
