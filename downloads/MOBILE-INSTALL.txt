@@ -1,0 +1,9 @@
+Farming Ledger mobile app package
+
+To use:
+1. Download this ZIP file.
+2. Extract it with your phone's file manager if you want an offline copy.
+3. For the best mobile app experience, open https://farmingledger.co.za/ in Chrome and choose Install app or Add to Home screen.
+
+Latest online app:
+https://farmingledger.co.za/

@@ -1,0 +1,9 @@
+Farming Ledger Windows app package
+
+To use:
+1. Extract this ZIP file.
+2. Open index.html in Chrome, Edge, or any modern browser.
+3. For the online installable app, visit https://farmingledger.co.za/ and use the browser's install option.
+
+Latest online app:
+https://farmingledger.co.za/

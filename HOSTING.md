@@ -114,14 +114,12 @@ The website reads the latest Windows and phone download buttons from `downloads.
 
 When a new app version is available:
 
-1. Create a new GitHub release.
-2. Upload the app installers as release assets using these exact filenames:
-   - `farming-ledger-windows-latest.exe`
-   - `farming-ledger-phone-latest.apk`
-3. Update `downloads.json` with the new version and date, then redeploy the site.
+1. Replace the downloadable app packages:
+   - `downloads/farming-ledger-windows-app.zip`
+   - `downloads/farming-ledger-mobile-app.zip`
+2. Update `downloads.json` with the new version, date, file size, and URL.
+3. Redeploy the site.
 
-The download URLs use GitHub's `/releases/latest/download/...` pattern, so they automatically point to the newest release asset that uses the same filename.
+The page fetches `downloads.json` without browser caching, so visitors get the newest file links after the deploy.
 
-The site is also installable as a web app through `site.webmanifest` and `service-worker.js`, so Windows and phone users can open `https://farmingledger.co.za/` and install the online app from their browser.
-
-Until native `.exe` and `.apk` release assets are published, the public Windows and phone buttons point to the live online app so visitors never hit a broken download.
+The site is also installable as a web app through `site.webmanifest` and `service-worker.js`, so users can open `https://farmingledger.co.za/` and install the online app from their browser.

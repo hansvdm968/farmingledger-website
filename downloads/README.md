@@ -1,6 +1,6 @@
-Publish the latest public app installers as GitHub release assets using stable filenames:
+The website download buttons point to these public files:
 
-- `farming-ledger-phone-latest.apk`
-- `farming-ledger-windows-latest.exe`
+- `farming-ledger-mobile-app.zip`
+- `farming-ledger-windows-app.zip`
 
-The website points at GitHub's latest release download URLs, so a new GitHub release with these asset names automatically becomes the live download.
+Replace those files when a new build is ready, then update `../downloads.json` with the new version and file size.

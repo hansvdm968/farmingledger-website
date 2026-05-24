@@ -7,12 +7,12 @@
   },
   "phone": {
     "version": "1.0.0",
-    "size": "Online app",
-    "url": "https://farmingledger.co.za/"
+    "size": "ZIP",
+    "url": "downloads/farming-ledger-mobile-app.zip"
   },
   "windows": {
     "version": "1.0.0",
-    "size": "Online app",
-    "url": "https://farmingledger.co.za/"
+    "size": "ZIP",
+    "url": "downloads/farming-ledger-windows-app.zip"
   }
 }
