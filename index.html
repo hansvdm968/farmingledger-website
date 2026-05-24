@@ -8,7 +8,7 @@
     <link rel="icon" href="assets/farming-ledger-logo.png">
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#0b1115">
-    <link rel="stylesheet" href="styles.css?v=9">
+    <link rel="stylesheet" href="styles.css?v=10">
   </head>
   <body>
     <header class="site-header">
@@ -113,7 +113,15 @@
           <h2 id="downloadTitle">Get Farming Ledger on the device you use at the farm.</h2>
           <p>Download the app package for Windows or mobile, or open the online app directly in your browser.</p>
           <p class="download-status" id="downloadStatus">Checking latest version...</p>
-          <p class="install-message" id="installMessage" role="status" aria-live="polite"></p>
+          <div class="app-popup" id="appPopup" role="dialog" aria-modal="true" aria-labelledby="appPopupTitle" aria-hidden="true">
+            <div class="app-popup-panel">
+              <button class="app-popup-close" id="appPopupClose" type="button" aria-label="Close message">X</button>
+              <p class="eyebrow">Online app</p>
+              <h3 id="appPopupTitle">Opening Farming Ledger</h3>
+              <p id="appPopupMessage">The online app will open in a new page.</p>
+              <a class="download-action" id="appPopupAction" href="https://farmingledger.co.za/app/">Open app</a>
+            </div>
+          </div>
         </div>
 
         <div class="download-grid">
@@ -125,7 +133,7 @@
               <p>Real Android APK for phone and tablet use in the field.</p>
               <p class="version-line" id="phoneVersion">Latest version loading</p>
             </div>
-            <a class="download-action" id="phoneDownload" href="downloads/farming-ledger-mobile-app.apk" download>Download mobile app</a>
+            <a class="download-action" id="phoneDownload" href="downloads/farming-ledger-mobile-app.apk" download="farming-ledger-mobile-app.apk">Download mobile app</a>
           </article>
 
           <article class="download-card">
@@ -136,7 +144,7 @@
               <p>For office use, reporting, and larger screens.</p>
               <p class="version-line" id="windowsVersion">Latest version loading</p>
             </div>
-            <a class="download-action secondary-download" id="windowsDownload" href="downloads/farming-ledger-windows-app.zip" download>Download Windows app</a>
+            <a class="download-action secondary-download" id="windowsDownload" href="downloads/farming-ledger-windows-app.zip" download="farming-ledger-windows-app.zip">Download Windows app</a>
           </article>
 
           <article class="download-card">
@@ -304,6 +312,6 @@
       <a href="mailto:hello@FarmingLedger.co.za">hello@FarmingLedger.co.za</a>
     </footer>
 
-    <script src="app.js?v=9"></script>
+    <script src="app.js?v=10"></script>
   </body>
 </html>

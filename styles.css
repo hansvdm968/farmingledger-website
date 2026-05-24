@@ -686,13 +686,11 @@ footer {
 }
 
 .download-status,
-.version-line,
-.install-message {
+.version-line {
   font-size: 0.92rem;
 }
 
-.download-status,
-.install-message {
+.download-status {
   display: inline-flex;
   width: fit-content;
   margin-top: 8px;
@@ -703,21 +701,56 @@ footer {
   padding: 8px 10px;
 }
 
-.install-message {
-  display: none;
-  max-width: 560px;
-  background: rgba(214, 182, 107, 0.12);
-  border-color: rgba(214, 182, 107, 0.34);
-  line-height: 1.5;
-}
-
-.install-message:not(:empty) {
-  display: inline-flex;
-}
-
 .download-grid {
   display: grid;
   gap: 14px;
+}
+
+.app-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(3, 7, 8, 0.72);
+  padding: 20px;
+}
+
+.app-popup[aria-hidden="false"] {
+  display: flex;
+}
+
+.app-popup-panel {
+  position: relative;
+  width: min(440px, 100%);
+  border: 1px solid rgba(85, 240, 163, 0.32);
+  border-radius: 8px;
+  background: #101a20;
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+
+.app-popup-panel h3 {
+  margin: 4px 0 10px;
+  font-size: 1.5rem;
+}
+
+.app-popup-panel p:not(.eyebrow) {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.app-popup-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  min-height: 34px;
+  width: 34px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  padding: 0;
 }
 
 .download-card {

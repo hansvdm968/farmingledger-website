@@ -65,7 +65,10 @@ const phoneVersion = document.querySelector("#phoneVersion");
 const windowsVersion = document.querySelector("#windowsVersion");
 const manifestUpdated = document.querySelector("#manifestUpdated");
 const webAppLink = document.querySelector("#webAppLink");
-const installMessage = document.querySelector("#installMessage");
+const appPopup = document.querySelector("#appPopup");
+const appPopupMessage = document.querySelector("#appPopupMessage");
+const appPopupAction = document.querySelector("#appPopupAction");
+const appPopupClose = document.querySelector("#appPopupClose");
 
 const currency = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -81,9 +84,6 @@ document.querySelector("#date").valueAsDate = new Date();
 window.addEventListener("beforeinstallprompt", (event) => {
   event.preventDefault();
   deferredInstallPrompt = event;
-  if (installMessage) {
-    installMessage.textContent = "Install is ready. Use the Windows or phone button to add Farming Ledger to your device.";
-  }
 });
 
 form.addEventListener("submit", (event) => {
@@ -128,8 +128,12 @@ rows.addEventListener("click", (event) => {
   render();
 });
 
-[phoneDownload, windowsDownload, webAppLink].forEach((link) => {
-  link?.addEventListener("click", handleAppAction);
+webAppLink?.addEventListener("click", handleAppAction);
+appPopupClose?.addEventListener("click", closeAppPopup);
+appPopup?.addEventListener("click", (event) => {
+  if (event.target === appPopup) {
+    closeAppPopup();
+  }
 });
 
 function loadRecords() {
@@ -275,8 +279,13 @@ function applyDownloadLink(anchor, versionElement, release) {
   }
 
   anchor.href = release.url;
-  anchor.toggleAttribute("download", !isExternalUrl(release.url));
-  anchor.toggleAttribute("data-online-app", release.url === "https://farmingledger.co.za/");
+  if (isExternalUrl(release.url)) {
+    anchor.removeAttribute("download");
+  } else if (release.url.endsWith(".apk")) {
+    anchor.setAttribute("download", "farming-ledger-mobile-app.apk");
+  } else if (release.url.endsWith(".zip")) {
+    anchor.setAttribute("download", "farming-ledger-windows-app.zip");
+  }
   anchor.removeAttribute("aria-disabled");
 
   const version = release.version ? `Version ${release.version}` : "Latest version";
@@ -299,13 +308,10 @@ function formatManifestDate(value) {
 async function handleAppAction(event) {
   const link = event.currentTarget;
   const target = link.dataset.installTarget || "online";
-  const isOnlineApp = link.dataset.onlineApp === "" || link.href.replace(/\/$/, "") === "https://farmingledger.co.za";
 
-  if (!isOnlineApp || target === "online") {
-    if (target === "online") {
-      event.preventDefault();
-      showInstallMessage("You are already using the online app. Use the Windows or phone install button to add it to your device.");
-    }
+  if (target === "launch") {
+    event.preventDefault();
+    showAppPopup("Open the real Farming Ledger web app in a new page.", link.href);
     return;
   }
 
@@ -315,13 +321,13 @@ async function handleAppAction(event) {
     deferredInstallPrompt.prompt();
     const result = await deferredInstallPrompt.userChoice;
     deferredInstallPrompt = null;
-    showInstallMessage(result.outcome === "accepted"
+    showAppPopup(result.outcome === "accepted"
       ? "Farming Ledger is being installed. You can open it from your device apps."
-      : fallbackInstallText(target));
+      : fallbackInstallText(target), link.href);
     return;
   }
 
-  showInstallMessage(fallbackInstallText(target));
+  showAppPopup(fallbackInstallText(target), link.href);
 }
 
 function fallbackInstallText(target) {
@@ -338,11 +344,17 @@ function fallbackInstallText(target) {
   return "On Windows: click the install icon in the address bar, or open Chrome menu > Save and share > Install page.";
 }
 
-function showInstallMessage(message) {
-  if (!installMessage) return;
+function showAppPopup(message, actionUrl) {
+  if (!appPopup || !appPopupMessage || !appPopupAction) return;
 
-  installMessage.textContent = message;
-  installMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  appPopupMessage.textContent = message;
+  appPopupAction.href = actionUrl;
+  appPopup.setAttribute("aria-hidden", "false");
+  appPopupClose?.focus();
+}
+
+function closeAppPopup() {
+  appPopup?.setAttribute("aria-hidden", "true");
 }
 
 loadDownloadLinks();
