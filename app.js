@@ -115,12 +115,12 @@ form?.addEventListener("submit", (event) => {
 fieldFilter?.addEventListener("change", render);
 categoryFilter?.addEventListener("change", render);
 
-document.querySelector("#contactForm").addEventListener("submit", (event) => {
+document.querySelector("#contactForm")?.addEventListener("submit", (event) => {
   event.preventDefault();
   const email = document.querySelector("#email").value.trim();
   const joined = JSON.parse(localStorage.getItem("farm-ledger-waitlist") || "[]");
   localStorage.setItem("farm-ledger-waitlist", JSON.stringify([...new Set([...joined, email])]));
-  document.querySelector("#contactMessage").textContent = "Thanks. Your email is saved on this device for the launch list.";
+  document.querySelector("#contactMessage").textContent = "Thanks. Your email is saved on this device and ready for follow-up.";
   event.target.reset();
 });
 
@@ -139,6 +139,12 @@ appPopup?.addEventListener("click", (event) => {
   if (event.target === appPopup) {
     closeAppPopup();
   }
+});
+
+document.querySelectorAll(".social-link[href='#']").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+  });
 });
 
 function loadRecords() {
