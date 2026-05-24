@@ -64,6 +64,7 @@ const windowsDownload = document.querySelector("#windowsDownload");
 const phoneVersion = document.querySelector("#phoneVersion");
 const windowsVersion = document.querySelector("#windowsVersion");
 const manifestUpdated = document.querySelector("#manifestUpdated");
+const webAppLink = document.querySelector("#webAppLink");
 
 const currency = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -234,6 +235,9 @@ async function loadDownloadLinks() {
     const manifest = await response.json();
     applyDownloadLink(phoneDownload, phoneVersion, manifest.phone);
     applyDownloadLink(windowsDownload, windowsVersion, manifest.windows);
+    if (manifest.web?.url && webAppLink) {
+      webAppLink.href = manifest.web.url;
+    }
 
     const releaseName = manifest.latestVersion ? `Version ${manifest.latestVersion}` : "Latest version";
     const updated = manifest.updatedAt ? `Updated ${formatManifestDate(manifest.updatedAt)}` : "Release manifest ready";
@@ -278,4 +282,13 @@ function formatManifestDate(value) {
 }
 
 loadDownloadLinks();
+registerServiceWorker();
 render();
+
+function registerServiceWorker() {
+  if (!("serviceWorker" in navigator)) return;
+
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("service-worker.js").catch(() => {});
+  });
+}

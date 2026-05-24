@@ -121,3 +121,5 @@ When a new app version is available:
 3. Update `downloads.json` with the new version and date, then redeploy the site.
 
 The download URLs use GitHub's `/releases/latest/download/...` pattern, so they automatically point to the newest release asset that uses the same filename.
+
+The site is also installable as a web app through `site.webmanifest` and `service-worker.js`, so Windows and phone users can open `https://farmingledger.co.za/` and install the online app from their browser.
