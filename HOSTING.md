@@ -123,3 +123,5 @@ When a new app version is available:
 The download URLs use GitHub's `/releases/latest/download/...` pattern, so they automatically point to the newest release asset that uses the same filename.
 
 The site is also installable as a web app through `site.webmanifest` and `service-worker.js`, so Windows and phone users can open `https://farmingledger.co.za/` and install the online app from their browser.
+
+Until native `.exe` and `.apk` release assets are published, the public Windows and phone buttons point to the live online app so visitors never hit a broken download.
