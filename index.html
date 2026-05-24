@@ -111,8 +111,9 @@
       <section id="download" class="download-section" aria-labelledby="downloadTitle">
         <div class="download-copy">
           <h2 id="downloadTitle">Get Farming Ledger on the device you use at the farm.</h2>
-          <p>Use the latest official builds for Windows and phones. These buttons read from the release manifest, so the links update when a new version is published.</p>
+          <p>Install the online app on Windows or your phone, then open it like a normal app from your device.</p>
           <p class="download-status" id="downloadStatus">Checking latest version...</p>
+          <p class="install-message" id="installMessage" role="status" aria-live="polite"></p>
         </div>
 
         <div class="download-grid">
@@ -124,7 +125,7 @@
               <p>For Android phone and tablet use in the field.</p>
               <p class="version-line" id="phoneVersion">Latest version loading</p>
             </div>
-            <a class="download-action" id="phoneDownload" href="https://farmingledger.co.za/">Open phone app</a>
+            <a class="download-action" id="phoneDownload" href="https://farmingledger.co.za/" data-install-target="phone">Install phone app</a>
           </article>
 
           <article class="download-card">
@@ -135,7 +136,7 @@
               <p>For office use, reporting, and larger screens.</p>
               <p class="version-line" id="windowsVersion">Latest version loading</p>
             </div>
-            <a class="download-action secondary-download" id="windowsDownload" href="https://farmingledger.co.za/">Open Windows app</a>
+            <a class="download-action secondary-download" id="windowsDownload" href="https://farmingledger.co.za/" data-install-target="windows">Install Windows app</a>
           </article>
 
           <article class="download-card">
@@ -146,7 +147,7 @@
               <p>Open Farming Ledger online and install it from your browser on Windows or phone.</p>
               <p class="version-line" id="manifestUpdated">Release manifest loading</p>
             </div>
-            <a class="download-action secondary-download" id="webAppLink" href="https://farmingledger.co.za/">Open online app</a>
+            <a class="download-action secondary-download" id="webAppLink" href="https://farmingledger.co.za/" data-install-target="online">Open online app</a>
           </article>
         </div>
       </section>

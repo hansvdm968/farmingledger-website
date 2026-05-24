@@ -65,6 +65,7 @@ const phoneVersion = document.querySelector("#phoneVersion");
 const windowsVersion = document.querySelector("#windowsVersion");
 const manifestUpdated = document.querySelector("#manifestUpdated");
 const webAppLink = document.querySelector("#webAppLink");
+const installMessage = document.querySelector("#installMessage");
 
 const currency = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -73,8 +74,17 @@ const currency = new Intl.NumberFormat("en-US", {
 });
 
 let records = loadRecords();
+let deferredInstallPrompt = null;
 
 document.querySelector("#date").valueAsDate = new Date();
+
+window.addEventListener("beforeinstallprompt", (event) => {
+  event.preventDefault();
+  deferredInstallPrompt = event;
+  if (installMessage) {
+    installMessage.textContent = "Install is ready. Use the Windows or phone button to add Farming Ledger to your device.";
+  }
+});
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -116,6 +126,10 @@ rows.addEventListener("click", (event) => {
   records = records.filter((record) => record.id !== button.dataset.delete);
   saveRecords();
   render();
+});
+
+[phoneDownload, windowsDownload, webAppLink].forEach((link) => {
+  link?.addEventListener("click", handleAppAction);
 });
 
 function loadRecords() {
@@ -262,6 +276,7 @@ function applyDownloadLink(anchor, versionElement, release) {
 
   anchor.href = release.url;
   anchor.toggleAttribute("download", !isExternalUrl(release.url));
+  anchor.toggleAttribute("data-online-app", release.url === "https://farmingledger.co.za/");
   anchor.removeAttribute("aria-disabled");
 
   const version = release.version ? `Version ${release.version}` : "Latest version";
@@ -279,6 +294,55 @@ function formatManifestDate(value) {
     day: "numeric",
     year: "numeric"
   }).format(new Date(`${value}T12:00:00`));
+}
+
+async function handleAppAction(event) {
+  const link = event.currentTarget;
+  const target = link.dataset.installTarget || "online";
+  const isOnlineApp = link.dataset.onlineApp === "" || link.href.replace(/\/$/, "") === "https://farmingledger.co.za";
+
+  if (!isOnlineApp || target === "online") {
+    if (target === "online") {
+      event.preventDefault();
+      showInstallMessage("You are already using the online app. Use the Windows or phone install button to add it to your device.");
+    }
+    return;
+  }
+
+  event.preventDefault();
+
+  if (deferredInstallPrompt) {
+    deferredInstallPrompt.prompt();
+    const result = await deferredInstallPrompt.userChoice;
+    deferredInstallPrompt = null;
+    showInstallMessage(result.outcome === "accepted"
+      ? "Farming Ledger is being installed. You can open it from your device apps."
+      : fallbackInstallText(target));
+    return;
+  }
+
+  showInstallMessage(fallbackInstallText(target));
+}
+
+function fallbackInstallText(target) {
+  const ua = navigator.userAgent.toLowerCase();
+
+  if (target === "phone" && /iphone|ipad|ipod/.test(ua)) {
+    return "On iPhone: tap Share, then Add to Home Screen.";
+  }
+
+  if (target === "phone") {
+    return "On Android: tap the browser menu, then Install app or Add to Home screen.";
+  }
+
+  return "On Windows: click the install icon in the address bar, or open Chrome menu > Save and share > Install page.";
+}
+
+function showInstallMessage(message) {
+  if (!installMessage) return;
+
+  installMessage.textContent = message;
+  installMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
 loadDownloadLinks();

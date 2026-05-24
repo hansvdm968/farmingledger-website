@@ -686,11 +686,13 @@ footer {
 }
 
 .download-status,
-.version-line {
+.version-line,
+.install-message {
   font-size: 0.92rem;
 }
 
-.download-status {
+.download-status,
+.install-message {
   display: inline-flex;
   width: fit-content;
   margin-top: 8px;
@@ -699,6 +701,18 @@ footer {
   background: rgba(85, 240, 163, 0.1);
   color: var(--ink);
   padding: 8px 10px;
+}
+
+.install-message {
+  display: none;
+  max-width: 560px;
+  background: rgba(214, 182, 107, 0.12);
+  border-color: rgba(214, 182, 107, 0.34);
+  line-height: 1.5;
+}
+
+.install-message:not(:empty) {
+  display: inline-flex;
 }
 
 .download-grid {
