@@ -8,7 +8,7 @@
     <link rel="icon" href="assets/farming-ledger-logo.png">
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#0b1115">
-    <link rel="stylesheet" href="styles.css?v=10">
+    <link rel="stylesheet" href="styles.css?v=11">
   </head>
   <body>
     <header class="site-header">
@@ -165,128 +165,86 @@
           <h2 id="previewTitle">App Preview</h2>
         </div>
 
-        <div class="app-shell">
-          <section class="panel input-panel" aria-labelledby="entryTitle">
-            <div class="panel-heading">
-              <div>
-                <p class="eyebrow">New record</p>
-                <h3 id="entryTitle">Log farm activity</h3>
-              </div>
+        <div class="dashboard-preview" aria-label="Farming Ledger dashboard preview">
+          <aside class="preview-sidebar" aria-hidden="true">
+            <div class="preview-brand-mark">FL</div>
+            <strong>Farming<br>Ledger</strong>
+            <nav>
+              <span class="active">Dashboard</span>
+              <small>Money</small>
+              <span>Finance</span>
+              <small>Farm</small>
+              <span>Crops</span>
+              <span>Harvests</span>
+              <span>Inventory</span>
+              <span>Fields / Blocks</span>
+            </nav>
+          </aside>
+
+          <div class="preview-dashboard">
+            <div class="preview-topbar">
+              <strong>Farming Ledger</strong>
             </div>
 
-            <form id="entryForm" class="entry-form">
-              <label>
-                Date
-                <input id="date" name="date" type="date" required>
-              </label>
+            <div class="preview-hero-band">
+              <h3>Dashboard</h3>
+            </div>
 
-              <label>
-                Field
-                <select id="field" name="field" required>
-                  <option value="North Pasture">North Pasture</option>
-                  <option value="River Block">River Block</option>
-                  <option value="Greenhouse">Greenhouse</option>
-                  <option value="Orchard">Orchard</option>
-                </select>
-              </label>
+            <div class="preview-filter-row" aria-hidden="true">
+              <span class="selected">All</span>
+              <span>Day</span>
+              <span>Month</span>
+              <span>Year</span>
+              <span class="date-chip">All dates</span>
+            </div>
 
-              <label>
-                Category
-                <select id="category" name="category" required>
-                  <option value="Harvest">Harvest</option>
-                  <option value="Input">Input</option>
-                  <option value="Labor">Labor</option>
-                  <option value="Sale">Sale</option>
-                  <option value="Maintenance">Maintenance</option>
-                </select>
-              </label>
-
-              <label>
-                Description
-                <input id="description" name="description" type="text" placeholder="Seedlings, feed delivery, market sale" required>
-              </label>
-
-              <div class="form-row">
-                <label>
-                  Quantity
-                  <input id="quantity" name="quantity" type="number" min="0" step="0.01" placeholder="0">
-                </label>
-
-                <label>
-                  Unit
-                  <input id="unit" name="unit" type="text" placeholder="kg, bags, hours">
-                </label>
-              </div>
-
-              <label>
-                Amount
-                <input id="amount" name="amount" type="number" step="0.01" placeholder="Income positive, costs negative" required>
-              </label>
-
-              <button type="submit">Add record</button>
-            </form>
-          </section>
-
-          <section class="workspace">
-            <div class="stats-grid" aria-label="Ledger summary">
-              <article class="stat">
-                <span>Net balance</span>
-                <strong id="netBalance">R0</strong>
+            <div class="preview-metric-grid">
+              <article class="preview-metric income">
+                <span>Total Income</span>
+                <strong>R 1 660.00</strong>
               </article>
-              <article class="stat">
-                <span>Income</span>
-                <strong id="incomeTotal">R0</strong>
+              <article class="preview-metric expense">
+                <span>Total Expenses</span>
+                <strong>R 11 937.54</strong>
               </article>
-              <article class="stat">
-                <span>Expenses</span>
-                <strong id="expenseTotal">R0</strong>
+              <article class="preview-metric expense">
+                <span>Profit</span>
+                <strong>R -10 277.54</strong>
               </article>
-              <article class="stat">
-                <span>Harvest volume</span>
-                <strong id="harvestTotal">0 kg</strong>
+              <article class="preview-metric blue">
+                <span>This Month</span>
+                <strong>R 1 070.00 in / R 1 132.00 out</strong>
+              </article>
+              <article class="preview-metric income">
+                <span>Active Crops</span>
+                <strong>4</strong>
+              </article>
+              <article class="preview-metric amber">
+                <span>Harvests This Week</span>
+                <strong>4</strong>
+              </article>
+              <article class="preview-metric income">
+                <span>Poultry Flocks</span>
+                <strong>0</strong>
+              </article>
+              <article class="preview-metric blue">
+                <span>Birds</span>
+                <strong>0</strong>
               </article>
             </div>
 
-            <section class="panel ledger-panel" aria-labelledby="ledgerTitle">
-              <div class="panel-heading ledger-heading">
-                <div>
-                  <p class="eyebrow">Ledger</p>
-                  <h3 id="ledgerTitle">Recent records</h3>
-                </div>
-                <div class="filters" aria-label="Ledger filters">
-                  <label>
-                    Field
-                    <select id="fieldFilter">
-                      <option value="All">All fields</option>
-                    </select>
-                  </label>
-                  <label>
-                    Category
-                    <select id="categoryFilter">
-                      <option value="All">All categories</option>
-                    </select>
-                  </label>
-                </div>
+            <div class="preview-chart">
+              <strong>Monthly Income vs Expenses</strong>
+              <div class="chart-bars" aria-hidden="true">
+                <span style="height: 45%"></span>
+                <span style="height: 72%"></span>
+                <span style="height: 38%"></span>
+                <span style="height: 88%"></span>
+                <span style="height: 56%"></span>
+                <span style="height: 64%"></span>
               </div>
-
-              <div class="table-wrap">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Date</th>
-                      <th>Field</th>
-                      <th>Category</th>
-                      <th>Description</th>
-                      <th>Qty</th>
-                      <th>Amount</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody id="ledgerRows"></tbody>
-                </table>
-              </div>
-            </section>
-          </section>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -312,6 +270,6 @@
       <a href="mailto:hello@FarmingLedger.co.za">hello@FarmingLedger.co.za</a>
     </footer>
 
-    <script src="app.js?v=10"></script>
+    <script src="app.js?v=11"></script>
   </body>
 </html>

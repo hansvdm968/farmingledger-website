@@ -79,14 +79,17 @@ const currency = new Intl.NumberFormat("en-US", {
 let records = loadRecords();
 let deferredInstallPrompt = null;
 
-document.querySelector("#date").valueAsDate = new Date();
+const dateInput = document.querySelector("#date");
+if (dateInput) {
+  dateInput.valueAsDate = new Date();
+}
 
 window.addEventListener("beforeinstallprompt", (event) => {
   event.preventDefault();
   deferredInstallPrompt = event;
 });
 
-form.addEventListener("submit", (event) => {
+form?.addEventListener("submit", (event) => {
   event.preventDefault();
   const data = new FormData(form);
   const record = {
@@ -103,12 +106,14 @@ form.addEventListener("submit", (event) => {
   records = [record, ...records];
   saveRecords();
   form.reset();
-  document.querySelector("#date").valueAsDate = new Date();
+  if (dateInput) {
+    dateInput.valueAsDate = new Date();
+  }
   render();
 });
 
-fieldFilter.addEventListener("change", render);
-categoryFilter.addEventListener("change", render);
+fieldFilter?.addEventListener("change", render);
+categoryFilter?.addEventListener("change", render);
 
 document.querySelector("#contactForm").addEventListener("submit", (event) => {
   event.preventDefault();
@@ -119,7 +124,7 @@ document.querySelector("#contactForm").addEventListener("submit", (event) => {
   event.target.reset();
 });
 
-rows.addEventListener("click", (event) => {
+rows?.addEventListener("click", (event) => {
   const button = event.target.closest("[data-delete]");
   if (!button) return;
 
@@ -153,6 +158,8 @@ function saveRecords() {
 }
 
 function render() {
+  if (!rows || !fieldFilter || !categoryFilter) return;
+
   syncFilters();
   renderStats();
   renderRows();
@@ -189,10 +196,10 @@ function renderStats() {
     .filter((record) => record.category === "Harvest" && record.unit.toLowerCase() === "kg")
     .reduce((sum, record) => sum + record.quantity, 0);
 
-  document.querySelector("#netBalance").textContent = currency.format(net);
-  document.querySelector("#incomeTotal").textContent = currency.format(income);
-  document.querySelector("#expenseTotal").textContent = currency.format(Math.abs(expenses));
-  document.querySelector("#harvestTotal").textContent = `${harvest.toLocaleString()} kg`;
+  setText("#netBalance", currency.format(net));
+  setText("#incomeTotal", currency.format(income));
+  setText("#expenseTotal", currency.format(Math.abs(expenses)));
+  setText("#harvestTotal", `${harvest.toLocaleString()} kg`);
 }
 
 function renderRows() {
@@ -236,6 +243,13 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
+}
+
+function setText(selector, value) {
+  const element = document.querySelector(selector);
+  if (element) {
+    element.textContent = value;
+  }
 }
 
 async function loadDownloadLinks() {
