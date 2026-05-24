@@ -16,6 +16,7 @@
       </a>
       <nav aria-label="Main navigation">
         <a href="#platform">Platform</a>
+        <a href="#download">Download</a>
         <a href="#preview">Preview</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -108,18 +109,20 @@
       <section id="download" class="download-section" aria-labelledby="downloadTitle">
         <div class="download-copy">
           <h2 id="downloadTitle">Get Farming Ledger on the device you use at the farm.</h2>
-          <p>Download links will be published here as the official app builds are released. The page is ready for Android phone builds, Windows desktop installs, and direct launch updates.</p>
+          <p>Use the latest official builds for Windows and phones. These buttons read from the release manifest, so the links update when a new version is published.</p>
+          <p class="download-status" id="downloadStatus">Checking latest version...</p>
         </div>
 
         <div class="download-grid">
           <article class="download-card primary-download">
-            <span class="download-icon">A</span>
+            <span class="download-icon">P</span>
             <div>
-              <p class="eyebrow">Recommended</p>
-              <h3>Android app</h3>
-              <p>For phone and tablet use in the field.</p>
+              <p class="eyebrow">Phone</p>
+              <h3>Phone app</h3>
+              <p>For Android phone and tablet use in the field.</p>
+              <p class="version-line" id="phoneVersion">Latest version loading</p>
             </div>
-            <a class="download-action" href="mailto:hello@FarmingLedger.co.za?subject=Farming%20Ledger%20Android%20build">Request Android build</a>
+            <a class="download-action" id="phoneDownload" href="downloads/farming-ledger-phone-latest.apk" download>Download phone app</a>
           </article>
 
           <article class="download-card">
@@ -128,18 +131,20 @@
               <p class="eyebrow">Desktop</p>
               <h3>Windows app</h3>
               <p>For office use, reporting, and larger screens.</p>
+              <p class="version-line" id="windowsVersion">Latest version loading</p>
             </div>
-            <a class="download-action secondary-download" href="mailto:hello@FarmingLedger.co.za?subject=Farming%20Ledger%20Windows%20build">Request Windows build</a>
+            <a class="download-action secondary-download" id="windowsDownload" href="downloads/farming-ledger-windows-latest.exe" download>Download for Windows</a>
           </article>
 
           <article class="download-card">
             <span class="download-icon">V</span>
             <div>
               <p class="eyebrow">Updates</p>
-              <h3>Latest version</h3>
-              <p>Future versions can check this website for app updates and release notices.</p>
+              <h3>Auto-updating links</h3>
+              <p>Publish a new build URL in <code>downloads.json</code> and this section points visitors to the new version.</p>
+              <p class="version-line" id="manifestUpdated">Release manifest loading</p>
             </div>
-            <a class="download-action secondary-download" href="#contact">Join update list</a>
+            <a class="download-action secondary-download" href="downloads.json">View release manifest</a>
           </article>
         </div>
       </section>

@@ -685,6 +685,22 @@ footer {
   line-height: 1.6;
 }
 
+.download-status,
+.version-line {
+  font-size: 0.92rem;
+}
+
+.download-status {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 8px;
+  border: 1px solid rgba(85, 240, 163, 0.24);
+  border-radius: 7px;
+  background: rgba(85, 240, 163, 0.1);
+  color: var(--ink);
+  padding: 8px 10px;
+}
+
 .download-grid {
   display: grid;
   gap: 14px;
@@ -729,6 +745,17 @@ footer {
   margin: 0;
 }
 
+.download-card code {
+  color: var(--ink);
+  font-size: 0.95em;
+}
+
+.version-line {
+  margin-top: 8px;
+  color: var(--green);
+  font-weight: 800;
+}
+
 .download-action {
   display: inline-flex;
   justify-content: center;
@@ -744,6 +771,11 @@ footer {
 
 .download-action:hover {
   background: #72f6b4;
+}
+
+.download-action[aria-disabled="true"] {
+  pointer-events: none;
+  opacity: 0.62;
 }
 
 .secondary-download {

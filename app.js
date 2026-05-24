@@ -1,4 +1,5 @@
 const STORAGE_KEY = "farm-ledger-records";
+const DOWNLOADS_MANIFEST = "downloads.json";
 
 const starterRecords = [
   {
@@ -57,6 +58,12 @@ const form = document.querySelector("#entryForm");
 const rows = document.querySelector("#ledgerRows");
 const fieldFilter = document.querySelector("#fieldFilter");
 const categoryFilter = document.querySelector("#categoryFilter");
+const downloadStatus = document.querySelector("#downloadStatus");
+const phoneDownload = document.querySelector("#phoneDownload");
+const windowsDownload = document.querySelector("#windowsDownload");
+const phoneVersion = document.querySelector("#phoneVersion");
+const windowsVersion = document.querySelector("#windowsVersion");
+const manifestUpdated = document.querySelector("#manifestUpdated");
 
 const currency = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -212,4 +219,63 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+async function loadDownloadLinks() {
+  if (!phoneDownload || !windowsDownload) return;
+
+  try {
+    const response = await fetch(`${DOWNLOADS_MANIFEST}?t=${Date.now()}`, {
+      cache: "no-store"
+    });
+
+    if (!response.ok) {
+      throw new Error(`Manifest returned ${response.status}`);
+    }
+
+    const manifest = await response.json();
+    applyDownloadLink(phoneDownload, phoneVersion, manifest.phone);
+    applyDownloadLink(windowsDownload, windowsVersion, manifest.windows);
+
+    const releaseName = manifest.latestVersion ? `Version ${manifest.latestVersion}` : "Latest version";
+    const updated = manifest.updatedAt ? `Updated ${formatManifestDate(manifest.updatedAt)}` : "Release manifest ready";
+    downloadStatus.textContent = `${releaseName} is ready to download.`;
+    manifestUpdated.textContent = updated;
+  } catch {
+    downloadStatus.textContent = "Download links are temporarily unavailable. Please try again shortly.";
+    phoneVersion.textContent = "Latest link unavailable";
+    windowsVersion.textContent = "Latest link unavailable";
+    manifestUpdated.textContent = "Release manifest unavailable";
+  }
+}
+
+function applyDownloadLink(anchor, versionElement, release) {
+  if (!release?.url) {
+    anchor.setAttribute("aria-disabled", "true");
+    anchor.removeAttribute("download");
+    anchor.href = "#contact";
+    versionElement.textContent = "Coming soon";
+    return;
+  }
+
+  anchor.href = release.url;
+  anchor.toggleAttribute("download", !isExternalUrl(release.url));
+  anchor.removeAttribute("aria-disabled");
+
+  const version = release.version ? `Version ${release.version}` : "Latest version";
+  const size = release.size ? ` - ${release.size}` : "";
+  versionElement.textContent = `${version}${size}`;
+}
+
+function isExternalUrl(value) {
+  return /^https?:\/\//i.test(value);
+}
+
+function formatManifestDate(value) {
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric"
+  }).format(new Date(`${value}T12:00:00`));
+}
+
+loadDownloadLinks();
 render();

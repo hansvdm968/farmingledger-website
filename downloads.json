@@ -1,0 +1,14 @@
+{
+  "latestVersion": "1.0.0",
+  "updatedAt": "2026-05-23",
+  "phone": {
+    "version": "1.0.0",
+    "size": "APK",
+    "url": "https://github.com/hansvdm968/farmingledger-website/releases/latest/download/farming-ledger-phone-latest.apk"
+  },
+  "windows": {
+    "version": "1.0.0",
+    "size": "EXE",
+    "url": "https://github.com/hansvdm968/farmingledger-website/releases/latest/download/farming-ledger-windows-latest.exe"
+  }
+}

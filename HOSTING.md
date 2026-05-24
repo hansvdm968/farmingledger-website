@@ -107,3 +107,17 @@ https://astounding-mooncake-c26d00.netlify.app/
 ```
 
 DNS can take a few minutes to 24 hours to fully update.
+
+## Updating App Download Links
+
+The website reads the latest Windows and phone download buttons from `downloads.json`.
+
+When a new app version is available:
+
+1. Create a new GitHub release.
+2. Upload the app installers as release assets using these exact filenames:
+   - `farming-ledger-windows-latest.exe`
+   - `farming-ledger-phone-latest.apk`
+3. Update `downloads.json` with the new version and date, then redeploy the site.
+
+The download URLs use GitHub's `/releases/latest/download/...` pattern, so they automatically point to the newest release asset that uses the same filename.
