@@ -1,14 +1,46 @@
 {
-  "schema": 1,
-  "source": "https://farmingledger.co.za/app/",
-  "platforms": {
-    "all": {
-      "version": "1.0.2",
-      "latest_build_number": 3,
-      "min_build_number": 0,
-      "force_update": false,
-      "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Updated Farming Ledger branding and refreshed app assets."
-    }
-  }
+    "schema":  1,
+    "source":  "https://farmingledger.co.za/app/",
+    "platforms":  {
+                      "all":  {
+                                  "version":  "1.0.2",
+                                  "latest_build_number":  3,
+                                  "min_build_number":  0,
+                                  "force_update":  false,
+                                  "download_url":  "https://farmingledger.co.za/app/",
+                                  "release_notes":  "Updates are now served from farmingledger.co.za/app/."
+                              },
+                      "windows":  {
+                                      "version":  "1.0.2",
+                                      "latest_build_number":  3,
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.2",
+                                      "release_notes":  "Download and unzip the latest Windows release.",
+                                      "min_build_number":  0,
+                                      "force_update":  false
+                                  },
+                      "android":  {
+                                      "version":  "1.0.2",
+                                      "latest_build_number":  3,
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.2",
+                                      "release_notes":  "Download and install the latest Android APK.",
+                                      "min_build_number":  0,
+                                      "force_update":  false
+                                  },
+                      "chrome":  {
+                                     "version":  "1.0.2",
+                                     "latest_build_number":  3,
+                                     "download_url":  "https://farmingledger.co.za/app/",
+                                     "release_notes":  "Refresh the website to load the latest Chrome/web version.",
+                                     "min_build_number":  0,
+                                     "force_update":  false
+                                 },
+                      "web":  {
+                                  "version":  "1.0.2",
+                                  "latest_build_number":  3,
+                                  "download_url":  "https://farmingledger.co.za/app/",
+                                  "release_notes":  "Refresh the website to load the latest web version.",
+                                  "min_build_number":  0,
+                                  "force_update":  false
+                              }
+                  }
 }
