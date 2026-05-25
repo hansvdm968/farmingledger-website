@@ -301,9 +301,9 @@ function applyDownloadLink(anchor, versionElement, release) {
   anchor.href = release.url;
   if (isExternalUrl(release.url)) {
     anchor.removeAttribute("download");
-  } else if (release.url.endsWith(".apk")) {
+  } else if (getDownloadPath(release.url).endsWith(".apk")) {
     anchor.setAttribute("download", "farming-ledger-mobile-app.apk");
-  } else if (release.url.endsWith(".zip")) {
+  } else if (getDownloadPath(release.url).endsWith(".zip")) {
     anchor.setAttribute("download", "farming-ledger-windows-app.zip");
   }
   anchor.removeAttribute("aria-disabled");
@@ -315,6 +315,10 @@ function applyDownloadLink(anchor, versionElement, release) {
 
 function isExternalUrl(value) {
   return /^https?:\/\//i.test(value);
+}
+
+function getDownloadPath(value) {
+  return value.split(/[?#]/, 1)[0];
 }
 
 function formatManifestDate(value) {

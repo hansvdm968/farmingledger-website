@@ -8,11 +8,11 @@
   "phone": {
     "version": "1.0.1",
     "size": "65 MB APK",
-    "url": "downloads/farming-ledger-mobile-app.apk"
+    "url": "downloads/farming-ledger-mobile-app.apk?v=1.0.1"
   },
   "windows": {
     "version": "1.0.1",
     "size": "18 MB ZIP",
-    "url": "downloads/farming-ledger-windows-app.zip"
+    "url": "downloads/farming-ledger-windows-app.zip?v=1.0.1"
   }
 }
