@@ -3,12 +3,12 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.4",
-                                  "latest_build_number":  5,
+                                  "version":  "1.0.5",
+                                  "latest_build_number":  6,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Removed the poultry Ops tab and added simple hover descriptions to flock metrics."
+                                  "release_notes":  "Added Paystack checkout for Crops, Poultry, and Crops + Poultry subscriptions."
                               },
                       "windows":  {
                                       "version":  "1.0.2",
@@ -27,18 +27,18 @@
                                       "force_update":  false
                                   },
                       "chrome":  {
-                                     "version":  "1.0.4",
-                                     "latest_build_number":  5,
+                                     "version":  "1.0.5",
+                                     "latest_build_number":  6,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Refresh the website to load the latest Chrome/web version with poultry metric descriptions.",
+                                     "release_notes":  "Refresh the website to load the latest Chrome/web version with Paystack checkout.",
                                      "min_build_number":  0,
                                      "force_update":  false
                                  },
                       "web":  {
-                                  "version":  "1.0.4",
-                                  "latest_build_number":  5,
+                                  "version":  "1.0.5",
+                                  "latest_build_number":  6,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Refresh the website to load the latest web version with poultry metric descriptions.",
+                                  "release_notes":  "Refresh the website to load the latest web version with Paystack checkout.",
                                   "min_build_number":  0,
                                   "force_update":  false
                               }
