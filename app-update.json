@@ -3,12 +3,12 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.2",
-                                  "latest_build_number":  3,
+                                  "version":  "1.0.3",
+                                  "latest_build_number":  4,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Updates are now served from farmingledger.co.za/app/."
+                                  "release_notes":  "Improved first-time poultry setup, validation, inventory units, and daily record forms."
                               },
                       "windows":  {
                                       "version":  "1.0.2",
@@ -27,16 +27,16 @@
                                       "force_update":  false
                                   },
                       "chrome":  {
-                                     "version":  "1.0.2",
-                                     "latest_build_number":  3,
+                                     "version":  "1.0.3",
+                                     "latest_build_number":  4,
                                      "download_url":  "https://farmingledger.co.za/app/",
                                      "release_notes":  "Refresh the website to load the latest Chrome/web version.",
                                      "min_build_number":  0,
                                      "force_update":  false
                                  },
                       "web":  {
-                                  "version":  "1.0.2",
-                                  "latest_build_number":  3,
+                                  "version":  "1.0.3",
+                                  "latest_build_number":  4,
                                   "download_url":  "https://farmingledger.co.za/app/",
                                   "release_notes":  "Refresh the website to load the latest web version.",
                                   "min_build_number":  0,
