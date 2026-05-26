@@ -3,7 +3,7 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.7",
+                                  "version":  "1.0.8",
                                   "latest_build_number":  8,
                                   "min_build_number":  0,
                                   "force_update":  false,
@@ -27,7 +27,7 @@
                                       "force_update":  false
                                   },
                       "chrome":  {
-                                     "version":  "1.0.7",
+                                     "version":  "1.0.8",
                                      "latest_build_number":  8,
                                      "download_url":  "https://farmingledger.co.za/app/",
                                      "release_notes":  "Refresh the website to load the latest Chrome/web version with poultry-finance feed links.",
@@ -35,7 +35,7 @@
                                      "force_update":  false
                                  },
                       "web":  {
-                                  "version":  "1.0.7",
+                                  "version":  "1.0.8",
                                   "latest_build_number":  8,
                                   "download_url":  "https://farmingledger.co.za/app/",
                                   "release_notes":  "Refresh the website to load the latest web version with poultry-finance feed links.",

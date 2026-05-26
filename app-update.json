@@ -3,12 +3,12 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.7",
-                                  "latest_build_number":  8,
+                                  "version":  "1.0.8",
+                                  "latest_build_number":  9,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Improved poultry feed delivery so feed costs are linked to Finance automatically."
+                                  "release_notes":  "Adds consistent edit and delete actions, bulk delete selection, planting-batch loss unit choices, and agent harvest invoicing from the invoice item picker."
                               },
                       "windows":  {
                                       "version":  "1.0.2",
@@ -27,18 +27,18 @@
                                       "force_update":  false
                                   },
                       "chrome":  {
-                                     "version":  "1.0.7",
-                                     "latest_build_number":  8,
+                                     "version":  "1.0.8",
+                                     "latest_build_number":  9,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Refresh the website to load the latest Chrome/web version with poultry-finance feed links.",
+                                     "release_notes":  "Refresh the website to load the latest Chrome/web version with bulk delete actions and easier agent harvest invoicing.",
                                      "min_build_number":  0,
                                      "force_update":  false
                                  },
                       "web":  {
-                                  "version":  "1.0.7",
-                                  "latest_build_number":  8,
+                                  "version":  "1.0.8",
+                                  "latest_build_number":  9,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Refresh the website to load the latest web version with poultry-finance feed links.",
+                                  "release_notes":  "Refresh the website to load the latest web version with bulk delete actions and easier agent harvest invoicing.",
                                   "min_build_number":  0,
                                   "force_update":  false
                               }
