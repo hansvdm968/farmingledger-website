@@ -3,12 +3,12 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.3",
-                                  "latest_build_number":  4,
+                                  "version":  "1.0.4",
+                                  "latest_build_number":  5,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Improved first-time poultry setup, validation, inventory units, and daily record forms."
+                                  "release_notes":  "Removed the poultry Ops tab and added simple hover descriptions to flock metrics."
                               },
                       "windows":  {
                                       "version":  "1.0.2",
@@ -27,18 +27,18 @@
                                       "force_update":  false
                                   },
                       "chrome":  {
-                                     "version":  "1.0.3",
-                                     "latest_build_number":  4,
+                                     "version":  "1.0.4",
+                                     "latest_build_number":  5,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Refresh the website to load the latest Chrome/web version.",
+                                     "release_notes":  "Refresh the website to load the latest Chrome/web version with poultry metric descriptions.",
                                      "min_build_number":  0,
                                      "force_update":  false
                                  },
                       "web":  {
-                                  "version":  "1.0.3",
-                                  "latest_build_number":  4,
+                                  "version":  "1.0.4",
+                                  "latest_build_number":  5,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Refresh the website to load the latest web version.",
+                                  "release_notes":  "Refresh the website to load the latest web version with poultry metric descriptions.",
                                   "min_build_number":  0,
                                   "force_update":  false
                               }
