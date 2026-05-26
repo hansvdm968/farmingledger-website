@@ -1,5 +1,5 @@
 const STORAGE_KEY = "farm-ledger-records";
-const DOWNLOADS_MANIFEST = "downloads.json";
+const DOWNLOADS_MANIFEST = "downloads.json?v=14";
 
 const starterRecords = [
   {
@@ -277,7 +277,11 @@ async function loadDownloadLinks() {
       webAppLink.href = manifest.web.url;
     }
 
-    const releaseName = manifest.latestVersion ? `Version ${manifest.latestVersion}` : "Latest version";
+    const releaseName = manifest.web?.version
+      ? `Online app version ${manifest.web.version}`
+      : manifest.latestVersion
+        ? `Version ${manifest.latestVersion}`
+        : "Latest version";
     const updated = manifest.updatedAt ? `Updated ${formatManifestDate(manifest.updatedAt)}` : "Release manifest ready";
     downloadStatus.textContent = `${releaseName} is ready to download.`;
     manifestUpdated.textContent = updated;
