@@ -99,6 +99,13 @@
       document.body.style.background = "transparent";
     }
   </script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.getRegistrations().then((registrations) => {
+        registrations.forEach((registration) => registration.unregister());
+      });
+    }
+  </script>
 </head>
 <body>
   <picture id="splash">
