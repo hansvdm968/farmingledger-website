@@ -45,8 +45,13 @@ a {
 
 button,
 input,
-select {
+select,
+textarea {
   font: inherit;
+}
+
+section[id] {
+  scroll-margin-top: 160px;
 }
 
 .site-header {
@@ -408,6 +413,7 @@ label {
 .farm-gallery,
 .app-section,
 .download-section,
+.feedback-section,
 .contact-section,
 footer {
   padding-right: clamp(18px, 4vw, 56px);
@@ -552,6 +558,7 @@ footer {
 .farm-gallery,
 .app-section,
 .download-section,
+.feedback-section,
 .contact-section {
   padding-top: 76px;
   padding-bottom: 76px;
@@ -856,7 +863,7 @@ footer {
   display: grid;
   grid-template-columns: 240px minmax(0, 1fr);
   overflow: hidden;
-  min-height: 640px;
+  min-height: 682px;
   border: 1px solid rgba(85, 240, 163, 0.22);
   border-radius: 8px;
   background: #0b161a;
@@ -877,6 +884,18 @@ footer {
   gap: 12px;
   align-items: center;
   padding: 0 4px 12px;
+}
+
+.preview-collapse {
+  justify-self: end;
+  min-height: 24px;
+  border: 0;
+  background: transparent;
+  color: rgba(238, 245, 242, 0.62);
+  font-size: 1.22rem;
+  font-weight: 900;
+  padding: 0 14px 2px;
+  pointer-events: none;
 }
 
 .preview-brand-mark {
@@ -922,6 +941,38 @@ footer {
 .preview-sidebar span.active {
   background: rgba(85, 240, 163, 0.2);
   color: var(--green);
+}
+
+.preview-user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 7px;
+  color: var(--ink);
+  padding: 10px 4px;
+  font-weight: 850;
+}
+
+.preview-user::before {
+  content: "";
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--green);
+}
+
+.preview-user span {
+  min-width: 0;
+  overflow: hidden;
+  padding: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.preview-user b {
+  margin-left: auto;
+  color: rgba(238, 245, 242, 0.72);
 }
 
 .preview-package-tabs {
@@ -1013,13 +1064,23 @@ footer {
 
 .preview-metric {
   display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
   align-content: center;
-  gap: 8px;
+  gap: 4px 10px;
   min-height: 86px;
   border: 1px solid rgba(85, 240, 163, 0.32);
   border-radius: 8px;
   background: rgba(15, 24, 26, 0.96);
   padding: 16px;
+}
+
+.preview-metric i {
+  grid-row: span 2;
+  align-self: center;
+  color: var(--green);
+  font-style: normal;
+  font-size: 1.55rem;
+  font-weight: 900;
 }
 
 .preview-metric span {
@@ -1037,6 +1098,7 @@ footer {
   border-color: rgba(255, 83, 88, 0.45);
 }
 
+.preview-metric.expense i,
 .preview-metric.expense strong {
   color: var(--red);
 }
@@ -1045,6 +1107,7 @@ footer {
   border-color: rgba(61, 194, 255, 0.42);
 }
 
+.preview-metric.blue i,
 .preview-metric.blue strong {
   color: #43c7ff;
   font-size: 1.28rem;
@@ -1054,6 +1117,7 @@ footer {
   border-color: rgba(255, 176, 48, 0.5);
 }
 
+.preview-metric.amber i,
 .preview-metric.amber strong {
   color: #ffad35;
 }
@@ -1062,6 +1126,7 @@ footer {
   border-color: rgba(213, 73, 230, 0.45);
 }
 
+.preview-metric.purple i,
 .preview-metric.purple strong {
   color: #d94be9;
 }
@@ -1070,13 +1135,20 @@ footer {
   border-color: rgba(255, 213, 41, 0.45);
 }
 
+.preview-metric.yellow i,
 .preview-metric.yellow strong {
   color: #ffd529;
 }
 
+.preview-lower-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.75fr);
+  gap: 12px;
+  padding: 0 16px 18px;
+}
+
 .preview-chart {
   min-height: 150px;
-  margin: 4px 16px 18px;
   border-radius: 8px;
   background: #3b3f42;
   padding: 18px;
@@ -1095,6 +1167,36 @@ footer {
 .chart-bars span {
   border-radius: 5px 5px 0 0;
   background: linear-gradient(180deg, #55f0a3, #24a7ff);
+}
+
+.preview-records {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-height: 150px;
+  border: 1px solid rgba(238, 245, 242, 0.12);
+  border-radius: 8px;
+  background: rgba(15, 24, 26, 0.96);
+  padding: 18px;
+}
+
+.preview-records strong {
+  margin-bottom: 2px;
+}
+
+.preview-records p {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0;
+  border-top: 1px solid rgba(238, 245, 242, 0.08);
+  color: var(--muted);
+  padding-top: 10px;
+}
+
+.preview-records b {
+  color: var(--green);
+  white-space: nowrap;
 }
 
 .panel {
@@ -1129,7 +1231,8 @@ label {
 }
 
 input,
-select {
+select,
+textarea {
   width: 100%;
   min-height: 42px;
   border: 1px solid #304049;
@@ -1139,12 +1242,18 @@ select {
   padding: 9px 11px;
 }
 
-input::placeholder {
+textarea {
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
   color: #6e7a78;
 }
 
 input:focus,
-select:focus {
+select:focus,
+textarea:focus {
   border-color: var(--green);
   outline: 3px solid rgba(85, 240, 163, 0.16);
 }
@@ -1282,6 +1391,59 @@ td {
   grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
   gap: 32px;
   align-items: center;
+}
+
+.feedback-section {
+  display: grid;
+  gap: 22px;
+  border-top: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(11, 17, 21, 0.94), rgba(12, 19, 22, 0.98)),
+    url("https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=1600&q=82") center / cover;
+}
+
+.feedback-section .section-heading p:not(.eyebrow) {
+  max-width: 780px;
+}
+
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.feedback-grid article {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-height: 170px;
+  border: 1px solid rgba(85, 240, 163, 0.24);
+  border-radius: 8px;
+  background: rgba(17, 27, 33, 0.96);
+  padding: 20px;
+}
+
+.feedback-grid strong {
+  color: var(--ink);
+  font-size: 1.08rem;
+}
+
+.feedback-grid p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.feedback-action {
+  display: inline-flex;
+  justify-self: start;
+  align-items: center;
+  min-height: 42px;
+  border-radius: 7px;
+  background: var(--green);
+  color: #07110d;
+  padding: 0 16px;
+  font-weight: 850;
 }
 
 .pricing-section {
@@ -1535,7 +1697,8 @@ td {
   .dashboard-preview,
   .download-section,
   .pricing-layout,
-  .contact-section {
+  .contact-section,
+  .preview-lower-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1587,6 +1750,7 @@ td {
   }
 
   .platform-strip,
+  .feedback-grid,
   .preview-metric-grid,
   .pricing-features,
   .stats-grid {
@@ -1608,6 +1772,7 @@ td {
   }
 
   .platform-strip,
+  .feedback-grid,
   .module-grid,
   .download-card,
   .preview-metric-grid,

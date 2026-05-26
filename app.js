@@ -117,10 +117,21 @@ categoryFilter?.addEventListener("change", render);
 
 document.querySelector("#contactForm")?.addEventListener("submit", (event) => {
   event.preventDefault();
-  const email = document.querySelector("#email").value.trim();
+  const formData = new FormData(event.currentTarget);
+  const email = String(formData.get("email") || "").trim();
+  const name = String(formData.get("name") || "").trim();
+  const message = String(formData.get("message") || "").trim();
   const joined = JSON.parse(localStorage.getItem("farm-ledger-waitlist") || "[]");
   localStorage.setItem("farm-ledger-waitlist", JSON.stringify([...new Set([...joined, email])]));
-  document.querySelector("#contactMessage").textContent = "Thanks. Your email is saved on this device and ready for follow-up.";
+  const feedback = JSON.parse(localStorage.getItem("farm-ledger-feedback") || "[]");
+  feedback.push({
+    email,
+    name,
+    message,
+    createdAt: new Date().toISOString()
+  });
+  localStorage.setItem("farm-ledger-feedback", JSON.stringify(feedback));
+  document.querySelector("#contactMessage").textContent = "Thanks. Your details and suggestion are saved on this device and ready for follow-up.";
   event.target.reset();
 });
 

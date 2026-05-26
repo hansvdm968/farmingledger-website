@@ -8,7 +8,7 @@
     <link rel="icon" href="assets/farming-ledger-logo.png">
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#0b1115">
-    <link rel="stylesheet" href="styles.css?v=14">
+    <link rel="stylesheet" href="styles.css?v=15">
   </head>
   <body>
     <header class="site-header">
@@ -172,6 +172,7 @@
               <div class="preview-brand-mark">FL</div>
               <strong>Farming<br>Ledger</strong>
             </div>
+            <button class="preview-collapse" type="button" tabindex="-1"><<</button>
             <nav>
               <span class="active">Dashboard</span>
               <small>Money</small>
@@ -186,7 +187,13 @@
               <span>Inventory</span>
               <span>Fields / Blocks</span>
               <span>Planting Batches</span>
+              <span>Staff</span>
+              <span>Agents</span>
             </nav>
+            <div class="preview-user">
+              <span>carlitapieters@g...</span>
+              <b>-></b>
+            </div>
           </aside>
 
           <div class="preview-dashboard">
@@ -208,64 +215,84 @@
 
             <div class="preview-metric-grid">
               <article class="preview-metric income">
+                <i>+</i>
                 <span>Total Income</span>
-                <strong>R 1 660.00</strong>
+                <strong>R 0.00</strong>
               </article>
               <article class="preview-metric expense">
+                <i>-</i>
                 <span>Total Expenses</span>
-                <strong>R 11 937.54</strong>
+                <strong>R 1 600.00</strong>
               </article>
               <article class="preview-metric expense">
+                <i>R</i>
                 <span>Profit</span>
-                <strong>R -10 277.54</strong>
+                <strong>R -1 600.00</strong>
               </article>
               <article class="preview-metric blue">
+                <i>$</i>
                 <span>This Month</span>
-                <strong>R 1 070.00 in / R 1 132.00 out</strong>
+                <strong>R 0.00 in / R 1 600.00 out</strong>
               </article>
               <article class="preview-metric income">
+                <i>C</i>
                 <span>Active Crops</span>
-                <strong>4</strong>
+                <strong>1</strong>
               </article>
               <article class="preview-metric amber">
+                <i>H</i>
                 <span>Harvests This Week</span>
-                <strong>4</strong>
+                <strong>0</strong>
               </article>
               <article class="preview-metric income">
+                <i>F</i>
                 <span>Poultry Flocks</span>
-                <strong>0</strong>
+                <strong>2</strong>
               </article>
               <article class="preview-metric blue">
-                <span>Birds</span>
-                <strong>0</strong>
+                <i>B</i>
+                <span>Poultry count</span>
+                <strong>150</strong>
               </article>
               <article class="preview-metric amber">
+                <i>!</i>
                 <span>Mortality</span>
                 <strong>0.0%</strong>
               </article>
               <article class="preview-metric purple">
+                <i>FCR</i>
                 <span>Avg FCR</span>
                 <strong>-</strong>
               </article>
               <article class="preview-metric yellow">
+                <i>E</i>
                 <span>Eggs Collected</span>
                 <strong>0</strong>
               </article>
-              <article class="preview-metric income">
+              <article class="preview-metric expense">
+                <i>P</i>
                 <span>Poultry Profit</span>
-                <strong>R 0.00</strong>
+                <strong>R -100.00</strong>
               </article>
             </div>
 
-            <div class="preview-chart">
-              <strong>Monthly Income vs Expenses</strong>
-              <div class="chart-bars" aria-hidden="true">
-                <span style="height: 45%"></span>
-                <span style="height: 72%"></span>
-                <span style="height: 38%"></span>
-                <span style="height: 88%"></span>
-                <span style="height: 56%"></span>
-                <span style="height: 64%"></span>
+            <div class="preview-lower-grid">
+              <div class="preview-chart">
+                <strong>Monthly Income vs Expenses</strong>
+                <div class="chart-bars" aria-hidden="true">
+                  <span style="height: 22%"></span>
+                  <span style="height: 72%"></span>
+                  <span style="height: 38%"></span>
+                  <span style="height: 88%"></span>
+                  <span style="height: 18%"></span>
+                  <span style="height: 64%"></span>
+                </div>
+              </div>
+              <div class="preview-records">
+                <strong>Recent records</strong>
+                <p><span>Poultry feed</span><b>Finance expense</b></p>
+                <p><span>Egg collection</span><b>Poultry history</b></p>
+                <p><span>Harvest allocation</span><b>Agent invoice</b></p>
               </div>
             </div>
           </div>
@@ -314,18 +341,51 @@
         </div>
       </section>
 
+      <section id="feedback" class="feedback-section" aria-labelledby="feedbackTitle">
+        <div class="section-heading">
+          <p class="eyebrow">Built with farmers</p>
+          <h2 id="feedbackTitle">Your opinion matters.</h2>
+          <p>Real farms run differently. Tell us what would save you time, what records you need, and what should be simpler in the app.</p>
+        </div>
+
+        <div class="feedback-grid">
+          <article>
+            <strong>Share daily farm problems</strong>
+            <p>Send the tasks that slow you down, from feed records and flock history to harvest slips, staff work, and agent payments.</p>
+          </article>
+          <article>
+            <strong>Suggest practical features</strong>
+            <p>Ask for dropdowns, reports, calculations, reminders, or farm-specific fields that would make Farming Ledger fit your operation better.</p>
+          </article>
+          <article>
+            <strong>Help shape the next release</strong>
+            <p>Useful suggestions are reviewed for future updates so the app keeps growing around real crop and poultry work.</p>
+          </article>
+        </div>
+
+        <a class="feedback-action" href="#contact">Send feedback</a>
+      </section>
+
       <section id="contact" class="contact-section" aria-labelledby="contactTitle">
         <div>
           <p class="eyebrow">Contact us</p>
-          <h2 id="contactTitle">Questions about Farming Ledger?</h2>
-          <p>Send your email and we will help with access, downloads, setup, or subscription questions.</p>
+          <h2 id="contactTitle">Questions or farm suggestions?</h2>
+          <p>Send your email and a short note. We can help with access, downloads, setup, subscriptions, or ideas for better farm records.</p>
         </div>
         <form id="contactForm" class="contact-form">
+          <label>
+            Name
+            <input id="name" name="name" type="text" placeholder="Your name">
+          </label>
           <label>
             Email
             <input id="email" name="email" type="email" placeholder="you@example.com" required>
           </label>
-          <button type="submit">Contact Farming Ledger</button>
+          <label>
+            Message
+            <textarea id="message" name="message" rows="4" placeholder="Tell us what you need on your farm"></textarea>
+          </label>
+          <button type="submit">Send to Farming Ledger</button>
           <p id="contactMessage" role="status"></p>
         </form>
       </section>
@@ -376,6 +436,6 @@
       </div>
     </footer>
 
-    <script src="app.js?v=14"></script>
+    <script src="app.js?v=15"></script>
   </body>
 </html>
