@@ -3,12 +3,12 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.8",
-                                  "latest_build_number":  9,
+                                  "version":  "1.0.9",
+                                  "latest_build_number":  10,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Adds consistent edit and delete actions, bulk delete selection, planting-batch loss unit choices, and agent harvest invoicing from the invoice item picker."
+                                  "release_notes":  "Adds item price presets and guided poultry sales for broilers, layers, spent hens, and fertile eggs."
                               },
                       "windows":  {
                                       "version":  "1.0.2",
@@ -27,18 +27,18 @@
                                       "force_update":  false
                                   },
                       "chrome":  {
-                                     "version":  "1.0.8",
-                                     "latest_build_number":  9,
+                                     "version":  "1.0.9",
+                                     "latest_build_number":  10,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Refresh the website to load the latest Chrome/web version with bulk delete actions and easier agent harvest invoicing.",
+                                     "release_notes":  "Refresh the website to load price presets and guided poultry sales.",
                                      "min_build_number":  0,
                                      "force_update":  false
                                  },
                       "web":  {
-                                  "version":  "1.0.8",
-                                  "latest_build_number":  9,
+                                  "version":  "1.0.9",
+                                  "latest_build_number":  10,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Refresh the website to load the latest web version with bulk delete actions and easier agent harvest invoicing.",
+                                  "release_notes":  "Refresh the website to load price presets and guided poultry sales.",
                                   "min_build_number":  0,
                                   "force_update":  false
                               }

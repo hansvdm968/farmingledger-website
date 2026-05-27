@@ -1,8 +1,8 @@
 {
-  "latestVersion": "1.0.8",
-  "updatedAt": "2026-05-26",
+  "latestVersion": "1.0.9",
+  "updatedAt": "2026-05-27",
   "web": {
-    "version": "1.0.8",
+    "version": "1.0.9",
     "url": "https://farmingledger.co.za/app/"
   },
   "phone": {
