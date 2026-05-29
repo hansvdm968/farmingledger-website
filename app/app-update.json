@@ -3,12 +3,12 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.12",
-                                  "latest_build_number":  13,
+                                  "version":  "1.0.13",
+                                  "latest_build_number":  14,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Adds poultry daily record editing, feed form persistence, flock supplier dropdowns, and crop timing presets."
+                                  "release_notes":  "Adds Finance reports for balance sheet, income statement, cashflow, equity, and production with PDF export."
                               },
                       "windows":  {
                                       "version":  "1.0.11",
@@ -19,26 +19,26 @@
                                       "force_update":  false
                                   },
                       "android":  {
-                                      "version":  "1.0.12",
-                                      "latest_build_number":  13,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.12",
-                                      "release_notes":  "Download and install the latest Android APK with poultry and crop workflow updates.",
+                                      "version":  "1.0.13",
+                                      "latest_build_number":  14,
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.13",
+                                      "release_notes":  "Download and install the latest Android APK with Finance reports and PDF export.",
                                       "min_build_number":  0,
                                       "force_update":  false
                                   },
                       "chrome":  {
-                                     "version":  "1.0.12",
-                                     "latest_build_number":  13,
+                                     "version":  "1.0.13",
+                                     "latest_build_number":  14,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Refresh the website to load poultry and crop workflow updates.",
+                                     "release_notes":  "Refresh the website to load Finance reports and PDF export.",
                                      "min_build_number":  0,
                                      "force_update":  false
                                  },
                       "web":  {
-                                  "version":  "1.0.12",
-                                  "latest_build_number":  13,
+                                  "version":  "1.0.13",
+                                  "latest_build_number":  14,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Refresh the website to load poultry and crop workflow updates.",
+                                  "release_notes":  "Refresh the website to load Finance reports and PDF export.",
                                   "min_build_number":  0,
                                   "force_update":  false
                               }
