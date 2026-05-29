@@ -3,42 +3,42 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.10",
-                                  "latest_build_number":  11,
+                                  "version":  "1.0.11",
+                                  "latest_build_number":  12,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Updates native downloads and fixes agent outstanding balances when invoices are marked paid."
+                                  "release_notes":  "Adds Terms of Use acceptance for account creation and subscription checkout, with explicit Supabase Data API grants."
                               },
                       "windows":  {
-                                      "version":  "1.0.10",
-                                      "latest_build_number":  11,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.10",
-                                      "release_notes":  "Download and unzip the latest Windows release with the agent invoice balance fix.",
+                                      "version":  "1.0.11",
+                                      "latest_build_number":  12,
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.11",
+                                      "release_notes":  "Download and unzip the latest Windows release with terms acceptance security.",
                                       "min_build_number":  0,
                                       "force_update":  false
                                   },
                       "android":  {
-                                      "version":  "1.0.10",
-                                      "latest_build_number":  11,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.10",
-                                      "release_notes":  "Download and install the latest Android APK with the agent invoice balance fix.",
+                                      "version":  "1.0.11",
+                                      "latest_build_number":  12,
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.11",
+                                      "release_notes":  "Download and install the latest Android APK with terms acceptance security.",
                                       "min_build_number":  0,
                                       "force_update":  false
                                   },
                       "chrome":  {
-                                     "version":  "1.0.10",
-                                     "latest_build_number":  11,
+                                     "version":  "1.0.11",
+                                     "latest_build_number":  12,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Refresh the website to load updated downloads and the agent invoice balance fix.",
+                                     "release_notes":  "Refresh the website to load terms acceptance security.",
                                      "min_build_number":  0,
                                      "force_update":  false
                                  },
                       "web":  {
-                                  "version":  "1.0.10",
-                                  "latest_build_number":  11,
+                                  "version":  "1.0.11",
+                                  "latest_build_number":  12,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Refresh the website to load updated downloads and the agent invoice balance fix.",
+                                  "release_notes":  "Refresh the website to load terms acceptance security.",
                                   "min_build_number":  0,
                                   "force_update":  false
                               }
