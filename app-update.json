@@ -3,12 +3,12 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.13",
-                                  "latest_build_number":  14,
+                                  "version":  "1.0.14",
+                                  "latest_build_number":  15,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Adds Finance reports for balance sheet, income statement, cashflow, equity, and production with PDF export."
+                                  "release_notes":  "Fixes Finance report PDF download and improves report balance calculations."
                               },
                       "windows":  {
                                       "version":  "1.0.11",
@@ -19,26 +19,26 @@
                                       "force_update":  false
                                   },
                       "android":  {
-                                      "version":  "1.0.13",
-                                      "latest_build_number":  14,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.13",
-                                      "release_notes":  "Download and install the latest Android APK with Finance reports and PDF export.",
+                                      "version":  "1.0.14",
+                                      "latest_build_number":  15,
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.14",
+                                      "release_notes":  "Download and install the latest Android APK with Finance report PDF fixes.",
                                       "min_build_number":  0,
                                       "force_update":  false
                                   },
                       "chrome":  {
-                                     "version":  "1.0.13",
-                                     "latest_build_number":  14,
+                                     "version":  "1.0.14",
+                                     "latest_build_number":  15,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Refresh the website to load Finance reports and PDF export.",
+                                     "release_notes":  "Refresh the website to load Finance report PDF fixes.",
                                      "min_build_number":  0,
                                      "force_update":  false
                                  },
                       "web":  {
-                                  "version":  "1.0.13",
-                                  "latest_build_number":  14,
+                                  "version":  "1.0.14",
+                                  "latest_build_number":  15,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Refresh the website to load Finance reports and PDF export.",
+                                  "release_notes":  "Refresh the website to load Finance report PDF fixes.",
                                   "min_build_number":  0,
                                   "force_update":  false
                               }
