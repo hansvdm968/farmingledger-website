@@ -3,42 +3,42 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.14",
-                                  "latest_build_number":  15,
+                                  "version":  "1.0.15",
+                                  "latest_build_number":  16,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Fixes Finance report PDF download and improves report balance calculations."
+                                  "release_notes":  "Simplifies invoice billing and adds customer management updates."
                               },
                       "windows":  {
-                                      "version":  "1.0.11",
-                                      "latest_build_number":  12,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.11",
-                                      "release_notes":  "Download and unzip the current Windows release.",
+                                      "version":  "1.0.15",
+                                      "latest_build_number":  16,
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.15",
+                                      "release_notes":  "Download and unzip the latest Windows release with invoice billing and customer updates.",
                                       "min_build_number":  0,
                                       "force_update":  false
                                   },
                       "android":  {
-                                      "version":  "1.0.14",
-                                      "latest_build_number":  15,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.14",
-                                      "release_notes":  "Download and install the latest Android APK with Finance report PDF fixes.",
+                                      "version":  "1.0.15",
+                                      "latest_build_number":  16,
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.15",
+                                      "release_notes":  "Download and install the latest Android APK with invoice billing and customer updates.",
                                       "min_build_number":  0,
                                       "force_update":  false
                                   },
                       "chrome":  {
-                                     "version":  "1.0.14",
-                                     "latest_build_number":  15,
+                                     "version":  "1.0.15",
+                                     "latest_build_number":  16,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Refresh the website to load Finance report PDF fixes.",
+                                     "release_notes":  "Refresh the website to load invoice billing and customer updates.",
                                      "min_build_number":  0,
                                      "force_update":  false
                                  },
                       "web":  {
-                                  "version":  "1.0.14",
-                                  "latest_build_number":  15,
+                                  "version":  "1.0.15",
+                                  "latest_build_number":  16,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Refresh the website to load Finance report PDF fixes.",
+                                  "release_notes":  "Refresh the website to load invoice billing and customer updates.",
                                   "min_build_number":  0,
                                   "force_update":  false
                               }
