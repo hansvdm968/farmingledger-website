@@ -1,9 +1,9 @@
-const CACHE_NAME = "farming-ledger-v11";
+const CACHE_NAME = "farming-ledger-v12";
 const APP_SHELL = [
   "/",
   "/index.html",
-  "/styles.css?v=17",
-  "/app.js?v=16",
+  "/styles.css?v=18",
+  "/app.js?v=17",
   "/contact.html",
   "/pricing.html",
   "/privacy-policy.html",
