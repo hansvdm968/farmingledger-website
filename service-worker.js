@@ -1,4 +1,4 @@
-const CACHE_NAME = "farming-ledger-v13";
+const CACHE_NAME = "farming-ledger-v14";
 const APP_SHELL = [
   "/",
   "/index.html",
@@ -12,7 +12,7 @@ const APP_SHELL = [
   "/terms-of-use.html",
   "/security.html",
   "/assets/farming-ledger-logo.png?v=1.0.7",
-  "/downloads.json?v=15",
+  "/downloads.json?v=16",
   "/site.webmanifest"
 ];
 
