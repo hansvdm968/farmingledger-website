@@ -1013,17 +1013,19 @@ footer {
 .preview-hero-band {
   display: flex;
   align-items: end;
-  min-height: 76px;
-  background: #101418;
-  padding: 18px 18px 8px;
+  min-height: 128px;
+  background:
+    linear-gradient(90deg, rgba(16, 20, 24, 0.88), rgba(16, 20, 24, 0.38)),
+    url("assets/dashboard-hay-bales.png") center / cover;
+  padding: 24px 18px;
 }
 
 .preview-hero-band h3 {
   margin: 0;
   color: rgba(238, 245, 242, 0.94);
-  font-size: 1.55rem;
-  line-height: 1.1;
-  font-weight: 650;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 800;
 }
 
 .preview-filter-row {
