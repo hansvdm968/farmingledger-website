@@ -3,42 +3,42 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.17",
-                                  "latest_build_number":  18,
+                                  "version":  "1.0.18",
+                                  "latest_build_number":  19,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Adds full business privacy hardening across reports, records, and relationship checks."
+                                  "release_notes":  "Adds expanded farm management tools, Windows release updates, and privacy hardening."
                               },
                       "windows":  {
-                                      "version":  "1.0.15",
-                                      "latest_build_number":  16,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.15",
-                                      "release_notes":  "Download and unzip the latest Windows release with invoice billing and customer updates.",
+                                      "version":  "1.0.18",
+                                      "latest_build_number":  19,
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.18",
+                                      "release_notes":  "Download and unzip the expanded farm management Windows release.",
                                       "min_build_number":  0,
                                       "force_update":  false
                                   },
                       "android":  {
-                                      "version":  "1.0.17",
-                                      "latest_build_number":  18,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.17",
-                                      "release_notes":  "Download and install the privacy hardening update.",
+                                      "version":  "1.0.18",
+                                      "latest_build_number":  19,
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.18",
+                                      "release_notes":  "Download and install the expanded farm management update.",
                                       "min_build_number":  0,
                                       "force_update":  false
                                   },
                       "chrome":  {
-                                     "version":  "1.0.17",
-                                     "latest_build_number":  18,
+                                     "version":  "1.0.18",
+                                     "latest_build_number":  19,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Refresh the website to load the privacy hardening update.",
+                                     "release_notes":  "Refresh the website to load the expanded farm management update.",
                                      "min_build_number":  0,
                                      "force_update":  false
                                  },
                       "web":  {
-                                  "version":  "1.0.17",
-                                  "latest_build_number":  18,
+                                  "version":  "1.0.18",
+                                  "latest_build_number":  19,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Refresh the website to load the privacy hardening update.",
+                                  "release_notes":  "Refresh the website to load the expanded farm management update.",
                                   "min_build_number":  0,
                                   "force_update":  false
                               }
