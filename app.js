@@ -1,5 +1,6 @@
 const STORAGE_KEY = "farm-ledger-records";
-const DOWNLOADS_MANIFEST = "downloads.json?v=14";
+const DOWNLOADS_MANIFEST = "downloads.json?v=15";
+const CONTACT_EMAIL = "hansvdm62@gmail.com";
 
 const starterRecords = [
   {
@@ -131,7 +132,18 @@ document.querySelector("#contactForm")?.addEventListener("submit", (event) => {
     createdAt: new Date().toISOString()
   });
   localStorage.setItem("farm-ledger-feedback", JSON.stringify(feedback));
-  document.querySelector("#contactMessage").textContent = "Thanks. Your details and suggestion are saved on this device and ready for follow-up.";
+  const subject = encodeURIComponent("Farming Ledger website message");
+  const body = encodeURIComponent([
+    "New Farming Ledger website message",
+    "",
+    `Name: ${name || "Not provided"}`,
+    `Email: ${email}`,
+    "",
+    "Message:",
+    message || "Not provided"
+  ].join("\n"));
+  window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+  document.querySelector("#contactMessage").textContent = "Your email app should open now. Please press Send there so the Farming Ledger team receives your message.";
   event.target.reset();
 });
 
