@@ -1,49 +1,46 @@
 {
-    "latest_version":  "1.0.20",
-    "latest_build_number":  21,
-    "min_build_number":  0,
-    "force_update":  false,
-    "release_notes":  "Adds fixed-asset expense capture and richer dashboard charts.",
+    "schema":  1,
+    "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "latest_version":  "1.0.20",
+                                  "version":  "1.0.20",
                                   "latest_build_number":  21,
                                   "min_build_number":  0,
                                   "force_update":  false,
-                                  "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Adds fixed-asset expense capture and richer dashboard charts."
-                              },
-                      "chrome":  {
-                                     "latest_version":  "1.0.20",
-                                     "latest_build_number":  21,
-                                     "min_build_number":  0,
-                                     "force_update":  false,
-                                     "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Adds fixed-asset expense capture and richer dashboard charts."
-                                 },
-                      "web":  {
-                                  "latest_version":  "1.0.20",
-                                  "latest_build_number":  21,
-                                  "min_build_number":  0,
-                                  "force_update":  false,
-                                  "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Adds fixed-asset expense capture and richer dashboard charts."
+                                  "download_url":  "https://www.farmingledger.co.za",
+                                  "release_notes":  "Adds expanded farm management tools, Windows release updates, and privacy hardening."
                               },
                       "windows":  {
-                                      "latest_version":  "1.0.20",
+                                      "version":  "1.0.20",
                                       "latest_build_number":  21,
+                                      "download_url":  "https://www.farmingledger.co.za/downloads/farming-ledger-windows.zip",
+                                      "release_notes":  "Download and unzip the expanded farm management Windows release.",
                                       "min_build_number":  0,
-                                      "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.20",
-                                      "release_notes":  "Adds fixed-asset expense capture and richer dashboard charts."
+                                      "force_update":  false
                                   },
                       "android":  {
-                                      "latest_version":  "1.0.20",
+                                      "version":  "1.0.20",
                                       "latest_build_number":  21,
+                                      "download_url":  "https://www.farmingledger.co.za/downloads/farming-ledger-android.apk",
+                                      "release_notes":  "Download and install the expanded farm management update.",
                                       "min_build_number":  0,
-                                      "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.20",
-                                      "release_notes":  "Adds fixed-asset expense capture and richer dashboard charts."
-                                  }
+                                      "force_update":  false
+                                  },
+                      "chrome":  {
+                                     "version":  "1.0.20",
+                                     "latest_build_number":  21,
+                                     "download_url":  "https://www.farmingledger.co.za",
+                                     "release_notes":  "Refresh the website to load the expanded farm management update.",
+                                     "min_build_number":  0,
+                                     "force_update":  false
+                                 },
+                      "web":  {
+                                  "version":  "1.0.20",
+                                  "latest_build_number":  21,
+                                  "download_url":  "https://www.farmingledger.co.za",
+                                  "release_notes":  "Refresh the website to load the expanded farm management update.",
+                                  "min_build_number":  0,
+                                  "force_update":  false
+                              }
                   }
 }
