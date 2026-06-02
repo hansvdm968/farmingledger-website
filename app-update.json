@@ -3,8 +3,8 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.18",
-                                  "latest_build_number":  19,
+                                  "version":  "1.0.19",
+                                  "latest_build_number":  20,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
@@ -19,24 +19,24 @@
                                       "force_update":  false
                                   },
                       "android":  {
-                                      "version":  "1.0.18",
-                                      "latest_build_number":  19,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.18",
+                                      "version":  "1.0.19",
+                                      "latest_build_number":  20,
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.19",
                                       "release_notes":  "Download and install the expanded farm management update.",
                                       "min_build_number":  0,
                                       "force_update":  false
                                   },
                       "chrome":  {
-                                     "version":  "1.0.18",
-                                     "latest_build_number":  19,
+                                     "version":  "1.0.19",
+                                     "latest_build_number":  20,
                                      "download_url":  "https://farmingledger.co.za/app/",
                                      "release_notes":  "Refresh the website to load the expanded farm management update.",
                                      "min_build_number":  0,
                                      "force_update":  false
                                  },
                       "web":  {
-                                  "version":  "1.0.18",
-                                  "latest_build_number":  19,
+                                  "version":  "1.0.19",
+                                  "latest_build_number":  20,
                                   "download_url":  "https://farmingledger.co.za/app/",
                                   "release_notes":  "Refresh the website to load the expanded farm management update.",
                                   "min_build_number":  0,
