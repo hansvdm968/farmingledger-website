@@ -79226,7 +79226,7 @@ r.push(new A.akr(p.w,p.gaP3(),o))
 r.push(B.a9)
 s=p.y
 q=s?B.S0:B.eH
-r.push(new A.ID("App Updates","Check updates published from www.farmingledger.co.za",s?o:p.gaAf(),q,o))
+r.push(new A.ID("App Updates","Check updates published from farmingledger.co.za",s?o:p.gaAf(),q,o))
 r.push(B.a9)
 s=p.z?B.S0:B.eH
 r.push(new A.ID("Desktop Shortcut","On mobile, add the app to your home screen from the operating system",o,s,o))
