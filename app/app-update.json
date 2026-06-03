@@ -1,49 +1,46 @@
 {
-    "latest_version":  "1.0.21",
-    "latest_build_number":  22,
-    "min_build_number":  0,
-    "force_update":  false,
-    "release_notes":  "Adds bag-size conversion for purchased inputs and month-specific staff payslips with leave and overtime summaries.",
+    "schema":  1,
+    "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "latest_version":  "1.0.21",
+                                  "version":  "1.0.21",
                                   "latest_build_number":  22,
                                   "min_build_number":  0,
                                   "force_update":  false,
-                                  "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Adds bag-size conversion for purchased inputs and month-specific staff payslips with leave and overtime summaries."
-                              },
-                      "chrome":  {
-                                     "latest_version":  "1.0.21",
-                                     "latest_build_number":  22,
-                                     "min_build_number":  0,
-                                     "force_update":  false,
-                                     "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Adds bag-size conversion for purchased inputs and month-specific staff payslips with leave and overtime summaries."
-                                 },
-                      "web":  {
-                                  "latest_version":  "1.0.21",
-                                  "latest_build_number":  22,
-                                  "min_build_number":  0,
-                                  "force_update":  false,
-                                  "download_url":  "https://farmingledger.co.za/app/",
+                                  "download_url":  "https://www.farmingledger.co.za",
                                   "release_notes":  "Adds bag-size conversion for purchased inputs and month-specific staff payslips with leave and overtime summaries."
                               },
                       "windows":  {
-                                      "latest_version":  "1.0.21",
+                                      "version":  "1.0.21",
                                       "latest_build_number":  22,
+                                      "download_url":  "https://www.farmingledger.co.za/downloads/farming-ledger-windows.zip",
+                                      "release_notes":  "Adds bag-size conversion for purchased inputs and month-specific staff payslips with leave and overtime summaries.",
                                       "min_build_number":  0,
-                                      "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.21",
-                                      "release_notes":  "Adds bag-size conversion for purchased inputs and month-specific staff payslips with leave and overtime summaries."
+                                      "force_update":  false
                                   },
                       "android":  {
-                                      "latest_version":  "1.0.21",
+                                      "version":  "1.0.21",
                                       "latest_build_number":  22,
+                                      "download_url":  "https://www.farmingledger.co.za/downloads/farming-ledger-android.apk",
+                                      "release_notes":  "Adds bag-size conversion for purchased inputs and month-specific staff payslips with leave and overtime summaries.",
                                       "min_build_number":  0,
-                                      "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.21",
-                                      "release_notes":  "Adds bag-size conversion for purchased inputs and month-specific staff payslips with leave and overtime summaries."
-                                  }
+                                      "force_update":  false
+                                  },
+                      "chrome":  {
+                                     "version":  "1.0.21",
+                                     "latest_build_number":  22,
+                                     "download_url":  "https://www.farmingledger.co.za",
+                                     "release_notes":  "Adds bag-size conversion for purchased inputs and month-specific staff payslips with leave and overtime summaries.",
+                                     "min_build_number":  0,
+                                     "force_update":  false
+                                 },
+                      "web":  {
+                                  "version":  "1.0.21",
+                                  "latest_build_number":  22,
+                                  "download_url":  "https://www.farmingledger.co.za",
+                                  "release_notes":  "Adds bag-size conversion for purchased inputs and month-specific staff payslips with leave and overtime summaries.",
+                                  "min_build_number":  0,
+                                  "force_update":  false
+                              }
                   }
 }
