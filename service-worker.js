@@ -1,8 +1,8 @@
-const CACHE_NAME = "farming-ledger-v16";
+const CACHE_NAME = "farming-ledger-v17";
 const APP_SHELL = [
   "/",
   "/index.html",
-  "/styles.css?v=19",
+  "/styles.css?v=20",
   "/assets/dashboard-hay-bales.png",
   "/app.js?v=17",
   "/contact.html",
@@ -20,13 +20,14 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL))
   );
+  self.skipWaiting();
 });
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
       Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)))
-    )
+    ).then(() => self.clients.claim())
   );
 });
 
