@@ -3,44 +3,44 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.26",
-                                  "latest_build_number":  27,
+                                  "version":  "1.0.25",
+                                  "latest_build_number":  26,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Fixes dashboard package visibility, corrects low-stock units, and adds inventory-linked daily crop, poultry health, and livestock feed/treatment costing."
+                                  "release_notes":  "Adds Farm Vehicles with diesel storage, SARS fuel usage logs, eligible diesel tracking, maintenance intervals, inventory-linked service parts, field job costing and telematics-ready security events."
                               },
                       "windows":  {
-                                      "version":  "1.0.26",
-                                      "latest_build_number":  27,
+                                      "version":  "1.0.25",
+                                      "latest_build_number":  26,
                                       "min_build_number":  0,
                                       "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.26",
-                                      "release_notes":  "Fixes dashboard package visibility, corrects low-stock units, and adds inventory-linked daily crop, poultry health, and livestock feed/treatment costing."
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.23",
+                                      "release_notes":  "Adds team roles, livestock modules for cattle, sheep/goats and pigs, livestock finance links, dashboard insights, reports, and subscription-aware access."
                                   },
                       "android":  {
-                                      "version":  "1.0.26",
-                                      "latest_build_number":  27,
+                                      "version":  "1.0.23",
+                                      "latest_build_number":  24,
                                       "min_build_number":  0,
                                       "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.26",
-                                      "release_notes":  "Fixes dashboard package visibility, corrects low-stock units, and adds inventory-linked daily crop, poultry health, and livestock feed/treatment costing."
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.25",
+                                      "release_notes":  "Adds Farm Vehicles with diesel storage, SARS fuel usage logs, eligible diesel tracking, maintenance intervals, inventory-linked service parts, field job costing and telematics-ready security events."
                                   },
                       "chrome":  {
-                                     "version":  "1.0.26",
-                                     "latest_build_number":  27,
+                                     "version":  "1.0.25",
+                                     "latest_build_number":  26,
                                      "min_build_number":  0,
                                      "force_update":  false,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Fixes dashboard package visibility, corrects low-stock units, and adds inventory-linked daily crop, poultry health, and livestock feed/treatment costing."
+                                     "release_notes":  "Adds Farm Vehicles with diesel storage, SARS fuel usage logs, eligible diesel tracking, maintenance intervals, inventory-linked service parts, field job costing and telematics-ready security events."
                                  },
                       "web":  {
-                                  "version":  "1.0.26",
-                                  "latest_build_number":  27,
+                                  "version":  "1.0.25",
+                                  "latest_build_number":  26,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Fixes dashboard package visibility, corrects low-stock units, and adds inventory-linked daily crop, poultry health, and livestock feed/treatment costing."
+                                  "release_notes":  "Adds Farm Vehicles with diesel storage, SARS fuel usage logs, eligible diesel tracking, maintenance intervals, inventory-linked service parts, field job costing and telematics-ready security events."
                               }
                   }
 }
