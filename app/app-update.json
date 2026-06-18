@@ -3,44 +3,44 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.29",
-                                  "latest_build_number":  30,
+                                  "version":  "1.0.30",
+                                  "latest_build_number":  31,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Fixes invoice item additions, dashboard profit totals, existing finance data sync, and adds new-user email notification support."
+                                  "release_notes":  "Corrects dashboard income, expense, and profit totals so profit is always income minus all business expenses."
                               },
                       "windows":  {
-                                      "version":  "1.0.29",
-                                      "latest_build_number":  30,
+                                      "version":  "1.0.30",
+                                      "latest_build_number":  31,
                                       "min_build_number":  0,
                                       "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.29",
-                                      "release_notes":  "Fixes invoice item additions, dashboard profit totals, existing finance data sync, and adds new-user email notification support."
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.30",
+                                      "release_notes":  "Corrects dashboard income, expense, and profit totals so profit is always income minus all business expenses."
                                   },
                       "android":  {
-                                      "version":  "1.0.29",
-                                      "latest_build_number":  30,
+                                      "version":  "1.0.30",
+                                      "latest_build_number":  31,
                                       "min_build_number":  0,
                                       "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.29",
-                                      "release_notes":  "Fixes invoice item additions, dashboard profit totals, existing finance data sync, and adds new-user email notification support."
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.30",
+                                      "release_notes":  "Corrects dashboard income, expense, and profit totals so profit is always income minus all business expenses."
                                   },
                       "chrome":  {
-                                     "version":  "1.0.29",
-                                     "latest_build_number":  30,
+                                     "version":  "1.0.30",
+                                     "latest_build_number":  31,
                                      "min_build_number":  0,
                                      "force_update":  false,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Fixes invoice item additions, dashboard profit totals, existing finance data sync, and adds new-user email notification support."
+                                     "release_notes":  "Corrects dashboard income, expense, and profit totals so profit is always income minus all business expenses."
                                  },
                       "web":  {
-                                  "version":  "1.0.29",
-                                  "latest_build_number":  30,
+                                  "version":  "1.0.30",
+                                  "latest_build_number":  31,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Fixes invoice item additions, dashboard profit totals, existing finance data sync, and adds new-user email notification support."
+                                  "release_notes":  "Corrects dashboard income, expense, and profit totals so profit is always income minus all business expenses."
                               }
                   }
 }
