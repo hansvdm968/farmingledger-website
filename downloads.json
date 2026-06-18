@@ -1,7 +1,7 @@
 {
-    "latestVersion":  "1.0.30",
+    "latestVersion":  "1.0.31",
     "web":  {
-                "version":  "1.0.30",
+                "version":  "1.0.31",
                 "url":  "https://farmingledger.co.za/app/"
             },
     "updatedAt":  "2026-06-18",
@@ -12,7 +12,7 @@
               },
     "ios":  {
                 "url":  "https://farmingledger.co.za/app/",
-                "version":  "1.0.30",
+                "version":  "1.0.31",
                 "size":  "Online app for iPhone and iPad"
             },
     "windows":  {

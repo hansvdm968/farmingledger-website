@@ -71504,7 +71504,7 @@ c3=b4?p.k5("livestock_events",a8):A.e_(A.b([],t.H7),t.E)
 c4=b2?p.k5("planting_batches",a8):A.e_(A.b([],t.H7),t.E)
 c5=b2?p.k5("field_operation_logs",a8):A.e_(A.b([],t.H7),t.E)
 s=4
-return A.c(A.i0(A.b([b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,p.k5("staff_allocations",a8)],t.Df),t.E),$async$Gq)
+return A.c(A.i0(A.b([b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,p.k5("staff_allocations",a8),p.k5("staff_payments",a8),p.k5("commission_entries",a8),p.k5("staff_payslips",a8),p.k5("staff",a8)],t.Df),t.E),$async$Gq)
 case 4:c6=d2
 c5=J.L(c6)
 o=c5.h(c6,0)
@@ -71519,6 +71519,60 @@ g=c5.h(c6,8)
 f=c5.h(c6,9)
 e=c5.h(c6,10)
 d=c5.h(c6,11)
+a6=c5.h(c6,12)
+a7=c5.h(c6,13)
+a8=c5.h(c6,14)
+c9=c5.h(c6,15)
+for(c5=J.aG(c9);c5.u();){a1=c5.gP(c5)
+a2=J.L(a1)
+a3=a2.h(a1,"employment_type")
+a3=a3==null?null:J.m(a3)
+if(a3==null)a3="permanent"
+if(!(a3==="permanent"||a3==="permanent_commission"))continue
+a4=a2.h(a1,"employment_status")
+a4=a4==null?null:J.m(a4)
+if(a4!=null&&a4.length!==0&&a4!=="active")continue
+a5=a2.h(a1,"id")
+a5=a5==null?null:J.m(a5)
+if(a5==null||a5.length===0)continue
+for(b7=!1,c0=J.aG(a8);c0.u();){b5=c0.gP(c0)
+b6=J.L(b5)
+a3=b6.h(b5,"staff_id")
+if(a3!=null&&J.m(a3)===a5&&p.pi(p.hu(b5,A.b(["pay_date","date","created_at"],t.s)),a9)){b7=!0
+break}}if(b7)continue
+a4=p.fJ(a2.h(a1,"daily_rate"))
+if(a4<=0)continue
+b5=a2.h(a1,"uif_exempt")===!0?0:Math.min(a4,17712)*0.01
+l.push(A.ah(["date",B.i.gM(b0.aS().split("T")),"category","Payroll","amount",Math.abs(a4+b5),"description","Staff salary owed"],t.N,t.z))}
+for(c5=J.aG(a6);c5.u();){a1=c5.gP(c5)
+a2=J.L(a1)
+if(a2.h(a1,"expense_id")!=null||a2.h(a1,"payslip_id")!=null)continue
+for(b7=!1,c0=J.aG(c9);c0.u();){b5=c0.gP(c0)
+b6=J.L(b5)
+a4=b6.h(b5,"employment_type")
+a4=a4==null?null:J.m(a4)
+if(a4==null)a4="permanent"
+if(!(a4==="permanent"||a4==="permanent_commission"))continue
+a5=b6.h(b5,"employment_status")
+a5=a5==null?null:J.m(a5)
+if(a5!=null&&a5.length!==0&&a5!=="active")continue
+a5=b6.h(b5,"id")
+if(a5!=null&&a2.h(a1,"staff_id")!=null&&J.m(a5)===J.m(a2.h(a1,"staff_id"))){b7=!0
+break}}if(b7)continue
+a3=p.hu(a1,A.b(["date","created_at"],t.s))
+if(a3==null)a3=a9
+l.push(A.ah(["date",B.i.gM(a3.aS().split("T")),"category","Staff Payment","amount",Math.abs(p.fJ(a2.h(a1,"amount"))),"description","Staff payment"],t.N,t.z))}for(c5=J.aG(a7);c5.u();){a1=c5.gP(c5)
+a2=J.L(a1)
+if(a2.h(a1,"expense_id")!=null)continue
+a3=p.hu(a1,A.b(["date","created_at"],t.s))
+if(a3==null)a3=a9
+l.push(A.ah(["date",B.i.gM(a3.aS().split("T")),"category","Commission","amount",Math.abs(p.fJ(a2.h(a1,"total"))),"description","Staff commission"],t.N,t.z))}for(c5=J.aG(a8);c5.u();){a1=c5.gP(c5)
+a2=J.L(a1)
+if(a2.h(a1,"expense_id")!=null)continue
+a3=p.hu(a1,A.b(["pay_date","date","created_at"],t.s))
+if(a3==null)a3=a9
+a4=p.fJ(a2.h(a1,"gross_pay"))+p.fJ(a2.h(a1,"uif_employer"))
+l.push(A.ah(["date",B.i.gM(a3.aS().split("T")),"category","Payroll","amount",Math.abs(a4),"description","Staff salary and commission"],t.N,t.z))}
 c5=J.ch(o)
 c=c5.aD(o,0,new A.b5L(p))
 c5=c5.d4(o,new A.b5M(p))
@@ -92758,7 +92812,7 @@ return A.bKC(k,a==null?new A.a4(Date.now(),0,!1):a,n,m,a0,p,l,s,o,r,i,j,h,g,q,d,
 $S:518}
 A.azj.prototype={
 lI(a,b,c,d){return this.arD(a,b,!1,d)},
-arD(d0,d1,d2,d3){var s=0,r=A.j(t.Va),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9
+arD(d0,d1,d2,d3){var s=0,r=A.j(t.Va),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d6,d7,d8
 var $async$lI=A.e(function(d4,d5){if(d4===1)return A.f(d5,r)
 for(;;)switch(s){case 0:b9={}
 s=3
@@ -92772,6 +92826,9 @@ c5=c1.R("expenses").aB(0)
 c6=c1.R("staff_payments").c6(0,"amount, date, expense_id, payslip_id, business_id")
 c7=c1.R("commission_entries").c6(0,"total, date, paid, expense_id, business_id")
 c8=c1.R("staff_payslips").c6(0,"gross_pay, uif_employer, pay_date, expense_id, business_id")
+d6=c1.R("staff").c6(0,"id, employment_type, employment_status, daily_rate, uif_exempt, business_id")
+d7=c1.R("staff_day_work").c6(0,"staff_id, amount, date, business_id")
+d8=c1.R("staff_overtime_records").c6(0,"staff_id, amount, work_date, business_id")
 c9=c0!=null
 if(c9&&c0.length!==0){c2=c2.K("business_id",c0)
 c3=c3.K("business_id",c0)
@@ -92779,7 +92836,10 @@ c4=c4.K("business_id",c0)
 c5=c5.K("business_id",c0)
 c6=c6.K("business_id",c0)
 c7=c7.K("business_id",c0)
-c8=c8.K("business_id",c0)}s=4
+c8=c8.K("business_id",c0)
+d6=d6.K("business_id",c0)
+d7=d7.K("business_id",c0)
+d8=d8.K("business_id",c0)}s=4
 return A.c(c2,$async$lI)
 case 4:o=d5
 s=5
@@ -92800,6 +92860,15 @@ case 9:j=d5
 s=10
 return A.c(p.Au(c8),$async$lI)
 case 10:i=d5
+s=45
+return A.c(d6,$async$lI)
+case 45:d6=d5
+s=46
+return A.c(p.Au(d7),$async$lI)
+case 46:d7=d5
+s=47
+return A.c(p.Au(d8),$async$lI)
+case 47:d8=d5
 p.aPV(m)
 b9.a=0
 h=t.i
@@ -92820,9 +92889,77 @@ b=d1.iz(0,a3)
 if(b)c+=a0
 if(A.aF(a3)===A.aF(d)){b=A.aM(a3)-1
 f[b]=f[b]+a0}}a4=new A.azm(b9,d1,g,e)
+for(h=J.aG(d6),b=t.P;h.u();){a5=b.a(h.gP(h))
+a=J.L(a5)
+a1=a.h(a5,"employment_type")
+a1=a1==null?null:J.m(a1)
+if(a1==null)a1="permanent"
+if(!(a1==="permanent"||a1==="permanent_commission"))continue
+a2=a.h(a5,"employment_status")
+a2=a2==null?null:J.m(a2)
+if(a2!=null&&a2.length!==0&&a2!=="active")continue
+a3=a.h(a5,"id")
+a3=a3==null?null:J.m(a3)
+if(a3==null||a3.length===0)continue
+for(a7=!1,a8=J.aG(i);a8.u();){a9=a8.gP(a8)
+b0=J.L(a9)
+b1=b0.h(a9,"staff_id")
+if(b1!=null&&J.m(b1)===a3){b1=b0.h(a9,"pay_date")
+b1=b1==null?null:J.m(b1)
+b1=A.bj(b1==null?"":b1)
+if(b1!=null&&d1.iz(0,b1)){a7=!0
+break}}}if(a7)continue
+a1=A.K(a.h(a5,"daily_rate"))
+if(a1==null)a1=0
+if(a1<=0)continue
+a2=a.h(a5,"uif_exempt")===!0?0:Math.min(a1,17712)*0.01
+a4.$3$amount$category$date(a1+a2,"Payroll",A.aL(A.aF(d),A.aM(d),1,0,0,0,0))}
+for(h=J.aG(d7),b=t.P;h.u();){a5=b.a(h.gP(h))
+a=J.L(a5)
+for(a7=!1,a8=J.aG(i);a8.u();){a9=a8.gP(a8)
+b0=J.L(a9)
+b1=b0.h(a9,"staff_id")
+if(b1!=null&&a.h(a5,"staff_id")!=null&&J.m(b1)===J.m(a.h(a5,"staff_id"))){b1=b0.h(a9,"pay_date")
+b1=b1==null?null:J.m(b1)
+b1=A.bj(b1==null?"":b1)
+if(b1!=null&&d1.iz(0,b1)){a7=!0
+break}}}if(a7)continue
+a1=a.h(a5,"date")
+a1=a1==null?null:J.m(a1)
+a3=A.bj(a1==null?"":a1)
+if(a3==null)a3=new A.a4(Date.now(),0,!1)
+a=A.K(a.h(a5,"amount"))
+a4.$3$amount$category$date(a==null?0:a,"Day Work",a3)}for(h=J.aG(d8),b=t.P;h.u();){a5=b.a(h.gP(h))
+a=J.L(a5)
+for(a7=!1,a8=J.aG(i);a8.u();){a9=a8.gP(a8)
+b0=J.L(a9)
+b1=b0.h(a9,"staff_id")
+if(b1!=null&&a.h(a5,"staff_id")!=null&&J.m(b1)===J.m(a.h(a5,"staff_id"))){b1=b0.h(a9,"pay_date")
+b1=b1==null?null:J.m(b1)
+b1=A.bj(b1==null?"":b1)
+if(b1!=null&&d1.iz(0,b1)){a7=!0
+break}}}if(a7)continue
+a1=a.h(a5,"work_date")
+a1=a1==null?null:J.m(a1)
+a3=A.bj(a1==null?"":a1)
+if(a3==null)a3=new A.a4(Date.now(),0,!1)
+a=A.K(a.h(a5,"amount"))
+a4.$3$amount$category$date(a==null?0:a,"Overtime",a3)}
 for(h=J.aG(k),b=t.P;h.u();){a5=b.a(h.gP(h))
 a=J.L(a5)
 if(a.h(a5,"expense_id")!=null||a.h(a5,"payslip_id")!=null)continue
+for(a7=!1,a8=J.aG(d6);a8.u();){a9=a8.gP(a8)
+b0=J.L(a9)
+b1=b0.h(a9,"employment_type")
+b1=b1==null?null:J.m(b1)
+if(b1==null)b1="permanent"
+if(!(b1==="permanent"||b1==="permanent_commission"))continue
+b2=b0.h(a9,"employment_status")
+b2=b2==null?null:J.m(b2)
+if(b2!=null&&b2.length!==0&&b2!=="active")continue
+b2=b0.h(a9,"id")
+if(b2!=null&&a.h(a5,"staff_id")!=null&&J.m(b2)===J.m(a.h(a5,"staff_id"))){a7=!0
+break}}if(a7)continue
 a1=a.h(a5,"date")
 a1=a1==null?null:J.m(a1)
 a3=A.bj(a1==null?"":a1)

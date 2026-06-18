@@ -3,12 +3,12 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.30",
-                                  "latest_build_number":  31,
+                                  "version":  "1.0.31",
+                                  "latest_build_number":  32,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Corrects dashboard income, expense, and profit totals so profit is always income minus all business expenses."
+                                  "release_notes":  "Includes staff salary, day-work, overtime, and commission owed in dashboard expenses so profit is income minus all earned business expenses."
                               },
                       "windows":  {
                                       "version":  "1.0.30",
@@ -27,28 +27,28 @@
                                       "release_notes":  "Corrects dashboard income, expense, and profit totals so profit is always income minus all business expenses."
                                   },
                       "ios":  {
-                                  "version":  "1.0.30",
-                                  "latest_build_number":  31,
+                                  "version":  "1.0.31",
+                                  "latest_build_number":  32,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
+                                  "release_notes":  "Includes staff salary, day-work, overtime, and commission owed in dashboard expenses so profit is income minus all earned business expenses. iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
                               },
                       "chrome":  {
-                                     "version":  "1.0.30",
-                                     "latest_build_number":  31,
+                                     "version":  "1.0.31",
+                                     "latest_build_number":  32,
                                      "min_build_number":  0,
                                      "force_update":  false,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Corrects dashboard income, expense, and profit totals so profit is always income minus all business expenses."
+                                     "release_notes":  "Includes staff salary, day-work, overtime, and commission owed in dashboard expenses so profit is income minus all earned business expenses."
                                  },
                       "web":  {
-                                  "version":  "1.0.30",
-                                  "latest_build_number":  31,
+                                  "version":  "1.0.31",
+                                  "latest_build_number":  32,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Corrects dashboard income, expense, and profit totals so profit is always income minus all business expenses."
+                                  "release_notes":  "Includes staff salary, day-work, overtime, and commission owed in dashboard expenses so profit is income minus all earned business expenses."
                               }
                   }
 }
