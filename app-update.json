@@ -3,44 +3,44 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.28",
-                                  "latest_build_number":  29,
+                                  "version":  "1.0.29",
+                                  "latest_build_number":  30,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Adds subscription cancellation from settings and Farm Focus visibility controls so paid farm sections can be shown or hidden per account."
+                                  "release_notes":  "Fixes invoice item additions, dashboard profit totals, existing finance data sync, and adds new-user email notification support."
                               },
                       "windows":  {
-                                      "version":  "1.0.28",
-                                      "latest_build_number":  29,
+                                      "version":  "1.0.29",
+                                      "latest_build_number":  30,
                                       "min_build_number":  0,
                                       "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.28",
-                                      "release_notes":  "Adds subscription cancellation from settings and Farm Focus visibility controls so paid farm sections can be shown or hidden per account."
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.29",
+                                      "release_notes":  "Fixes invoice item additions, dashboard profit totals, existing finance data sync, and adds new-user email notification support."
                                   },
                       "android":  {
-                                      "version":  "1.0.28",
-                                      "latest_build_number":  29,
+                                      "version":  "1.0.29",
+                                      "latest_build_number":  30,
                                       "min_build_number":  0,
                                       "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.28",
-                                      "release_notes":  "Adds subscription cancellation from settings and Farm Focus visibility controls so paid farm sections can be shown or hidden per account."
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.29",
+                                      "release_notes":  "Fixes invoice item additions, dashboard profit totals, existing finance data sync, and adds new-user email notification support."
                                   },
                       "chrome":  {
-                                     "version":  "1.0.28",
-                                     "latest_build_number":  29,
+                                     "version":  "1.0.29",
+                                     "latest_build_number":  30,
                                      "min_build_number":  0,
                                      "force_update":  false,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Adds subscription cancellation from settings and Farm Focus visibility controls so paid farm sections can be shown or hidden per account."
+                                     "release_notes":  "Fixes invoice item additions, dashboard profit totals, existing finance data sync, and adds new-user email notification support."
                                  },
                       "web":  {
-                                  "version":  "1.0.28",
-                                  "latest_build_number":  29,
+                                  "version":  "1.0.29",
+                                  "latest_build_number":  30,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Adds subscription cancellation from settings and Farm Focus visibility controls so paid farm sections can be shown or hidden per account."
+                                  "release_notes":  "Fixes invoice item additions, dashboard profit totals, existing finance data sync, and adds new-user email notification support."
                               }
                   }
 }
