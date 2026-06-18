@@ -1,5 +1,5 @@
 const STORAGE_KEY = "farm-ledger-records";
-const DOWNLOADS_MANIFEST = "downloads.json?v=15";
+const DOWNLOADS_MANIFEST = "downloads.json?v=16";
 const CONTACT_EMAIL = "info@vdmfarming.co.za";
 
 const starterRecords = [
@@ -61,8 +61,10 @@ const fieldFilter = document.querySelector("#fieldFilter");
 const categoryFilter = document.querySelector("#categoryFilter");
 const downloadStatus = document.querySelector("#downloadStatus");
 const phoneDownload = document.querySelector("#phoneDownload");
+const iosDownload = document.querySelector("#iosDownload");
 const windowsDownload = document.querySelector("#windowsDownload");
 const phoneVersion = document.querySelector("#phoneVersion");
+const iosVersion = document.querySelector("#iosVersion");
 const windowsVersion = document.querySelector("#windowsVersion");
 const manifestUpdated = document.querySelector("#manifestUpdated");
 const webAppLink = document.querySelector("#webAppLink");
@@ -157,6 +159,7 @@ rows?.addEventListener("click", (event) => {
 });
 
 webAppLink?.addEventListener("click", handleAppAction);
+iosDownload?.addEventListener("click", handleAppAction);
 appPopupClose?.addEventListener("click", closeAppPopup);
 appPopup?.addEventListener("click", (event) => {
   if (event.target === appPopup) {
@@ -295,6 +298,9 @@ async function loadDownloadLinks() {
 
     const manifest = await response.json();
     applyDownloadLink(phoneDownload, phoneVersion, manifest.phone);
+    if (iosDownload && iosVersion) {
+      applyDownloadLink(iosDownload, iosVersion, manifest.ios);
+    }
     applyDownloadLink(windowsDownload, windowsVersion, manifest.windows);
     if (manifest.web?.url && webAppLink) {
       webAppLink.href = manifest.web.url;
@@ -311,6 +317,9 @@ async function loadDownloadLinks() {
   } catch {
     downloadStatus.textContent = "Download links are temporarily unavailable. Please try again shortly.";
     phoneVersion.textContent = "Latest link unavailable";
+    if (iosVersion) {
+      iosVersion.textContent = "Latest link unavailable";
+    }
     windowsVersion.textContent = "Latest link unavailable";
     manifestUpdated.textContent = "Release manifest unavailable";
   }

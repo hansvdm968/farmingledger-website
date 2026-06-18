@@ -26,6 +26,14 @@
                                       "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.30",
                                       "release_notes":  "Corrects dashboard income, expense, and profit totals so profit is always income minus all business expenses."
                                   },
+                      "ios":  {
+                                  "version":  "1.0.30",
+                                  "latest_build_number":  31,
+                                  "min_build_number":  0,
+                                  "force_update":  false,
+                                  "download_url":  "https://farmingledger.co.za/app/",
+                                  "release_notes":  "iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
+                              },
                       "chrome":  {
                                      "version":  "1.0.30",
                                      "latest_build_number":  31,
