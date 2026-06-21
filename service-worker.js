@@ -12,7 +12,7 @@ const APP_SHELL = [
   "/terms-of-use.html",
   "/security.html",
   "/assets/farming-ledger-logo.png?v=1.0.7",
-  "/downloads.json?v=16",
+  "/downloads.json?v=17",
   "/site.webmanifest"
 ];
 

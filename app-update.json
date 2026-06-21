@@ -3,52 +3,52 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.31",
-                                  "latest_build_number":  32,
+                                  "version":  "1.0.32",
+                                  "latest_build_number":  33,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Includes staff salary, day-work, overtime, and commission owed in dashboard expenses so profit is income minus all earned business expenses."
+                                  "release_notes":  "Adds editable daily crop entries, expense-derived inventory unit costs, liquid and seed inventory units, and weighted general crop expense allocation across active planting batches."
                               },
                       "windows":  {
-                                      "version":  "1.0.31",
-                                      "latest_build_number":  32,
+                                      "version":  "1.0.32",
+                                      "latest_build_number":  33,
                                       "min_build_number":  0,
                                       "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.31",
-                                      "release_notes":  "Includes staff salary, day-work, overtime, and commission owed in dashboard expenses so profit is income minus all earned business expenses."
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.32",
+                                      "release_notes":  "Adds editable daily crop entries, expense-derived inventory unit costs, liquid and seed inventory units, and weighted general crop expense allocation across active planting batches."
                                   },
                       "android":  {
-                                      "version":  "1.0.31",
-                                      "latest_build_number":  32,
+                                      "version":  "1.0.32",
+                                      "latest_build_number":  33,
                                       "min_build_number":  0,
                                       "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.31",
-                                      "release_notes":  "Includes staff salary, day-work, overtime, and commission owed in dashboard expenses so profit is income minus all earned business expenses."
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.32",
+                                      "release_notes":  "Adds editable daily crop entries, expense-derived inventory unit costs, liquid and seed inventory units, and weighted general crop expense allocation across active planting batches."
                                   },
                       "ios":  {
-                                  "version":  "1.0.31",
-                                  "latest_build_number":  32,
+                                  "version":  "1.0.32",
+                                  "latest_build_number":  33,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Includes staff salary, day-work, overtime, and commission owed in dashboard expenses so profit is income minus all earned business expenses. iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
+                                  "release_notes":  "Adds editable daily crop entries, expense-derived inventory unit costs, liquid and seed inventory units, and weighted general crop expense allocation across active planting batches. iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
                               },
                       "chrome":  {
-                                     "version":  "1.0.31",
-                                     "latest_build_number":  32,
+                                     "version":  "1.0.32",
+                                     "latest_build_number":  33,
                                      "min_build_number":  0,
                                      "force_update":  false,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Includes staff salary, day-work, overtime, and commission owed in dashboard expenses so profit is income minus all earned business expenses."
+                                     "release_notes":  "Adds editable daily crop entries, expense-derived inventory unit costs, liquid and seed inventory units, and weighted general crop expense allocation across active planting batches."
                                  },
                       "web":  {
-                                  "version":  "1.0.31",
-                                  "latest_build_number":  32,
+                                  "version":  "1.0.32",
+                                  "latest_build_number":  33,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Includes staff salary, day-work, overtime, and commission owed in dashboard expenses so profit is income minus all earned business expenses."
+                                  "release_notes":  "Adds editable daily crop entries, expense-derived inventory unit costs, liquid and seed inventory units, and weighted general crop expense allocation across active planting batches."
                               }
                   }
 }
