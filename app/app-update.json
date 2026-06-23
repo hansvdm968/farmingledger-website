@@ -3,52 +3,52 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.32",
-                                  "latest_build_number":  33,
+                                  "version":  "1.0.33",
+                                  "latest_build_number":  34,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Adds editable daily crop entries, expense-derived inventory unit costs, liquid and seed inventory units, and weighted general crop expense allocation across active planting batches."
+                                  "release_notes":  "Fixes invoice saving when harvest records are linked to planting batches after the crop daily-entry update."
                               },
                       "windows":  {
-                                      "version":  "1.0.32",
-                                      "latest_build_number":  33,
+                                      "version":  "1.0.33",
+                                      "latest_build_number":  34,
                                       "min_build_number":  0,
                                       "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.32",
-                                      "release_notes":  "Adds editable daily crop entries, expense-derived inventory unit costs, liquid and seed inventory units, and weighted general crop expense allocation across active planting batches."
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.33",
+                                      "release_notes":  "Fixes invoice saving when harvest records are linked to planting batches after the crop daily-entry update."
                                   },
                       "android":  {
-                                      "version":  "1.0.32",
-                                      "latest_build_number":  33,
+                                      "version":  "1.0.33",
+                                      "latest_build_number":  34,
                                       "min_build_number":  0,
                                       "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.32",
-                                      "release_notes":  "Adds editable daily crop entries, expense-derived inventory unit costs, liquid and seed inventory units, and weighted general crop expense allocation across active planting batches."
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.33",
+                                      "release_notes":  "Fixes invoice saving when harvest records are linked to planting batches after the crop daily-entry update."
                                   },
                       "ios":  {
-                                  "version":  "1.0.32",
-                                  "latest_build_number":  33,
+                                  "version":  "1.0.33",
+                                  "latest_build_number":  34,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Adds editable daily crop entries, expense-derived inventory unit costs, liquid and seed inventory units, and weighted general crop expense allocation across active planting batches. iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
+                                  "release_notes":  "Fixes invoice saving when harvest records are linked to planting batches after the crop daily-entry update. iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
                               },
                       "chrome":  {
-                                     "version":  "1.0.32",
-                                     "latest_build_number":  33,
+                                     "version":  "1.0.33",
+                                     "latest_build_number":  34,
                                      "min_build_number":  0,
                                      "force_update":  false,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Adds editable daily crop entries, expense-derived inventory unit costs, liquid and seed inventory units, and weighted general crop expense allocation across active planting batches."
+                                     "release_notes":  "Fixes invoice saving when harvest records are linked to planting batches after the crop daily-entry update."
                                  },
                       "web":  {
-                                  "version":  "1.0.32",
-                                  "latest_build_number":  33,
+                                  "version":  "1.0.33",
+                                  "latest_build_number":  34,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Adds editable daily crop entries, expense-derived inventory unit costs, liquid and seed inventory units, and weighted general crop expense allocation across active planting batches."
+                                  "release_notes":  "Fixes invoice saving when harvest records are linked to planting batches after the crop daily-entry update."
                               }
                   }
 }

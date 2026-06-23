@@ -46577,7 +46577,7 @@ $S:6}
 A.bAN.prototype={
 $1(a){var s=A.fV().b
 s=s==null?null:s.canvasKitBaseUrl
-return(s==null?"https://www.gstatic.com/flutter-canvaskit/77e2e94772b6eb43759e34ed1ad7da4674e19cab/":s)+a},
+return(s==null?"https://www.gstatic.com/flutter-canvaskit/a4ce257c68517c1410f4b48ac9852ab5642a3f8d/":s)+a},
 $S:36}
 A.a6g.prototype={
 gF(a){var s=this.a
@@ -93647,7 +93647,7 @@ as6(a){var s=0,r=A.j(t.ua),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d
 var $async$tg=A.e(function(b,c){if(b===1)return A.f(c,r)
 for(;;)switch(s){case 0:o=p.a
 s=3
-return A.c(o.R("harvests").c_(0,"price, quantity, planting_batches!inner(field_id)").K("planting_batches.field_id",a),$async$tg)
+return A.c(o.R("harvests").c_(0,"price, quantity, batch:planting_batches!fk_harvests_batch!inner(field_id)").K("batch.field_id",a),$async$tg)
 case 3:n=c
 s=4
 return A.c(o.R("blocks").c_(0,"id").K("field_id",a),$async$tg)
@@ -95627,14 +95627,14 @@ break
 case 4:k=[]
 s=5
 break
-case 6:n=p.a.R("harvests").c_(0,"id, planting_batch_id, planting_batches(field_id, block_id)").pU("id",m)
+case 6:n=p.a.R("harvests").c_(0,"id, planting_batch_id, batch:planting_batches!fk_harvests_batch(field_id, block_id)").pU("id",m)
 s=7
 return A.c(n.K("business_id",l==null?"":l),$async$uY)
 case 7:k=a4
 case 5:j=A.E(t.N,t._o)
 for(n=J.aD(k),i=t.nA;n.u();){h=n.gP(n)
 g=J.K(h)
-f=i.a(g.h(h,"planting_batches"))
+f=i.a(g.h(h,"batch"))
 e=g.h(h,"id")
 e=e==null?null:J.l(e)
 if(e==null)e=""
