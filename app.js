@@ -1,5 +1,5 @@
 const STORAGE_KEY = "farm-ledger-records";
-const DOWNLOADS_MANIFEST = "downloads.json?v=17";
+const DOWNLOADS_MANIFEST = "downloads.json?v=18";
 const CONTACT_EMAIL = "info@vdmfarming.co.za";
 
 const starterRecords = [
