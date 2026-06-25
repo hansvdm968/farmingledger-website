@@ -8,12 +8,14 @@
     <link rel="icon" href="assets/farming-ledger-logo.png">
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#0b1115">
-    <link rel="stylesheet" href="styles.css?v=20">
+    <link rel="preload" as="style" href="styles.css?v=22">
+    <link rel="stylesheet" href="styles.css?v=22" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="styles.css?v=22"></noscript>
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Farming Ledger home">
-        <img src="assets/farming-ledger-logo.png" alt="" class="brand-logo">
+        <img src="assets/farming-ledger-logo.png" alt="" class="brand-logo" width="42" height="42">
         <span>Farming Ledger</span>
       </a>
       <nav aria-label="Main navigation">
@@ -28,6 +30,10 @@
 
     <main id="top">
       <section class="hero" aria-labelledby="heroTitle">
+        <picture class="hero-media" aria-hidden="true">
+          <source srcset="assets/hero-field-800.jpg 800w, assets/hero-field-1200.jpg 1200w" sizes="100vw">
+          <img src="assets/hero-field-800.jpg" alt="" width="800" height="450" fetchpriority="high" decoding="async">
+        </picture>
         <div class="hero-copy-block">
           <h1 id="heroTitle">Farm records and production management.</h1>
           <p class="hero-copy">Farming Ledger gives growers and livestock teams one place to manage money, crops, poultry, flocks, daily records, feed, and water data.</p>
@@ -59,21 +65,21 @@
 
       <section class="farm-gallery" aria-label="Agricultural operations">
         <article>
-          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80" alt="Crop fields">
+          <img src="assets/gallery-crops-520.jpg" srcset="assets/gallery-crops-360.jpg 360w, assets/gallery-crops-520.jpg 520w, assets/gallery-crops-720.jpg 720w" sizes="(max-width: 760px) calc(100vw - 36px), 31vw" width="520" height="347" loading="lazy" decoding="async" alt="Crop fields">
           <div>
             <strong>Crop planning</strong>
             <span>Track planting, inputs, harvests, and field performance from one record trail.</span>
           </div>
         </article>
         <article>
-          <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=900&q=80" alt="Fresh produce">
+          <img src="assets/gallery-harvest-520.jpg" srcset="assets/gallery-harvest-360.jpg 360w, assets/gallery-harvest-520.jpg 520w, assets/gallery-harvest-720.jpg 720w" sizes="(max-width: 760px) calc(100vw - 36px), 31vw" width="520" height="347" loading="lazy" decoding="async" alt="Fresh produce">
           <div>
             <strong>Harvest records</strong>
             <span>Keep production, sales, and daily farm work connected to your finances.</span>
           </div>
         </article>
         <article>
-          <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=900&q=80" alt="Poultry farm">
+          <img src="assets/gallery-poultry-520.jpg" srcset="assets/gallery-poultry-360.jpg 360w, assets/gallery-poultry-520.jpg 520w, assets/gallery-poultry-720.jpg 720w" sizes="(max-width: 760px) calc(100vw - 36px), 31vw" width="520" height="347" loading="lazy" decoding="async" alt="Poultry farm">
           <div>
             <strong>Poultry management</strong>
             <span>Follow flocks, feed, mortality, water, and daily production.</span>

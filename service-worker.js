@@ -1,19 +1,10 @@
-const CACHE_NAME = "farming-ledger-v17";
+const CACHE_NAME = "farming-ledger-v19";
 const APP_SHELL = [
   "/",
   "/index.html",
-  "/styles.css?v=20",
-  "/assets/dashboard-hay-bales.png",
-  "/app.js?v=17",
-  "/contact.html",
-  "/pricing.html",
-  "/privacy-policy.html",
-  "/cookie-notice.html",
-  "/terms-of-use.html",
-  "/security.html",
-  "/assets/farming-ledger-logo.png?v=1.0.7",
-  "/downloads.json?v=18",
-  "/site.webmanifest"
+  "/styles.css?v=22",
+  "/app.js?v=18",
+  "/assets/farming-ledger-logo.png?v=1.0.8"
 ];
 
 self.addEventListener("install", (event) => {
@@ -34,11 +25,16 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
 
+  const requestUrl = new URL(event.request.url);
+  if (requestUrl.origin !== self.location.origin) return;
+
   event.respondWith(
-    fetch(event.request)
+    caches.match(event.request).then((cached) => cached || fetch(event.request))
       .then((response) => {
-        const clone = response.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+        if (response.ok) {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+        }
         return response;
       })
       .catch(() => caches.match(event.request).then((cached) => cached || caches.match("/index.html")))

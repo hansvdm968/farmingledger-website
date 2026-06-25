@@ -288,9 +288,7 @@ async function loadDownloadLinks() {
   if (!phoneDownload || !windowsDownload) return;
 
   try {
-    const response = await fetch(`${DOWNLOADS_MANIFEST}?t=${Date.now()}`, {
-      cache: "no-store"
-    });
+    const response = await fetch(DOWNLOADS_MANIFEST);
 
     if (!response.ok) {
       throw new Error(`Manifest returned ${response.status}`);
@@ -417,9 +415,27 @@ function closeAppPopup() {
   appPopup?.setAttribute("aria-hidden", "true");
 }
 
-loadDownloadLinks();
+scheduleDownloadManifestLoad();
 registerServiceWorker();
 render();
+
+function scheduleDownloadManifestLoad() {
+  if (!phoneDownload || !windowsDownload) return;
+
+  const downloadSection = document.querySelector("#download");
+  if (!downloadSection || !("IntersectionObserver" in window)) {
+    window.addEventListener("load", () => window.setTimeout(loadDownloadLinks, 1500), { once: true });
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    if (!entries.some((entry) => entry.isIntersecting)) return;
+    observer.disconnect();
+    loadDownloadLinks();
+  }, { rootMargin: "240px" });
+
+  observer.observe(downloadSection);
+}
 
 function registerServiceWorker() {
   if (!("serviceWorker" in navigator)) return;
