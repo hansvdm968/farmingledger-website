@@ -3,52 +3,52 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.34",
-                                  "latest_build_number":  35,
+                                  "version":  "1.0.35",
+                                  "latest_build_number":  36,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Adds the Batch Records release with on-device printed ear tag OCR, keeps manual entry for damaged tags, and refreshes the web, Android, and Windows builds."
+                                  "release_notes":  "Fixes Android update package identity, invoice item saving, and invoice edit speed. Keeps printed tag OCR in the installed Android app and clarifies that mobile web scans barcode tags only."
                               },
                       "windows":  {
-                                      "version":  "1.0.34",
-                                      "latest_build_number":  35,
+                                      "version":  "1.0.35",
+                                      "latest_build_number":  36,
                                       "min_build_number":  0,
                                       "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.34",
-                                      "release_notes":  "Adds the Batch Records release with on-device printed ear tag OCR, keeps manual entry for damaged tags, and refreshes the Windows desktop build."
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.35",
+                                      "release_notes":  "Fixes invoice item saving and refreshes the Windows desktop build."
                                   },
                       "android":  {
-                                      "version":  "1.0.34",
-                                      "latest_build_number":  35,
+                                      "version":  "1.0.35",
+                                      "latest_build_number":  36,
                                       "min_build_number":  0,
                                       "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.34",
-                                      "release_notes":  "Adds the Batch Records release with on-device printed ear tag OCR, keeps manual entry for damaged tags, and refreshes the Android mobile build."
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.35",
+                                      "release_notes":  "Fixes Android update package identity so the APK updates the existing app, improves invoice item saving, and keeps on-device printed tag OCR in the installed Android app."
                                   },
                       "ios":  {
-                                  "version":  "1.0.34",
-                                  "latest_build_number":  35,
+                                  "version":  "1.0.35",
+                                  "latest_build_number":  36,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Adds the Batch Records release with on-device printed ear tag OCR for supported mobile builds. iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
+                                  "release_notes":  "Fixes invoice item saving. iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
                               },
                       "chrome":  {
-                                     "version":  "1.0.34",
-                                     "latest_build_number":  35,
+                                     "version":  "1.0.35",
+                                     "latest_build_number":  36,
                                      "min_build_number":  0,
                                      "force_update":  false,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Adds the Batch Records release with updated web app files and refreshed downloads."
+                                     "release_notes":  "Fixes invoice item saving and updates the web app. Mobile web scans barcode tags; printed tag OCR is available in the installed Android app."
                                  },
                       "web":  {
-                                  "version":  "1.0.34",
-                                  "latest_build_number":  35,
+                                  "version":  "1.0.35",
+                                  "latest_build_number":  36,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Adds the Batch Records release with updated web app files and refreshed downloads."
+                                  "release_notes":  "Fixes invoice item saving and updates the web app. Mobile web scans barcode tags; printed tag OCR is available in the installed Android app."
                               }
                   }
 }
