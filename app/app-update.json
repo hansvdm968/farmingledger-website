@@ -3,52 +3,52 @@
     "source":  "https://farmingledger.co.za/app/",
     "platforms":  {
                       "all":  {
-                                  "version":  "1.0.33",
-                                  "latest_build_number":  34,
+                                  "version":  "1.0.34",
+                                  "latest_build_number":  35,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Fixes invoice saving when harvest records are linked to planting batches after the crop daily-entry update."
+                                  "release_notes":  "Adds the Batch Records release with on-device printed ear tag OCR, keeps manual entry for damaged tags, and refreshes the web, Android, and Windows builds."
                               },
                       "windows":  {
-                                      "version":  "1.0.33",
-                                      "latest_build_number":  34,
+                                      "version":  "1.0.34",
+                                      "latest_build_number":  35,
                                       "min_build_number":  0,
                                       "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.33",
-                                      "release_notes":  "Fixes invoice saving when harvest records are linked to planting batches after the crop daily-entry update."
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.34",
+                                      "release_notes":  "Adds the Batch Records release with on-device printed ear tag OCR, keeps manual entry for damaged tags, and refreshes the Windows desktop build."
                                   },
                       "android":  {
-                                      "version":  "1.0.33",
-                                      "latest_build_number":  34,
+                                      "version":  "1.0.34",
+                                      "latest_build_number":  35,
                                       "min_build_number":  0,
                                       "force_update":  false,
-                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.33",
-                                      "release_notes":  "Fixes invoice saving when harvest records are linked to planting batches after the crop daily-entry update."
+                                      "download_url":  "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.34",
+                                      "release_notes":  "Adds the Batch Records release with on-device printed ear tag OCR, keeps manual entry for damaged tags, and refreshes the Android mobile build."
                                   },
                       "ios":  {
-                                  "version":  "1.0.33",
-                                  "latest_build_number":  34,
+                                  "version":  "1.0.34",
+                                  "latest_build_number":  35,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Fixes invoice saving when harvest records are linked to planting batches after the crop daily-entry update. iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
+                                  "release_notes":  "Adds the Batch Records release with on-device printed ear tag OCR for supported mobile builds. iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
                               },
                       "chrome":  {
-                                     "version":  "1.0.33",
-                                     "latest_build_number":  34,
+                                     "version":  "1.0.34",
+                                     "latest_build_number":  35,
                                      "min_build_number":  0,
                                      "force_update":  false,
                                      "download_url":  "https://farmingledger.co.za/app/",
-                                     "release_notes":  "Fixes invoice saving when harvest records are linked to planting batches after the crop daily-entry update."
+                                     "release_notes":  "Adds the Batch Records release with updated web app files and refreshed downloads."
                                  },
                       "web":  {
-                                  "version":  "1.0.33",
-                                  "latest_build_number":  34,
+                                  "version":  "1.0.34",
+                                  "latest_build_number":  35,
                                   "min_build_number":  0,
                                   "force_update":  false,
                                   "download_url":  "https://farmingledger.co.za/app/",
-                                  "release_notes":  "Fixes invoice saving when harvest records are linked to planting batches after the crop daily-entry update."
+                                  "release_notes":  "Adds the Batch Records release with updated web app files and refreshed downloads."
                               }
                   }
 }
