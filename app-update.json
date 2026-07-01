@@ -3,52 +3,52 @@
   "source": "https://farmingledger.co.za/app/",
   "platforms": {
     "all": {
-      "version": "1.0.37",
-      "latest_build_number": 38,
+      "version": "1.0.39",
+      "latest_build_number": 40,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Polishes Quick Records icons so cattle, pigs and sheep match the sidebar, and aligns the Quick Records action icon with the rest of the app design."
+      "release_notes": "Improves invoice item saving and totals, respects partial agent harvest allocation quantities, refreshes the login screen, and polishes Quick Records icons and tag scanning."
     },
     "windows": {
-      "version": "1.0.37",
-      "latest_build_number": 38,
+      "version": "1.0.39",
+      "latest_build_number": 40,
       "min_build_number": 0,
       "force_update": false,
-      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.37",
-      "release_notes": "Adds Quick Records, expanded livestock record types, adaptive setup fields, and matching livestock/sidebar icons."
+      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.39",
+      "release_notes": "Improves invoice item saving and totals, respects partial agent harvest allocation quantities, refreshes the login screen, and polishes Quick Records icons and tag scanning."
     },
     "android": {
-      "version": "1.0.38",
-      "latest_build_number": 39,
+      "version": "1.0.39",
+      "latest_build_number": 40,
       "min_build_number": 0,
       "force_update": false,
-      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.38",
-      "release_notes": "Fixes Android app identity so the APK updates the original Farming Ledger app icon instead of installing a second icon. Keeps Quick Records and on-device printed tag OCR."
+      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.39",
+      "release_notes": "Improves invoice item saving and totals, respects partial agent harvest allocation quantities, refreshes the login screen, keeps the original Android app identity, and improves Quick Records tag scanning."
     },
     "ios": {
-      "version": "1.0.37",
-      "latest_build_number": 38,
+      "version": "1.0.39",
+      "latest_build_number": 40,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Polishes Quick Records icons in the online app. iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
+      "release_notes": "Improves invoice item saving and totals, respects partial agent harvest allocation quantities, refreshes the login screen, and polishes Quick Records icons."
     },
     "chrome": {
-      "version": "1.0.37",
-      "latest_build_number": 38,
+      "version": "1.0.39",
+      "latest_build_number": 40,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Polishes Quick Records icons so cattle, pigs and sheep match the sidebar."
+      "release_notes": "Improves invoice item saving and totals, respects partial agent harvest allocation quantities, refreshes the login screen, and polishes Quick Records icons."
     },
     "web": {
-      "version": "1.0.37",
-      "latest_build_number": 38,
+      "version": "1.0.39",
+      "latest_build_number": 40,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Polishes Quick Records icons so cattle, pigs and sheep match the sidebar."
+      "release_notes": "Improves invoice item saving and totals, respects partial agent harvest allocation quantities, refreshes the login screen, and polishes Quick Records icons."
     }
   }
 }
