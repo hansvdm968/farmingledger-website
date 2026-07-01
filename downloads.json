@@ -1,23 +1,23 @@
-{
-    "latestVersion":  "1.0.36",
+﻿{
+    "latestVersion":  "1.0.37",
     "web":  {
-                "version":  "1.0.36",
+                "version":  "1.0.37",
                 "url":  "https://farmingledger.co.za/app/"
             },
     "updatedAt":  "2026-07-01",
     "phone":  {
-                  "url":  "downloads/farming-ledger-mobile-app.apk?v=1.0.35",
-                  "version":  "1.0.35",
-                  "size":  "72,4 MB APK"
+                  "url":  "downloads/farming-ledger-mobile-app.apk?v=1.0.37",
+                  "version":  "1.0.37",
+                  "size":  "45,8 MB APK"
               },
     "ios":  {
                 "url":  "https://farmingledger.co.za/app/",
-                "version":  "1.0.36",
+                "version":  "1.0.37",
                 "size":  "Online app for iPhone and iPad"
             },
     "windows":  {
-                    "url":  "downloads/farming-ledger-windows-app.zip?v=1.0.35",
-                    "version":  "1.0.35",
-                    "size":  "20,8 MB ZIP"
+                    "url":  "downloads/farming-ledger-windows-app.zip?v=1.0.37",
+                    "version":  "1.0.37",
+                    "size":  "21,8 MB ZIP"
                 }
 }

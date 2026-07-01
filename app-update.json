@@ -3,52 +3,52 @@
   "source": "https://farmingledger.co.za/app/",
   "platforms": {
     "all": {
-      "version": "1.0.36",
-      "latest_build_number": 37,
+      "version": "1.0.37",
+      "latest_build_number": 38,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Adds Quick Records for faster livestock work entries, expands treatment and farm-work record types, and adapts the setup form for medicine, pregnancy, weight, movement, ID, vet procedure and other animal records."
+      "release_notes": "Polishes Quick Records icons so cattle, pigs and sheep match the sidebar, and aligns the Quick Records action icon with the rest of the app design."
     },
     "windows": {
-      "version": "1.0.35",
-      "latest_build_number": 36,
+      "version": "1.0.37",
+      "latest_build_number": 38,
       "min_build_number": 0,
       "force_update": false,
-      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.35",
-      "release_notes": "Fixes invoice item saving and refreshes the Windows desktop build."
+      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.37",
+      "release_notes": "Adds Quick Records, expanded livestock record types, adaptive setup fields, and matching livestock/sidebar icons."
     },
     "android": {
-      "version": "1.0.35",
-      "latest_build_number": 36,
+      "version": "1.0.37",
+      "latest_build_number": 38,
       "min_build_number": 0,
       "force_update": false,
-      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.35",
-      "release_notes": "Fixes Android update package identity so the APK updates the existing app, improves invoice item saving, and keeps on-device printed tag OCR in the installed Android app."
+      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.37",
+      "release_notes": "Adds Quick Records, expanded livestock record types, adaptive setup fields, and matching livestock/sidebar icons. Keeps on-device printed tag OCR in the installed Android app."
     },
     "ios": {
-      "version": "1.0.36",
-      "latest_build_number": 37,
+      "version": "1.0.37",
+      "latest_build_number": 38,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Adds Quick Records to the online app. iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
+      "release_notes": "Polishes Quick Records icons in the online app. iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
     },
     "chrome": {
-      "version": "1.0.36",
-      "latest_build_number": 37,
+      "version": "1.0.37",
+      "latest_build_number": 38,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Adds Quick Records, expanded livestock record types and adaptive setup fields to the web app."
+      "release_notes": "Polishes Quick Records icons so cattle, pigs and sheep match the sidebar."
     },
     "web": {
-      "version": "1.0.36",
-      "latest_build_number": 37,
+      "version": "1.0.37",
+      "latest_build_number": 38,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Adds Quick Records, expanded livestock record types and adaptive setup fields to the web app."
+      "release_notes": "Polishes Quick Records icons so cattle, pigs and sheep match the sidebar."
     }
   }
 }
