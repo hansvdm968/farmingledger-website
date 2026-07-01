@@ -19,12 +19,12 @@
       "release_notes": "Adds Quick Records, expanded livestock record types, adaptive setup fields, and matching livestock/sidebar icons."
     },
     "android": {
-      "version": "1.0.37",
-      "latest_build_number": 38,
+      "version": "1.0.38",
+      "latest_build_number": 39,
       "min_build_number": 0,
       "force_update": false,
-      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.37",
-      "release_notes": "Adds Quick Records, expanded livestock record types, adaptive setup fields, and matching livestock/sidebar icons. Keeps on-device printed tag OCR in the installed Android app."
+      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.38",
+      "release_notes": "Fixes Android app identity so the APK updates the original Farming Ledger app icon instead of installing a second icon. Keeps Quick Records and on-device printed tag OCR."
     },
     "ios": {
       "version": "1.0.37",
