@@ -3,12 +3,12 @@
   "source": "https://farmingledger.co.za/app/",
   "platforms": {
     "all": {
-      "version": "1.0.39",
-      "latest_build_number": 40,
+      "version": "1.0.41",
+      "latest_build_number": 42,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Improves invoice item saving and totals, respects partial agent harvest allocation quantities, refreshes the login screen, and polishes Quick Records icons and tag scanning."
+      "release_notes": "Allows repeated invoice lines from the same harvest allocation until the available harvested stock is used up."
     },
     "windows": {
       "version": "1.0.39",
@@ -19,36 +19,36 @@
       "release_notes": "Improves invoice item saving and totals, respects partial agent harvest allocation quantities, refreshes the login screen, and polishes Quick Records icons and tag scanning."
     },
     "android": {
-      "version": "1.0.40",
-      "latest_build_number": 41,
+      "version": "1.0.41",
+      "latest_build_number": 42,
       "min_build_number": 0,
       "force_update": false,
-      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.40",
-      "release_notes": "Adds Android signing rotation support so older Farming Ledger installs can update cleanly without creating another app icon."
+      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.41",
+      "release_notes": "Allows repeated invoice lines from the same harvest allocation until the available harvested stock is used up."
     },
     "ios": {
-      "version": "1.0.39",
-      "latest_build_number": 40,
+      "version": "1.0.41",
+      "latest_build_number": 42,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Improves invoice item saving and totals, respects partial agent harvest allocation quantities, refreshes the login screen, and polishes Quick Records icons."
+      "release_notes": "Allows repeated invoice lines from the same harvest allocation until the available harvested stock is used up."
     },
     "chrome": {
-      "version": "1.0.39",
-      "latest_build_number": 40,
+      "version": "1.0.41",
+      "latest_build_number": 42,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Improves invoice item saving and totals, respects partial agent harvest allocation quantities, refreshes the login screen, and polishes Quick Records icons."
+      "release_notes": "Allows repeated invoice lines from the same harvest allocation until the available harvested stock is used up."
     },
     "web": {
-      "version": "1.0.39",
-      "latest_build_number": 40,
+      "version": "1.0.41",
+      "latest_build_number": 42,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Improves invoice item saving and totals, respects partial agent harvest allocation quantities, refreshes the login screen, and polishes Quick Records icons."
+      "release_notes": "Allows repeated invoice lines from the same harvest allocation until the available harvested stock is used up."
     }
   }
 }
