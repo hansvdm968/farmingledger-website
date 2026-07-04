@@ -3,12 +3,12 @@
   "source": "https://farmingledger.co.za/app/",
   "platforms": {
     "all": {
-      "version": "1.0.41",
-      "latest_build_number": 42,
+      "version": "1.0.42",
+      "latest_build_number": 43,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Allows repeated invoice lines from the same harvest allocation until the available harvested stock is used up."
+      "release_notes": "Fixes staff commission and salary expense links so payroll is shown on the correct accounts without double-counting."
     },
     "windows": {
       "version": "1.0.39",
@@ -19,36 +19,36 @@
       "release_notes": "Improves invoice item saving and totals, respects partial agent harvest allocation quantities, refreshes the login screen, and polishes Quick Records icons and tag scanning."
     },
     "android": {
-      "version": "1.0.41",
-      "latest_build_number": 42,
+      "version": "1.0.42",
+      "latest_build_number": 43,
       "min_build_number": 0,
       "force_update": false,
-      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.41",
-      "release_notes": "Allows repeated invoice lines from the same harvest allocation until the available harvested stock is used up."
+      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.42",
+      "release_notes": "Fixes staff commission and salary expense links so payroll is shown on the correct accounts without double-counting."
     },
     "ios": {
-      "version": "1.0.41",
-      "latest_build_number": 42,
+      "version": "1.0.42",
+      "latest_build_number": 43,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Allows repeated invoice lines from the same harvest allocation until the available harvested stock is used up."
+      "release_notes": "Fixes staff commission and salary expense links so payroll is shown on the correct accounts without double-counting."
     },
     "chrome": {
-      "version": "1.0.41",
-      "latest_build_number": 42,
+      "version": "1.0.42",
+      "latest_build_number": 43,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Allows repeated invoice lines from the same harvest allocation until the available harvested stock is used up."
+      "release_notes": "Fixes staff commission and salary expense links so payroll is shown on the correct accounts without double-counting."
     },
     "web": {
-      "version": "1.0.41",
-      "latest_build_number": 42,
+      "version": "1.0.42",
+      "latest_build_number": 43,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Allows repeated invoice lines from the same harvest allocation until the available harvested stock is used up."
+      "release_notes": "Fixes staff commission and salary expense links so payroll is shown on the correct accounts without double-counting."
     }
   }
 }
