@@ -356,7 +356,9 @@ button {
   align-items: center;
   border-top: 1px solid rgba(85, 240, 163, 0.1);
   border-bottom: 1px solid rgba(85, 240, 163, 0.08);
-  background: linear-gradient(90deg, rgba(12, 19, 15, 0.95), rgba(16, 46, 34, 0.86));
+  background:
+    linear-gradient(90deg, rgba(12, 19, 15, 0.95), rgba(16, 46, 34, 0.84)),
+    url("assets/dashboard-hay-bales-960.jpg") center / cover;
   padding: 20px 24px;
 }
 
@@ -443,7 +445,9 @@ footer {
   gap: 26px;
   border-top: 1px solid rgba(238, 245, 242, 0.12);
   border-bottom: 1px solid rgba(238, 245, 242, 0.12);
-  background: linear-gradient(180deg, rgba(11, 17, 21, 0.74), rgba(11, 17, 21, 0.92));
+  background:
+    linear-gradient(180deg, rgba(11, 17, 21, 0.82), rgba(11, 17, 21, 0.94)),
+    url("assets/gallery-crops-720.jpg") center / cover;
   padding-top: 36px;
   padding-bottom: 36px;
 }
@@ -686,7 +690,10 @@ footer {
   align-items: start;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  background: linear-gradient(90deg, rgba(11, 17, 21, 0.98), rgba(15, 31, 28, 0.9)), #0f171c;
+  background:
+    linear-gradient(90deg, rgba(11, 17, 21, 0.98), rgba(15, 31, 28, 0.86)),
+    url("assets/gallery-harvest-720.jpg") center / cover,
+    #0f171c;
 }
 
 .download-copy {
@@ -859,9 +866,10 @@ footer {
   background:
     linear-gradient(90deg, rgba(85, 240, 163, 0.04) 1px, transparent 1px),
     linear-gradient(rgba(85, 240, 163, 0.04) 1px, transparent 1px),
-    linear-gradient(rgba(11, 17, 21, 0.93), rgba(11, 17, 21, 0.96)),
+    linear-gradient(rgba(11, 17, 21, 0.9), rgba(11, 17, 21, 0.96)),
+    url("assets/gallery-poultry-720.jpg") center / cover,
     #0b1115;
-  background-size: 30px 30px, 30px 30px, auto, auto;
+  background-size: 30px 30px, 30px 30px, auto, cover, auto;
 }
 
 .app-shell {
@@ -1025,7 +1033,9 @@ footer {
   display: flex;
   align-items: end;
   min-height: 128px;
-  background: linear-gradient(90deg, rgba(16, 20, 24, 0.92), rgba(19, 52, 39, 0.72));
+  background:
+    linear-gradient(90deg, rgba(16, 20, 24, 0.9), rgba(19, 52, 39, 0.76)),
+    url("assets/gallery-crops-520.jpg") center / cover;
   padding: 24px 18px;
 }
 
@@ -1408,7 +1418,9 @@ td {
   display: grid;
   gap: 22px;
   border-top: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(11, 17, 21, 0.96), rgba(12, 24, 22, 0.98));
+  background:
+    linear-gradient(180deg, rgba(11, 17, 21, 0.94), rgba(12, 24, 22, 0.98)),
+    url("assets/gallery-poultry-720.jpg") center / cover;
 }
 
 .feedback-section .section-heading p:not(.eyebrow) {
@@ -1458,7 +1470,9 @@ td {
 .pricing-section {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(11, 17, 21, 0.96), rgba(9, 18, 17, 0.98));
+  background:
+    linear-gradient(180deg, rgba(11, 17, 21, 0.95), rgba(9, 18, 17, 0.98)),
+    url("assets/gallery-harvest-720.jpg") center / cover;
   padding: 76px clamp(18px, 4vw, 56px);
 }
 
@@ -1618,7 +1632,9 @@ td {
 
 .page-hero {
   border-bottom: 1px solid var(--line);
-  background: linear-gradient(90deg, rgba(11, 17, 21, 0.98), rgba(13, 31, 27, 0.92));
+  background:
+    linear-gradient(90deg, rgba(11, 17, 21, 0.97), rgba(13, 31, 27, 0.88)),
+    url("assets/dashboard-hay-bales-960.jpg") center / cover;
 }
 
 .page-hero h1 {
