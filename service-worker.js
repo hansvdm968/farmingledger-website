@@ -1,8 +1,8 @@
-const CACHE_NAME = "farming-ledger-v19";
+const CACHE_NAME = "farming-ledger-v20";
 const APP_SHELL = [
   "/",
   "/index.html",
-  "/styles.css?v=22",
+  "/styles.css?v=23",
   "/app.js?v=18",
   "/assets/farming-ledger-logo.png?v=1.0.8"
 ];
@@ -27,6 +27,7 @@ self.addEventListener("fetch", (event) => {
 
   const requestUrl = new URL(event.request.url);
   if (requestUrl.origin !== self.location.origin) return;
+  if (event.request.mode === "navigate" || requestUrl.pathname.endsWith(".html")) return;
 
   event.respondWith(
     caches.match(event.request).then((cached) => cached || fetch(event.request))

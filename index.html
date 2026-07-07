@@ -8,9 +8,8 @@
     <link rel="icon" href="assets/farming-ledger-logo.png">
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#0b1115">
-    <link rel="preload" as="style" href="styles.css?v=22">
-    <link rel="stylesheet" href="styles.css?v=22" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="styles.css?v=22"></noscript>
+    <link rel="preload" as="image" href="assets/hero-field-800.jpg" imagesrcset="assets/hero-field-800.jpg 800w, assets/hero-field-1200.jpg 1200w" imagesizes="100vw" fetchpriority="high">
+    <link rel="stylesheet" href="styles.css?v=23">
   </head>
   <body>
     <header class="site-header">
@@ -32,7 +31,7 @@
       <section class="hero" aria-labelledby="heroTitle">
         <picture class="hero-media" aria-hidden="true">
           <source srcset="assets/hero-field-800.jpg 800w, assets/hero-field-1200.jpg 1200w" sizes="100vw">
-          <img src="assets/hero-field-800.jpg" alt="" width="800" height="450" fetchpriority="high" decoding="async">
+          <img src="assets/hero-field-800.jpg" alt="" width="800" height="450" fetchpriority="high" decoding="sync">
         </picture>
         <div class="hero-copy-block">
           <h1 id="heroTitle">Farm records and production management.</h1>

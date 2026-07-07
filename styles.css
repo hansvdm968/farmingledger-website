@@ -135,17 +135,17 @@ button {
   display: flex;
   align-items: center;
   overflow: hidden;
-  min-height: calc(92vh - 71px);
+  min-height: clamp(420px, 62vh, 620px);
   border-bottom: 1px solid rgba(214, 182, 107, 0.18);
   background: #0b1115;
-  padding: clamp(34px, 5vw, 64px) clamp(18px, 4vw, 56px);
+  padding: clamp(30px, 4vw, 54px) clamp(18px, 4vw, 56px);
 }
 
 .hero::after {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: linear-gradient(90deg, rgba(10, 17, 14, 0.94) 0%, rgba(10, 17, 14, 0.78) 52%, rgba(10, 17, 14, 0.38) 100%);
+  background: linear-gradient(90deg, rgba(10, 17, 14, 0.96) 0%, rgba(10, 17, 14, 0.88) 55%, rgba(10, 17, 14, 0.62) 100%);
   content: "";
 }
 
@@ -180,7 +180,7 @@ button {
 .hero h1 {
   margin: 0;
   max-width: 780px;
-  font-size: clamp(2.55rem, 5.1vw, 5rem);
+  font-size: clamp(2.3rem, 4.5vw, 4.3rem);
   line-height: 1;
   letter-spacing: 0;
   text-shadow: 0 12px 42px rgba(0, 0, 0, 0.55);
@@ -188,7 +188,7 @@ button {
 
 .hero-copy {
   max-width: 650px;
-  margin: 24px 0 0;
+  margin: 20px 0 0;
   color: var(--muted);
   font-size: clamp(1.05rem, 1.8vw, 1.28rem);
   line-height: 1.62;
@@ -197,7 +197,7 @@ button {
 .hero-actions {
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 28px;
+  margin-top: 24px;
 }
 
 .product-frame {
@@ -356,9 +356,7 @@ button {
   align-items: center;
   border-top: 1px solid rgba(85, 240, 163, 0.1);
   border-bottom: 1px solid rgba(85, 240, 163, 0.08);
-  background:
-    linear-gradient(90deg, rgba(12, 19, 15, 0.95), rgba(16, 46, 34, 0.86)),
-    url("assets/dashboard-hay-bales-960.jpg") center / cover;
+  background: linear-gradient(90deg, rgba(12, 19, 15, 0.95), rgba(16, 46, 34, 0.86));
   padding: 20px 24px;
 }
 
@@ -445,9 +443,7 @@ footer {
   gap: 26px;
   border-top: 1px solid rgba(238, 245, 242, 0.12);
   border-bottom: 1px solid rgba(238, 245, 242, 0.12);
-  background:
-    linear-gradient(180deg, rgba(11, 17, 21, 0.58), rgba(11, 17, 21, 0.82)),
-    url("assets/hero-field-800.jpg") center / cover;
+  background: linear-gradient(180deg, rgba(11, 17, 21, 0.74), rgba(11, 17, 21, 0.92));
   padding-top: 36px;
   padding-bottom: 36px;
 }
@@ -690,10 +686,7 @@ footer {
   align-items: start;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  background:
-    linear-gradient(90deg, rgba(11, 17, 21, 0.96), rgba(11, 17, 21, 0.82)),
-    url("assets/hero-field-800.jpg") center / cover,
-    #0f171c;
+  background: linear-gradient(90deg, rgba(11, 17, 21, 0.98), rgba(15, 31, 28, 0.9)), #0f171c;
 }
 
 .download-copy {
@@ -867,22 +860,8 @@ footer {
     linear-gradient(90deg, rgba(85, 240, 163, 0.04) 1px, transparent 1px),
     linear-gradient(rgba(85, 240, 163, 0.04) 1px, transparent 1px),
     linear-gradient(rgba(11, 17, 21, 0.93), rgba(11, 17, 21, 0.96)),
-    url("assets/hero-field-800.jpg") center bottom / cover,
     #0b1115;
-  background-size: 30px 30px, 30px 30px, auto, cover, auto;
-}
-
-@supports (background-image: image-set(url("assets/hero-field-800.jpg") 1x)) {
-  .app-section {
-    background-image:
-      linear-gradient(90deg, rgba(85, 240, 163, 0.04) 1px, transparent 1px),
-      linear-gradient(rgba(85, 240, 163, 0.04) 1px, transparent 1px),
-      linear-gradient(rgba(11, 17, 21, 0.93), rgba(11, 17, 21, 0.96)),
-      image-set(
-        url("assets/hero-field-800.jpg") 1x,
-        url("assets/hero-field-1200.jpg") 2x
-      );
-  }
+  background-size: 30px 30px, 30px 30px, auto, auto;
 }
 
 .app-shell {
@@ -1046,21 +1025,8 @@ footer {
   display: flex;
   align-items: end;
   min-height: 128px;
-  background:
-    linear-gradient(90deg, rgba(16, 20, 24, 0.88), rgba(16, 20, 24, 0.38)),
-    url("assets/dashboard-hay-bales-960.jpg") center / cover;
+  background: linear-gradient(90deg, rgba(16, 20, 24, 0.92), rgba(19, 52, 39, 0.72));
   padding: 24px 18px;
-}
-
-@supports (background-image: image-set(url("assets/dashboard-hay-bales-960.jpg") 1x)) {
-  .preview-hero-band {
-    background-image:
-      linear-gradient(90deg, rgba(16, 20, 24, 0.88), rgba(16, 20, 24, 0.38)),
-      image-set(
-        url("assets/dashboard-hay-bales-960.jpg") 1x,
-        url("assets/dashboard-hay-bales-1440.jpg") 2x
-      );
-  }
 }
 
 .preview-hero-band h3 {
@@ -1442,9 +1408,7 @@ td {
   display: grid;
   gap: 22px;
   border-top: 1px solid var(--line);
-  background:
-    linear-gradient(180deg, rgba(11, 17, 21, 0.94), rgba(12, 19, 22, 0.98)),
-    url("assets/hero-field-800.jpg") center / cover;
+  background: linear-gradient(180deg, rgba(11, 17, 21, 0.96), rgba(12, 24, 22, 0.98));
 }
 
 .feedback-section .section-heading p:not(.eyebrow) {
@@ -1494,9 +1458,7 @@ td {
 .pricing-section {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  background:
-    linear-gradient(180deg, rgba(11, 17, 21, 0.94), rgba(9, 15, 18, 0.98)),
-    url("assets/hero-field-800.jpg") center / cover;
+  background: linear-gradient(180deg, rgba(11, 17, 21, 0.96), rgba(9, 18, 17, 0.98));
   padding: 76px clamp(18px, 4vw, 56px);
 }
 
@@ -1656,9 +1618,7 @@ td {
 
 .page-hero {
   border-bottom: 1px solid var(--line);
-  background:
-    linear-gradient(90deg, rgba(11, 17, 21, 0.95), rgba(11, 17, 21, 0.72)),
-    url("assets/hero-field-800.jpg") center / cover;
+  background: linear-gradient(90deg, rgba(11, 17, 21, 0.98), rgba(13, 31, 27, 0.92));
 }
 
 .page-hero h1 {
@@ -1929,7 +1889,25 @@ td {
 
 @media (max-width: 640px) {
   .hero {
-    padding-top: 34px;
+    min-height: clamp(360px, 56vh, 500px);
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hero::after {
+    background: linear-gradient(180deg, rgba(10, 17, 14, 0.94) 0%, rgba(10, 17, 14, 0.86) 62%, rgba(10, 17, 14, 0.72) 100%);
+  }
+
+  .hero h1 {
+    font-size: clamp(2.05rem, 11vw, 3rem);
+  }
+
+  .hero-copy {
+    margin-top: 16px;
+  }
+
+  .hero-actions {
+    margin-top: 20px;
   }
 
   .price-ladder,
