@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /app/
+Disallow: /downloads/
+
+Sitemap: https://farmingledger.co.za/sitemap.xml
