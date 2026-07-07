@@ -3,52 +3,52 @@
   "source": "https://farmingledger.co.za/app/",
   "platforms": {
     "all": {
-      "version": "1.0.42",
-      "latest_build_number": 43,
+      "version": "1.0.43",
+      "latest_build_number": 44,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Fixes staff commission and salary expense links so payroll is shown on the correct accounts without double-counting."
+      "release_notes": "Improves the Fields & Blocks screen with clearer field, block, edit, delete and selection icons."
     },
     "windows": {
-      "version": "1.0.39",
-      "latest_build_number": 40,
+      "version": "1.0.43",
+      "latest_build_number": 44,
       "min_build_number": 0,
       "force_update": false,
-      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.39",
-      "release_notes": "Improves invoice item saving and totals, respects partial agent harvest allocation quantities, refreshes the login screen, and polishes Quick Records icons and tag scanning."
+      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.43",
+      "release_notes": "Improves the Fields & Blocks screen with clearer field, block, edit, delete and selection icons."
     },
     "android": {
-      "version": "1.0.42",
-      "latest_build_number": 43,
+      "version": "1.0.43",
+      "latest_build_number": 44,
       "min_build_number": 0,
       "force_update": false,
-      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.42",
-      "release_notes": "Fixes staff commission and salary expense links so payroll is shown on the correct accounts without double-counting."
+      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.43",
+      "release_notes": "Improves the Fields & Blocks screen with clearer field, block, edit, delete and selection icons."
     },
     "ios": {
-      "version": "1.0.42",
-      "latest_build_number": 43,
+      "version": "1.0.43",
+      "latest_build_number": 44,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Fixes staff commission and salary expense links so payroll is shown on the correct accounts without double-counting."
+      "release_notes": "Improves the Fields & Blocks screen with clearer field, block, edit, delete and selection icons."
     },
     "chrome": {
-      "version": "1.0.42",
-      "latest_build_number": 43,
+      "version": "1.0.43",
+      "latest_build_number": 44,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Fixes staff commission and salary expense links so payroll is shown on the correct accounts without double-counting."
+      "release_notes": "Improves the Fields & Blocks screen with clearer field, block, edit, delete and selection icons."
     },
     "web": {
-      "version": "1.0.42",
-      "latest_build_number": 43,
+      "version": "1.0.43",
+      "latest_build_number": 44,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Fixes staff commission and salary expense links so payroll is shown on the correct accounts without double-counting."
+      "release_notes": "Improves the Fields & Blocks screen with clearer field, block, edit, delete and selection icons."
     }
   }
 }
