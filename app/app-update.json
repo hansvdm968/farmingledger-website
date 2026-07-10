@@ -3,52 +3,52 @@
   "source": "https://farmingledger.co.za/app/",
   "platforms": {
     "all": {
-      "version": "1.0.43",
-      "latest_build_number": 44,
+      "version": "1.0.44",
+      "latest_build_number": 45,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Improves the Fields & Blocks screen with clearer field, block, edit, delete and selection icons."
+      "release_notes": "Adds expanded soil sample capture, improves Scan Tag printed-tag handling, and removes duplicate crop input navigation."
     },
     "windows": {
-      "version": "1.0.43",
-      "latest_build_number": 44,
+      "version": "1.0.44",
+      "latest_build_number": 45,
       "min_build_number": 0,
       "force_update": false,
-      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.43",
-      "release_notes": "Improves the Fields & Blocks screen with clearer field, block, edit, delete and selection icons."
+      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.44",
+      "release_notes": "Adds expanded soil sample capture, improves Scan Tag printed-tag handling, and removes duplicate crop input navigation."
     },
     "android": {
-      "version": "1.0.43",
-      "latest_build_number": 44,
+      "version": "1.0.44",
+      "latest_build_number": 45,
       "min_build_number": 0,
       "force_update": false,
-      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.43",
-      "release_notes": "Improves the Fields & Blocks screen with clearer field, block, edit, delete and selection icons."
+      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.44",
+      "release_notes": "Adds expanded soil sample capture, improves Scan Tag printed-tag handling, and removes duplicate crop input navigation."
     },
     "ios": {
-      "version": "1.0.43",
-      "latest_build_number": 44,
+      "version": "1.0.44",
+      "latest_build_number": 45,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Improves the Fields & Blocks screen with clearer field, block, edit, delete and selection icons."
+      "release_notes": "Adds expanded soil sample capture, improves Scan Tag printed-tag handling, and removes duplicate crop input navigation."
     },
     "chrome": {
-      "version": "1.0.43",
-      "latest_build_number": 44,
+      "version": "1.0.44",
+      "latest_build_number": 45,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Improves the Fields & Blocks screen with clearer field, block, edit, delete and selection icons."
+      "release_notes": "Adds expanded soil sample capture, improves Scan Tag printed-tag handling, and removes duplicate crop input navigation."
     },
     "web": {
-      "version": "1.0.43",
-      "latest_build_number": 44,
+      "version": "1.0.44",
+      "latest_build_number": 45,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Improves the Fields & Blocks screen with clearer field, block, edit, delete and selection icons."
+      "release_notes": "Adds expanded soil sample capture, improves Scan Tag printed-tag handling, and removes duplicate crop input navigation."
     }
   }
 }
