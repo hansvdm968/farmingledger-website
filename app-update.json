@@ -3,52 +3,52 @@
   "source": "https://farmingledger.co.za/app/",
   "platforms": {
     "all": {
-      "version": "1.0.44",
-      "latest_build_number": 45,
+      "version": "1.0.45",
+      "latest_build_number": 2045,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Adds expanded soil sample capture, improves Scan Tag printed-tag handling, and removes duplicate crop input navigation."
+      "release_notes": "Fixes Android update installation by using a higher build code, and keeps the expanded soil sample and Scan Tag updates."
     },
     "windows": {
-      "version": "1.0.44",
-      "latest_build_number": 45,
+      "version": "1.0.45",
+      "latest_build_number": 2045,
       "min_build_number": 0,
       "force_update": false,
-      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.44",
-      "release_notes": "Adds expanded soil sample capture, improves Scan Tag printed-tag handling, and removes duplicate crop input navigation."
+      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.45",
+      "release_notes": "Fixes Android update installation by using a higher build code, and keeps the expanded soil sample and Scan Tag updates."
     },
     "android": {
-      "version": "1.0.44",
-      "latest_build_number": 45,
+      "version": "1.0.45",
+      "latest_build_number": 2045,
       "min_build_number": 0,
       "force_update": false,
-      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-mobile-app.apk?v=1.0.44",
-      "release_notes": "Adds expanded soil sample capture, improves Scan Tag printed-tag handling, and removes duplicate crop input navigation."
+      "download_url": "https://play.google.com/store/apps/details?id=za.co.farmingledger.app",
+      "release_notes": "Android updates now open the Farming Ledger Play Store listing. Also keeps the expanded soil sample and Scan Tag updates."
     },
     "ios": {
-      "version": "1.0.44",
-      "latest_build_number": 45,
+      "version": "1.0.45",
+      "latest_build_number": 2045,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Adds expanded soil sample capture, improves Scan Tag printed-tag handling, and removes duplicate crop input navigation."
+      "release_notes": "Fixes Android update installation by using a higher build code, and keeps the expanded soil sample and Scan Tag updates."
     },
     "chrome": {
-      "version": "1.0.44",
-      "latest_build_number": 45,
+      "version": "1.0.45",
+      "latest_build_number": 2045,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Adds expanded soil sample capture, improves Scan Tag printed-tag handling, and removes duplicate crop input navigation."
+      "release_notes": "Fixes Android update installation by using a higher build code, and keeps the expanded soil sample and Scan Tag updates."
     },
     "web": {
-      "version": "1.0.44",
-      "latest_build_number": 45,
+      "version": "1.0.45",
+      "latest_build_number": 2045,
       "min_build_number": 0,
       "force_update": false,
       "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Adds expanded soil sample capture, improves Scan Tag printed-tag handling, and removes duplicate crop input navigation."
+      "release_notes": "Fixes Android update installation by using a higher build code, and keeps the expanded soil sample and Scan Tag updates."
     }
   }
 }
