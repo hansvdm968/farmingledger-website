@@ -1,54 +1,54 @@
 {
-  "schema": 1,
-  "source": "https://farmingledger.co.za/app/",
-  "platforms": {
-    "all": {
-      "version": "1.0.45",
-      "latest_build_number": 2045,
-      "min_build_number": 0,
-      "force_update": false,
-      "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Fixes Android update installation by using a higher build code, and keeps the expanded soil sample and Scan Tag updates."
-    },
-    "windows": {
-      "version": "1.0.45",
-      "latest_build_number": 2045,
-      "min_build_number": 0,
-      "force_update": false,
-      "download_url": "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.45",
-      "release_notes": "Fixes Android update installation by using a higher build code, and keeps the expanded soil sample and Scan Tag updates."
-    },
-    "android": {
-      "version": "1.0.45",
-      "latest_build_number": 2045,
-      "min_build_number": 0,
-      "force_update": false,
-      "download_url": "https://play.google.com/store/apps/details?id=za.co.farmingledger.app",
-      "release_notes": "Android updates now open the Farming Ledger Play Store listing. Also keeps the expanded soil sample and Scan Tag updates."
-    },
-    "ios": {
-      "version": "1.0.45",
-      "latest_build_number": 2045,
-      "min_build_number": 0,
-      "force_update": false,
-      "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Fixes Android update installation by using a higher build code, and keeps the expanded soil sample and Scan Tag updates."
-    },
-    "chrome": {
-      "version": "1.0.45",
-      "latest_build_number": 2045,
-      "min_build_number": 0,
-      "force_update": false,
-      "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Fixes Android update installation by using a higher build code, and keeps the expanded soil sample and Scan Tag updates."
-    },
-    "web": {
-      "version": "1.0.45",
-      "latest_build_number": 2045,
-      "min_build_number": 0,
-      "force_update": false,
-      "download_url": "https://farmingledger.co.za/app/",
-      "release_notes": "Fixes Android update installation by using a higher build code, and keeps the expanded soil sample and Scan Tag updates."
+    "schema": 1,
+    "source": "https://farmingledger.co.za/app/",
+    "platforms": {
+        "all": {
+            "version": "1.0.46",
+            "latest_build_number": 2046,
+            "min_build_number": 0,
+            "force_update": false,
+            "download_url": "https://farmingledger.co.za/app/",
+            "release_notes": "Adds the lighter app theme, crop seedling and soil planning workflow, simpler livestock and poultry records, corrected dashboard expense totals, monthly bar performance charts, crop dashboards, and exact two-decimal number display."
+        },
+        "windows": {
+            "version": "1.0.46",
+            "latest_build_number": 2046,
+            "min_build_number": 0,
+            "force_update": false,
+            "download_url": "https://github.com/hansvdm968/Farm_ledger/releases/download/v1.0.46/farming-ledger-windows.zip",
+            "release_notes": "Adds the lighter app theme, crop seedling and soil planning workflow, simpler livestock and poultry records, corrected dashboard expense totals, monthly bar performance charts, crop dashboards, and exact two-decimal number display."
+        },
+        "android": {
+            "version": "1.0.46",
+            "latest_build_number": 2046,
+            "min_build_number": 0,
+            "force_update": false,
+            "download_url": "https://play.google.com/store/apps/details?id=za.co.farmingledger.app",
+            "release_notes": "Adds the lighter app theme, crop seedling and soil planning workflow, simpler livestock and poultry records, corrected dashboard expense totals, monthly bar performance charts, crop dashboards, and exact two-decimal number display."
+        },
+        "ios": {
+            "version": "1.0.46",
+            "latest_build_number": 2046,
+            "min_build_number": 0,
+            "force_update": false,
+            "download_url": "https://farmingledger.co.za/app/",
+            "release_notes": "iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
+        },
+        "chrome": {
+            "version": "1.0.46",
+            "latest_build_number": 2046,
+            "min_build_number": 0,
+            "force_update": false,
+            "download_url": "https://farmingledger.co.za/app/",
+            "release_notes": "Adds the lighter app theme, crop seedling and soil planning workflow, simpler livestock and poultry records, corrected dashboard expense totals, monthly bar performance charts, crop dashboards, and exact two-decimal number display."
+        },
+        "web": {
+            "version": "1.0.46",
+            "latest_build_number": 2046,
+            "min_build_number": 0,
+            "force_update": false,
+            "download_url": "https://farmingledger.co.za/app/",
+            "release_notes": "Adds the lighter app theme, crop seedling and soil planning workflow, simpler livestock and poultry records, corrected dashboard expense totals, monthly bar performance charts, crop dashboards, and exact two-decimal number display."
+        }
     }
-  }
 }
