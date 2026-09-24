@@ -348,7 +348,7 @@ function applyDownloadLink(anchor, versionElement, release) {
   } else if (getDownloadPath(release.url).endsWith(".zip")) {
     anchor.setAttribute("download", "farming-ledger-windows-desktop.zip");
   } else if (getDownloadPath(release.url).endsWith(".tar.gz")) {
-    anchor.setAttribute("download", "farming-ledger-linux-x64.tar.gz");
+    anchor.setAttribute("download", "farming-ledger-linux-app.tar.gz");
   }
   anchor.removeAttribute("aria-disabled");
 

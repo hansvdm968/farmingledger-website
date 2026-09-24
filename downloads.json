@@ -21,7 +21,7 @@
     "size": "Microsoft Store"
   },
   "linux": {
-    "url": "https://github.com/hansvdm968/Farm_ledger/releases/download/v1.0.47/farming-ledger-linux-x64.tar.gz",
+    "url": "https://farmingledger.co.za/downloads/farming-ledger-linux-app.tar.gz?v=1.0.47",
     "version": "1.0.47",
     "size": "Linux desktop package"
   }
