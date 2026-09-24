@@ -2431,6 +2431,134 @@ td {
   margin-top: 8px;
 }
 
+.real-preview-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 28px;
+  align-items: start;
+  padding: 72px clamp(18px, 4vw, 56px) 32px;
+  background: #0b1115;
+}
+
+.real-preview-intro h2,
+.screen-group-heading h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.real-preview-intro p:not(.eyebrow),
+.screen-directory-card p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.sidebar-directory {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  align-content: start;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(17, 27, 33, 0.96);
+  box-shadow: var(--shadow);
+}
+
+.sidebar-directory span {
+  border: 1px solid rgba(85, 240, 163, 0.32);
+  border-radius: 999px;
+  color: var(--ink);
+  padding: 8px 11px;
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.screen-group {
+  padding: 48px clamp(18px, 4vw, 56px) 78px;
+  background: #0b1115;
+}
+
+.alternate-screen-group {
+  background: linear-gradient(180deg, rgba(21, 61, 46, 0.16), rgba(11, 17, 21, 0.98));
+}
+
+.screen-group-heading {
+  max-width: 780px;
+  margin-bottom: 24px;
+}
+
+.real-screen-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.real-screen-card,
+.screen-directory-card {
+  min-width: 0;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(17, 27, 33, 0.96);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.real-screen-card-wide {
+  grid-column: 1 / -1;
+}
+
+.real-screen-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #0b1115;
+}
+
+.real-screen-card figcaption {
+  display: grid;
+  gap: 6px;
+  padding: 18px 20px 20px;
+}
+
+.real-screen-card figcaption strong,
+.screen-directory-card h3 {
+  color: var(--ink);
+  font-size: 1.2rem;
+}
+
+.real-screen-card figcaption span {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.screen-directory-card {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 24px;
+}
+
+.screen-directory-card h3 {
+  margin: 0;
+  font-size: 1.55rem;
+}
+
+.screen-directory-card p {
+  margin: 0;
+}
+
+.screen-directory-card .secondary-action {
+  justify-self: start;
+  margin-top: 8px;
+}
+
+.screen-directory-card-accent {
+  background: linear-gradient(135deg, rgba(85, 240, 163, 0.16), rgba(17, 27, 33, 0.98) 58%);
+}
+
 @media (max-width: 1120px) {
   .download-page {
     grid-template-columns: 1fr;
@@ -2438,7 +2566,8 @@ td {
 
   .about-detail-grid,
   .feature-preview-grid,
-  .production-preview-grid {
+  .production-preview-grid,
+  .real-screen-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -2470,7 +2599,9 @@ td {
   .about-detail-grid,
   .feature-preview-grid,
   .production-preview-grid,
-  .download-price-row {
+  .download-price-row,
+  .real-preview-intro,
+  .real-screen-grid {
     grid-template-columns: 1fr;
   }
 

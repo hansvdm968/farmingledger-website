@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://farmingledger.co.za/</loc>
     <lastmod>2026-09-24</lastmod>
@@ -17,6 +17,23 @@
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/dashboard.png</image:loc></image:image>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/finance.png</image:loc></image:image>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/inventory.png</image:loc></image:image>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/crops.png</image:loc></image:image>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/poultry.png</image:loc></image:image>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/cattle.png</image:loc></image:image>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/pigs.png</image:loc></image:image>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/sheep.png</image:loc></image:image>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/scan-tag.png</image:loc></image:image>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/property-map.png</image:loc></image:image>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/farm-vehicles.png</image:loc></image:image>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/tasks.png</image:loc></image:image>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/staff.png</image:loc></image:image>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/agents.png</image:loc></image:image>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/suppliers.png</image:loc></image:image>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/customers.png</image:loc></image:image>
+    <image:image><image:loc>https://farmingledger.co.za/assets/app-preview/settings.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://farmingledger.co.za/pricing.html</loc>
