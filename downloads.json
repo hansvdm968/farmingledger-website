@@ -1,23 +1,28 @@
 {
-    "latestVersion":  "1.0.46",
-    "web":  {
-                "version":  "1.0.46",
-                "url":  "https://farmingledger.co.za/app/"
-            },
-    "updatedAt":  "2026-08-28",
-    "phone":  {
-                  "url":  "https://play.google.com/store/apps/details?id=za.co.farmingledger.app",
-                  "version":  "1.0.46",
-                  "size":  "Google Play"
-              },
-    "ios":  {
-                "url":  "https://farmingledger.co.za/app/",
-                "version":  "1.0.46",
-                "size":  "Online app for iPhone and iPad"
-            },
-    "windows":  {
-                    "url":  "downloads/farming-ledger-windows-app.zip?v=1.0.46",
-                    "version":  "1.0.46",
-                    "size":  "20,9 MB ZIP"
-                }
+  "latestVersion": "1.0.47",
+  "updatedAt": "2026-09-23",
+  "web": {
+    "version": "1.0.47",
+    "url": "https://farmingledger.co.za/app/"
+  },
+  "phone": {
+    "url": "https://play.google.com/store/apps/details?id=za.co.farmingledger.app",
+    "version": "1.0.47",
+    "size": "Google Play"
+  },
+  "ios": {
+    "url": "https://farmingledger.co.za/app/",
+    "version": "1.0.47",
+    "size": "Online app for iPhone and iPad"
+  },
+  "windows": {
+    "url": "https://apps.microsoft.com/detail/9NXMZX1PF3FS",
+    "version": "1.0.47",
+    "size": "Microsoft Store"
+  },
+  "linux": {
+    "url": "https://github.com/hansvdm968/Farm_ledger/releases/download/v1.0.47/farming-ledger-linux-x64.tar.gz",
+    "version": "1.0.47",
+    "size": "Linux desktop package"
+  }
 }

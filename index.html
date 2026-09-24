@@ -63,7 +63,7 @@
             "@id": "https://farmingledger.co.za/#software",
             "name": "Farming Ledger",
             "applicationCategory": "BusinessApplication",
-            "operatingSystem": "Web browser, Android, Windows, iOS browser",
+            "operatingSystem": "Web browser, Android, Windows, Linux, iOS browser",
             "url": "https://farmingledger.co.za/",
             "description": "Farm management and accounting software for crops, cattle, sheep, pigs, poultry, invoices, inventory, harvests, staff, and farm reports.",
             "image": "https://farmingledger.co.za/assets/hero-field-1200.jpg",
@@ -188,7 +188,7 @@
       <section id="download" class="download-section" aria-labelledby="downloadTitle">
         <div class="download-copy">
           <h2 id="downloadTitle">Get Farming Ledger on the device you use at the farm.</h2>
-          <p>Download the app package for Windows or mobile, or open the online app directly in your browser.</p>
+          <p>Download the app from Google Play, Microsoft Store, Linux desktop, or open the online app directly in your browser.</p>
           <p class="download-status" id="downloadStatus">Checking latest version...</p>
           <div class="app-popup" id="appPopup" role="dialog" aria-modal="true" aria-labelledby="appPopupTitle" aria-hidden="true">
             <div class="app-popup-panel">
@@ -206,11 +206,11 @@
             <span class="download-icon">M</span>
             <div>
               <p class="eyebrow">Mobile</p>
-              <h3>Mobile app</h3>
-              <p>Real Android APK for phone and tablet use in the field.</p>
+              <h3>Android app</h3>
+              <p>Install Farming Ledger from Google Play for phone and tablet use in the field.</p>
               <p class="version-line" id="phoneVersion">Latest version loading</p>
             </div>
-            <a class="download-action" id="phoneDownload" href="downloads/farming-ledger-mobile-app.apk?v=1.0.42" download="farming-ledger-mobile-app.apk">Download mobile app</a>
+            <a class="download-action" id="phoneDownload" href="https://play.google.com/store/apps/details?id=za.co.farmingledger.app">Get it on Google Play</a>
           </article>
 
           <article class="download-card">
@@ -229,10 +229,21 @@
             <div>
               <p class="eyebrow">Desktop</p>
               <h3>Windows app</h3>
-              <p>For office use, reporting, and larger screens.</p>
+              <p>Install Farming Ledger from Microsoft Store for office use, reporting, and larger screens.</p>
               <p class="version-line" id="windowsVersion">Latest version loading</p>
             </div>
-            <a class="download-action secondary-download" id="windowsDownload" href="downloads/farming-ledger-windows-app.zip?v=1.0.39" download="farming-ledger-windows-app.zip">Download Windows app</a>
+            <a class="download-action secondary-download" id="windowsDownload" href="https://apps.microsoft.com/detail/9NXMZX1PF3FS">Microsoft Store</a>
+          </article>
+
+          <article class="download-card">
+            <span class="download-icon">L</span>
+            <div>
+              <p class="eyebrow">Desktop</p>
+              <h3>Linux app</h3>
+              <p>Download the Linux desktop package for compatible farm office computers.</p>
+              <p class="version-line" id="linuxVersion">Latest version loading</p>
+            </div>
+            <a class="download-action secondary-download" id="linuxDownload" href="https://github.com/hansvdm968/Farm_ledger/releases/download/v1.0.47/farming-ledger-linux-x64.tar.gz" download="farming-ledger-linux-x64.tar.gz">Download Linux app</a>
           </article>
 
           <article class="download-card">
@@ -253,7 +264,7 @@
           <h2 id="previewTitle">App Preview</h2>
         </div>
 
-        <div class="dashboard-preview" aria-label="Farming Ledger dashboard preview">
+        <div class="dashboard-preview map-preview" aria-label="Farming Ledger property map and records preview">
           <aside class="preview-sidebar" aria-hidden="true">
             <div class="preview-sidebar-brand">
               <div class="preview-brand-mark">FL</div>
@@ -261,21 +272,23 @@
             </div>
             <button class="preview-collapse" type="button" tabindex="-1"><<</button>
             <nav>
-              <span class="active">Dashboard</span>
-              <small>Money</small>
-              <span>Finance</span>
+              <span>Dashboard</span>
+              <small>Farm</small>
+              <span class="active">Property Map</span>
+              <span>Tasks</span>
               <small>Farm</small>
               <div class="preview-package-tabs">
-                <span class="active">Crops</span>
-                <span>Poultry</span>
+                <span class="active">Maps</span>
+                <span>Records</span>
               </div>
               <span>Crops</span>
-              <span>Harvests</span>
-              <span>Inventory</span>
-              <span>Fields / Blocks</span>
-              <span>Planting Batches</span>
+              <span>Cattle</span>
+              <span>Sheep</span>
+              <span>Poultry</span>
+              <span>Finance</span>
+              <span>Quotes</span>
+              <span>Invoices</span>
               <span>Staff</span>
-              <span>Agents</span>
             </nav>
             <div class="preview-user">
               <span>demo@farmingledger.co.za</span>
@@ -289,97 +302,59 @@
             </div>
 
             <div class="preview-hero-band">
-              <h3>Dashboard</h3>
+              <h3>Property Map</h3>
             </div>
 
-            <div class="preview-filter-row" aria-hidden="true">
-              <span class="selected">All</span>
-              <span>Day</span>
-              <span>Month</span>
-              <span>Year</span>
-              <span class="date-chip">All dates</span>
+            <div class="preview-filter-row preview-map-tools" aria-hidden="true">
+              <span class="selected">Satellite</span>
+              <span>Boundaries</span>
+              <span>Pins</span>
+              <span>Roads</span>
+              <span>KML</span>
+              <span>PDF</span>
             </div>
 
-            <div class="preview-metric-grid">
-              <article class="preview-metric income">
-                <i>+</i>
-                <span>Total Income</span>
-                <strong>R 0.00</strong>
-              </article>
-              <article class="preview-metric expense">
-                <i>-</i>
-                <span>Total Expenses</span>
-                <strong>R 1 600.00</strong>
-              </article>
-              <article class="preview-metric expense">
-                <i>R</i>
-                <span>Profit</span>
-                <strong>R -1 600.00</strong>
-              </article>
-              <article class="preview-metric blue">
-                <i>$</i>
-                <span>This Month</span>
-                <strong>R 0.00 in / R 1 600.00 out</strong>
-              </article>
-              <article class="preview-metric income">
-                <i>C</i>
-                <span>Active Crops</span>
-                <strong>1</strong>
-              </article>
-              <article class="preview-metric amber">
-                <i>H</i>
-                <span>Harvests This Week</span>
-                <strong>0</strong>
-              </article>
-              <article class="preview-metric income">
-                <i>F</i>
-                <span>Poultry Flocks</span>
-                <strong>2</strong>
-              </article>
-              <article class="preview-metric blue">
-                <i>B</i>
-                <span>Poultry count</span>
-                <strong>150</strong>
-              </article>
-              <article class="preview-metric amber">
-                <i>!</i>
-                <span>Mortality</span>
-                <strong>0.0%</strong>
-              </article>
-              <article class="preview-metric purple">
-                <i>FCR</i>
-                <span>Avg FCR</span>
-                <strong>-</strong>
-              </article>
-              <article class="preview-metric yellow">
-                <i>E</i>
-                <span>Eggs Collected</span>
-                <strong>0</strong>
-              </article>
-              <article class="preview-metric expense">
-                <i>P</i>
-                <span>Poultry Profit</span>
-                <strong>R -100.00</strong>
-              </article>
-            </div>
+            <div class="preview-map-screen">
+              <div class="preview-map-layout">
+                <div class="preview-map-canvas" aria-hidden="true">
+                  <span class="preview-map-boundary farm-boundary"></span>
+                  <span class="preview-map-boundary crop-boundary"></span>
+                  <span class="preview-map-boundary grazing-boundary"></span>
+                  <span class="preview-map-road"></span>
+                  <span class="preview-map-label farm-label">VDM Farming - 9.01 ha</span>
+                  <span class="preview-map-label field-label">Field A - Herd D grazing</span>
+                  <span class="preview-map-label crop-label">Block 2 - maize</span>
+                  <span class="preview-map-pin house"><b></b><em>Main house</em></span>
+                  <span class="preview-map-pin borehole"><b></b><em>Main borehole</em></span>
+                  <span class="preview-map-pin dam"><b></b><em>Concrete dam</em></span>
+                </div>
 
-            <div class="preview-lower-grid">
-              <div class="preview-chart">
-                <strong>Monthly Income vs Expenses</strong>
-                <div class="chart-bars" aria-hidden="true">
-                  <span style="height: 22%"></span>
-                  <span style="height: 72%"></span>
-                  <span style="height: 38%"></span>
-                  <span style="height: 88%"></span>
-                  <span style="height: 18%"></span>
-                  <span style="height: 64%"></span>
+                <div class="preview-map-side">
+                  <strong>Live farm context</strong>
+                  <p><span>Field A</span><b>Herd D grazing</b></p>
+                  <p><span>Move date</span><b>26 Sep 2026</b></p>
+                  <p><span>Last soil test</span><b>pH 6.20</b></p>
+                  <p><span>Open tasks</span><b>3</b></p>
                 </div>
               </div>
-              <div class="preview-records">
-                <strong>Recent records</strong>
-                <p><span>Poultry feed</span><b>Finance expense</b></p>
-                <p><span>Egg collection</span><b>Poultry history</b></p>
-                <p><span>Harvest allocation</span><b>Agent invoice</b></p>
+
+              <div class="preview-insight-grid">
+                <article>
+                  <strong>Field history</strong>
+                  <p>Soil sample, lime application, grazing, planting, harvest, and maintenance records stay linked to the same mapped field.</p>
+                </article>
+                <article>
+                  <strong>Tasks and staff</strong>
+                  <p>Pump service assigned to Alex. Completion notes notify the owner and remain on the borehole record.</p>
+                </article>
+                <article>
+                  <strong>Quote to invoice</strong>
+                  <p>Accepted quote Q-1047 creates invoice INV-1047 without counting the same sale twice in finance reports.</p>
+                </article>
+                <article>
+                  <strong>Exports</strong>
+                  <p>Choose property boundary, fields, roads, pins, livestock camps, or all layers before exporting KML or PDF.</p>
+                </article>
               </div>
             </div>
           </div>
@@ -428,8 +403,9 @@
             <span>Full package R420/month</span>
             <span>Finance records</span>
             <span>Online web app</span>
-            <span>Mobile APK</span>
-            <span>Windows download</span>
+            <span>Google Play</span>
+            <span>Microsoft Store</span>
+            <span>Linux desktop download</span>
           </div>
         </div>
       </section>
@@ -508,8 +484,9 @@
           <h2>App</h2>
           <a href="https://farmingledger.co.za/app/">Online App</a>
           <a href="https://farmingledger.co.za/app/">iPhone / iPad</a>
-          <a href="downloads/farming-ledger-mobile-app.apk?v=1.0.42">Mobile APK</a>
-          <a href="downloads/farming-ledger-windows-app.zip?v=1.0.39">Windows App</a>
+          <a href="https://play.google.com/store/apps/details?id=za.co.farmingledger.app">Google Play</a>
+          <a href="https://apps.microsoft.com/detail/9NXMZX1PF3FS">Microsoft Store</a>
+          <a href="https://github.com/hansvdm968/Farm_ledger/releases/download/v1.0.47/farming-ledger-linux-x64.tar.gz">Linux App</a>
         </section>
 
         <section>
@@ -530,6 +507,6 @@
       </div>
     </footer>
 
-    <script src="app.js?v=18"></script>
+    <script src="app.js?v=19"></script>
   </body>
 </html>

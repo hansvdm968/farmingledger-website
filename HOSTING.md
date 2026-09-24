@@ -110,14 +110,13 @@ DNS can take a few minutes to 24 hours to fully update.
 
 ## Updating App Download Links
 
-The website reads the latest Windows and phone download buttons from `downloads.json`.
+The website reads the latest Store, Linux, and web app download buttons from `downloads.json`.
 
 When a new app version is available:
 
-1. Replace the downloadable app packages:
-   - `downloads/farming-ledger-windows-app.zip`
-   - `downloads/farming-ledger-mobile-app.zip`
-2. Update `downloads.json` with the new version, date, file size, and URL.
+1. Publish the version tag so the release workflow builds the Linux archive and attaches it to the GitHub release.
+2. Update `downloads.json` with the new version, date, file size, and tagged release URL.
+3. Keep the Android and Windows URLs pointed at Google Play and Microsoft Store.
 3. Redeploy the site.
 
 The page fetches `downloads.json` without browser caching, so visitors get the newest file links after the deploy.

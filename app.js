@@ -63,9 +63,11 @@ const downloadStatus = document.querySelector("#downloadStatus");
 const phoneDownload = document.querySelector("#phoneDownload");
 const iosDownload = document.querySelector("#iosDownload");
 const windowsDownload = document.querySelector("#windowsDownload");
+const linuxDownload = document.querySelector("#linuxDownload");
 const phoneVersion = document.querySelector("#phoneVersion");
 const iosVersion = document.querySelector("#iosVersion");
 const windowsVersion = document.querySelector("#windowsVersion");
+const linuxVersion = document.querySelector("#linuxVersion");
 const manifestUpdated = document.querySelector("#manifestUpdated");
 const webAppLink = document.querySelector("#webAppLink");
 const appPopup = document.querySelector("#appPopup");
@@ -300,6 +302,9 @@ async function loadDownloadLinks() {
       applyDownloadLink(iosDownload, iosVersion, manifest.ios);
     }
     applyDownloadLink(windowsDownload, windowsVersion, manifest.windows);
+    if (linuxDownload && linuxVersion) {
+      applyDownloadLink(linuxDownload, linuxVersion, manifest.linux);
+    }
     if (manifest.web?.url && webAppLink) {
       webAppLink.href = manifest.web.url;
     }
@@ -319,6 +324,9 @@ async function loadDownloadLinks() {
       iosVersion.textContent = "Latest link unavailable";
     }
     windowsVersion.textContent = "Latest link unavailable";
+    if (linuxVersion) {
+      linuxVersion.textContent = "Latest link unavailable";
+    }
     manifestUpdated.textContent = "Release manifest unavailable";
   }
 }
@@ -336,9 +344,11 @@ function applyDownloadLink(anchor, versionElement, release) {
   if (isExternalUrl(release.url)) {
     anchor.removeAttribute("download");
   } else if (getDownloadPath(release.url).endsWith(".apk")) {
-    anchor.setAttribute("download", "farming-ledger-mobile-app.apk");
+    anchor.setAttribute("download", "farming-ledger-android-app.apk");
   } else if (getDownloadPath(release.url).endsWith(".zip")) {
-    anchor.setAttribute("download", "farming-ledger-windows-app.zip");
+    anchor.setAttribute("download", "farming-ledger-windows-desktop.zip");
+  } else if (getDownloadPath(release.url).endsWith(".tar.gz")) {
+    anchor.setAttribute("download", "farming-ledger-linux-x64.tar.gz");
   }
   anchor.removeAttribute("aria-disabled");
 
