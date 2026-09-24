@@ -1,54 +1,62 @@
 {
-    "schema": 1,
-    "source": "https://farmingledger.co.za/app/",
-    "platforms": {
-        "all": {
-            "version": "1.0.46",
-            "latest_build_number": 2046,
-            "min_build_number": 0,
-            "force_update": false,
-            "download_url": "https://farmingledger.co.za/app/",
-            "release_notes": "Adds the lighter app theme, crop seedling and soil planning workflow, simpler livestock and poultry records, corrected dashboard expense totals, monthly bar performance charts, crop dashboards, and exact two-decimal number display."
-        },
-        "windows": {
-            "version": "1.0.46",
-            "latest_build_number": 2046,
-            "min_build_number": 0,
-            "force_update": false,
-            "download_url": "https://farmingledger.co.za/downloads/farming-ledger-windows-app.zip?v=1.0.46",
-            "release_notes": "Adds the lighter app theme, crop seedling and soil planning workflow, simpler livestock and poultry records, corrected dashboard expense totals, monthly bar performance charts, crop dashboards, and exact two-decimal number display."
-        },
-        "android": {
-            "version": "1.0.46",
-            "latest_build_number": 2046,
-            "min_build_number": 0,
-            "force_update": false,
-            "download_url": "https://play.google.com/store/apps/details?id=za.co.farmingledger.app",
-            "release_notes": "Adds the lighter app theme, crop seedling and soil planning workflow, simpler livestock and poultry records, corrected dashboard expense totals, monthly bar performance charts, crop dashboards, and exact two-decimal number display."
-        },
-        "ios": {
-            "version": "1.0.46",
-            "latest_build_number": 2046,
-            "min_build_number": 0,
-            "force_update": false,
-            "download_url": "https://farmingledger.co.za/app/",
-            "release_notes": "iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
-        },
-        "chrome": {
-            "version": "1.0.46",
-            "latest_build_number": 2046,
-            "min_build_number": 0,
-            "force_update": false,
-            "download_url": "https://farmingledger.co.za/app/",
-            "release_notes": "Adds the lighter app theme, crop seedling and soil planning workflow, simpler livestock and poultry records, corrected dashboard expense totals, monthly bar performance charts, crop dashboards, and exact two-decimal number display."
-        },
-        "web": {
-            "version": "1.0.46",
-            "latest_build_number": 2046,
-            "min_build_number": 0,
-            "force_update": false,
-            "download_url": "https://farmingledger.co.za/app/",
-            "release_notes": "Adds the lighter app theme, crop seedling and soil planning workflow, simpler livestock and poultry records, corrected dashboard expense totals, monthly bar performance charts, crop dashboards, and exact two-decimal number display."
-        }
+  "schema": 1,
+  "source": "https://farmingledger.co.za/app/",
+  "platforms": {
+    "all": {
+      "version": "1.0.47",
+      "latest_build_number": 2047,
+      "min_build_number": 0,
+      "force_update": false,
+      "download_url": "https://farmingledger.co.za/app/",
+      "release_notes": "Adds the property map with boundaries, pins, lines, KML/PDF export, field history links, tasks and team notifications, quotes that convert to invoices, invoice layout updates, staff access controls, and stronger app lock security."
+    },
+    "windows": {
+      "version": "1.0.47",
+      "latest_build_number": 2047,
+      "min_build_number": 0,
+      "force_update": false,
+      "download_url": "https://apps.microsoft.com/detail/9NXMZX1PF3FS",
+      "release_notes": "Adds the property map with boundaries, pins, lines, KML/PDF export, field history links, tasks and team notifications, quotes that convert to invoices, invoice layout updates, staff access controls, and stronger app lock security."
+    },
+    "android": {
+      "version": "1.0.47",
+      "latest_build_number": 2047,
+      "min_build_number": 0,
+      "force_update": false,
+      "download_url": "https://play.google.com/store/apps/details?id=za.co.farmingledger.app",
+      "release_notes": "Adds the property map with boundaries, pins, lines, KML/PDF export, field history links, tasks and team notifications, quotes that convert to invoices, invoice layout updates, staff access controls, and stronger app lock security."
+    },
+    "linux": {
+      "version": "1.0.47",
+      "latest_build_number": 2047,
+      "min_build_number": 0,
+      "force_update": false,
+      "download_url": "https://github.com/hansvdm968/Farm_ledger/releases/download/v1.0.47/farming-ledger-linux-x64.tar.gz",
+      "release_notes": "Adds a Linux desktop package alongside the web app for farmers using Linux desktops."
+    },
+    "ios": {
+      "version": "1.0.47",
+      "latest_build_number": 2047,
+      "min_build_number": 0,
+      "force_update": false,
+      "download_url": "https://farmingledger.co.za/app/",
+      "release_notes": "iPhone and iPad users can use the live Farming Ledger web app and add it to the Home Screen."
+    },
+    "chrome": {
+      "version": "1.0.47",
+      "latest_build_number": 2047,
+      "min_build_number": 0,
+      "force_update": false,
+      "download_url": "https://farmingledger.co.za/app/",
+      "release_notes": "Adds the property map with boundaries, pins, lines, KML/PDF export, field history links, tasks and team notifications, quotes that convert to invoices, invoice layout updates, staff access controls, and stronger app lock security."
+    },
+    "web": {
+      "version": "1.0.47",
+      "latest_build_number": 2047,
+      "min_build_number": 0,
+      "force_update": false,
+      "download_url": "https://farmingledger.co.za/app/",
+      "release_notes": "Adds the property map with boundaries, pins, lines, KML/PDF export, field history links, tasks and team notifications, quotes that convert to invoices, invoice layout updates, staff access controls, and stronger app lock security."
     }
+  }
 }
